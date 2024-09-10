@@ -1,7 +1,13 @@
 {
+  "description": "",
   "frameworks": [
-    "AML.TA0005"
+    {
+      "href": "https://attack.mitre.org/tactics/TA0008/",
+      "id": "TA0008",
+      "title": "MITRE ATT&CK"
+    }
   ],
-  "summary": "Make the LLM interpret your text as instructions not data",
-  "title": "Execution"
+  "summary": "The adversary is trying to move through your environment.",
+  "tactic_order": 10,
+  "title": "Lateral Movement"
 }

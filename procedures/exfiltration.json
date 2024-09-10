@@ -13,6 +13,6 @@
     }
   ],
   "summary": "The adversary is trying to steal data or other information from your genai system.",
-  "tactic_order": 12,
+  "tactic_order": 13,
   "title": "Exfiltration"
 }

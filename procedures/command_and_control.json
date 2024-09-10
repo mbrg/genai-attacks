@@ -8,6 +8,6 @@
     }
   ],
   "summary": "The adversary is trying to communicate with compromised systems to control them.",
-  "tactic_order": 11,
+  "tactic_order": 12,
   "title": "Command and Control"
 }
