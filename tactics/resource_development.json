@@ -2,17 +2,17 @@
   "description": "",
   "frameworks": [
     {
-      "href": "https://atlas.mitre.org/tactics/AML.TA0003",
-      "id": "AML.TA0005",
-      "title": "MITRE ATLAS"
+      "framework_id": "AML.TA0005",
+      "framework_title": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/tactics/AML.TA0003"
     },
     {
-      "href": "https://attack.mitre.org/tactics/TA0042/",
-      "id": "TA0042",
-      "title": "MITRE ATT&CK"
+      "framework_id": "TA0042",
+      "framework_title": "MITRE ATT&CK",
+      "href": "https://attack.mitre.org/tactics/TA0042/"
     }
   ],
-  "id": "tactics/resource_development",
+  "id": "$gai-tactics/resource_development",
   "summary": "The adversary is trying to establish resources they can use to support operations.",
   "tactic_order": 2,
   "title": "Resource Development"

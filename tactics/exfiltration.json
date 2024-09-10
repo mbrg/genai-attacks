@@ -2,17 +2,17 @@
   "description": "",
   "frameworks": [
     {
-      "href": "https://atlas.mitre.org/tactics/AML.TA0009",
-      "id": "AML.TA0009",
-      "title": "MITRE ATLAS"
+      "framework_id": "AML.TA0009",
+      "framework_title": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/tactics/AML.TA0009"
     },
     {
-      "href": "https://attack.mitre.org/tactics/TA0009/",
-      "id": "TA0009",
-      "title": "MITRE ATT&CK"
+      "framework_id": "TA0009",
+      "framework_title": "MITRE ATT&CK",
+      "href": "https://attack.mitre.org/tactics/TA0009/"
     }
   ],
-  "id": "tactics/exfiltration",
+  "id": "$gai-tactics/exfiltration",
   "summary": "The adversary is trying to steal data or other information from your genai system.",
   "tactic_order": 13,
   "title": "Exfiltration"

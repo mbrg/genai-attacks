@@ -2,17 +2,17 @@
   "description": "",
   "frameworks": [
     {
-      "href": "https://atlas.mitre.org/tactics/AML.TA0009",
-      "id": "AML.TA0009",
-      "title": "MITRE ATLAS"
+      "framework_id": "AML.TA0009",
+      "framework_title": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/tactics/AML.TA0009"
     },
     {
-      "href": "https://attack.mitre.org/tactics/TA0009/",
-      "id": "TA0009",
-      "title": "MITRE ATT&CK"
+      "framework_id": "TA0009",
+      "framework_title": "MITRE ATT&CK",
+      "href": "https://attack.mitre.org/tactics/TA0009/"
     }
   ],
-  "id": "tactics/collection",
+  "id": "$gai-tactics/collection",
   "summary": "The adversary is trying to gather data, artifacts and other related information relevant to their goal.",
   "tactic_order": 11,
   "title": "Collection"

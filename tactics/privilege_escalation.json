@@ -2,17 +2,17 @@
   "description": "",
   "frameworks": [
     {
-      "href": "https://atlas.mitre.org/tactics/AML.TA0012",
-      "id": "AML.TA0012",
-      "title": "MITRE ATLAS"
+      "framework_id": "AML.TA0012",
+      "framework_title": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/tactics/AML.TA0012"
     },
     {
-      "href": "https://attack.mitre.org/tactics/TA0004/",
-      "id": "TA0004",
-      "title": "MITRE ATT&CK"
+      "framework_id": "TA0004",
+      "framework_title": "MITRE ATT&CK",
+      "href": "https://attack.mitre.org/tactics/TA0004/"
     }
   ],
-  "id": "tactics/privilege_escalation",
+  "id": "$gai-tactics/privilege_escalation",
   "summary": "Confused deputy / Request forgery",
   "tactic_order": 6,
   "title": "Privilege Escalation"

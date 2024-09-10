@@ -1,7 +1,7 @@
 {
   "description": "",
   "frameworks": [],
-  "id": "techniques/ascii_smuggling",
+  "id": "$gai-techniques/ascii_smuggling",
   "references": [
     {
       "author": "authors/riley_goodside.json",

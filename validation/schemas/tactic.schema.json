@@ -8,20 +8,20 @@
     "frameworks": {
       "items": {
         "properties": {
+          "framework_id": {
+            "type": "string"
+          },
+          "framework_title": {
+            "type": "string"
+          },
           "href": {
             "format": "uri",
-            "type": "string"
-          },
-          "id": {
-            "type": "string"
-          },
-          "title": {
             "type": "string"
           }
         },
         "required": [
-          "title",
-          "id",
+          "framework_title",
+          "framework_id",
           "href"
         ],
         "type": "object"
@@ -29,7 +29,7 @@
       "type": "array"
     },
     "id": {
-      "type": "string"
+      "$ref": "common.schema.json#/definitions/id"
     },
     "summary": {
       "type": "string"

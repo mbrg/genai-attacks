@@ -10,7 +10,7 @@
       "type": "string"
     },
     "id": {
-      "type": "string"
+      "$ref": "common.schema.json#/definitions/id"
     }
   },
   "required": [

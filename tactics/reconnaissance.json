@@ -2,17 +2,17 @@
   "description": "",
   "frameworks": [
     {
-      "href": "https://atlas.mitre.org/tactics/AML.TA0002/",
-      "id": "AML.TA0002",
-      "title": "MITRE ATLAS"
+      "framework_id": "AML.TA0002",
+      "framework_title": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/tactics/AML.TA0002/"
     },
     {
-      "href": "https://attack.mitre.org/tactics/TA0043/",
-      "id": "TA0043",
-      "title": "MITRE ATT&CK"
+      "framework_id": "TA0043",
+      "framework_title": "MITRE ATT&CK",
+      "href": "https://attack.mitre.org/tactics/TA0043/"
     }
   ],
-  "id": "tactics/reconnaissance",
+  "id": "$gai-tactics/reconnaissance",
   "summary": "The adversary is trying to gather information about the GenAI system they can use to plan future operations.",
   "tactic_order": 1,
   "title": "Reconnaissance"

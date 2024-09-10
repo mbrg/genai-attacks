@@ -2,17 +2,17 @@
   "description": "",
   "frameworks": [
     {
-      "href": "https://atlas.mitre.org/tactics/AML.TA0007",
-      "id": "AML.TA0007",
-      "title": "MITRE ATLAS"
+      "framework_id": "AML.TA0007",
+      "framework_title": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/tactics/AML.TA0007"
     },
     {
-      "href": "https://attack.mitre.org/tactics/TA0005/",
-      "id": "TA0005",
-      "title": "MITRE ATT&CK"
+      "framework_id": "TA0005",
+      "framework_title": "MITRE ATT&CK",
+      "href": "https://attack.mitre.org/tactics/TA0005/"
     }
   ],
-  "id": "tactics/defense_evasion",
+  "id": "$gai-tactics/defense_evasion",
   "summary": "The adversary is trying to avoid being detected by security software and native controls.",
   "tactic_order": 7,
   "title": "Defense Evasion"

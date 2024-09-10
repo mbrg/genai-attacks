@@ -12,7 +12,7 @@
       "type": "array"
     },
     "id": {
-      "type": "string"
+      "$ref": "common.schema.json#/definitions/id"
     },
     "references": {
       "items": {

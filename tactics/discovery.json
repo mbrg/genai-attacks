@@ -2,17 +2,17 @@
   "description": "",
   "frameworks": [
     {
-      "href": "https://atlas.mitre.org/tactics/AML.TA0008",
-      "id": "AML.TA0008",
-      "title": "MITRE ATLAS"
+      "framework_id": "AML.TA0008",
+      "framework_title": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/tactics/AML.TA0008"
     },
     {
-      "href": "https://attack.mitre.org/tactics/TA0007/",
-      "id": "TA0007",
-      "title": "MITRE ATT&CK"
+      "framework_id": "TA0007",
+      "framework_title": "MITRE ATT&CK",
+      "href": "https://attack.mitre.org/tactics/TA0007/"
     }
   ],
-  "id": "tactics/discovery",
+  "id": "$gai-tactics/discovery",
   "summary": "Understand the capabilities and mitigations in place.",
   "tactic_order": 9,
   "title": "Discovery"

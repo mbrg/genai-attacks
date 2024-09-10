@@ -2,12 +2,12 @@
   "description": "",
   "frameworks": [
     {
-      "href": "https://attack.mitre.org/tactics/TA0011/",
-      "id": "TA0011",
-      "title": "MITRE ATT&CK"
+      "framework_id": "TA0011",
+      "framework_title": "MITRE ATT&CK",
+      "href": "https://attack.mitre.org/tactics/TA0011/"
     }
   ],
-  "id": "tactics/command_and_control",
+  "id": "$gai-tactics/command_and_control",
   "summary": "The adversary is trying to communicate with compromised systems to control them.",
   "tactic_order": 12,
   "title": "Command and Control"
