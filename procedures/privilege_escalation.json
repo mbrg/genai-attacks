@@ -1,0 +1,10 @@
+{
+    "tactic_order": 6,
+    "title": "Privilege Escalation",
+    "summary": "Confused deputy / Request forgery",
+    "description": "",
+    "frameworks": [
+        {"title": "MITRE ATLAS", "id": "AML.TA0012", "href": "https://atlas.mitre.org/tactics/AML.TA0012"},
+        {"title": "MITRE ATT&CK", "id": "TA0004", "href": "https://attack.mitre.org/tactics/TA0004/"}
+    ]
+}

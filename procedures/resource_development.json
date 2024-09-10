@@ -1,0 +1,10 @@
+{
+    "tactic_order": 2,
+    "title": "Resource Development",
+    "summary": "The adversary is trying to establish resources they can use to support operations.",
+    "description": "",
+    "frameworks": [
+        {"title": "MITRE ATLAS", "id": "AML.TA0005", "href": "https://atlas.mitre.org/tactics/AML.TA0003"},
+        {"title": "MITRE ATT&CK", "id": "TA0042", "href": "https://attack.mitre.org/tactics/TA0042/"}
+    ]
+}

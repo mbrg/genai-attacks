@@ -1,0 +1,10 @@
+{
+    "tactic_order": 1,
+    "title": "Reconnaissance",
+    "summary": "The adversary is trying to gather information about the GenAI system they can use to plan future operations.",
+    "description": "",
+    "frameworks": [
+        {"title": "MITRE ATLAS", "id": "AML.TA0002", "href": "https://atlas.mitre.org/tactics/AML.TA0002/"},
+        {"title": "MITRE ATT&CK", "id": "TA0043", "href": "https://attack.mitre.org/tactics/TA0043/"}
+    ]
+}

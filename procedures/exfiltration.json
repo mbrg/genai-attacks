@@ -1,0 +1,10 @@
+{
+    "tactic_order": 12,
+    "title": "Exfiltration",
+    "summary": "The adversary is trying to steal data or other information from your genai system.",
+    "description": "",
+    "frameworks": [
+        {"title": "MITRE ATLAS", "id": "AML.TA0009", "href": "https://atlas.mitre.org/tactics/AML.TA0009"},
+        {"title": "MITRE ATT&CK", "id": "TA0009", "href": "https://attack.mitre.org/tactics/TA0009/"}
+    ]
+}

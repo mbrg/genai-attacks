@@ -1,0 +1,9 @@
+{
+    "tactic_order": 11,
+    "title": "Command and Control",
+    "summary": "The adversary is trying to communicate with compromised systems to control them.",
+    "description": "",
+    "frameworks": [
+        {"title": "MITRE ATT&CK", "id": "TA0011", "href": "https://attack.mitre.org/tactics/TA0011/"}
+    ]
+}

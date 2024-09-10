@@ -1,0 +1,10 @@
+{
+    "tactic_order": 4,
+    "title": "Execution",
+    "summary": "Make the LLM interpret your text as instructions not data",
+    "description": "",
+    "frameworks": [
+        {"title": "MITRE ATLAS", "id": "AML.TA0005", "href": "https://atlas.mitre.org/tactics/AML.TA0005"},
+        {"title": "MITRE ATT&CK", "id": "TA0002", "href": "https://attack.mitre.org/tactics/TA0002/"}
+    ]
+}

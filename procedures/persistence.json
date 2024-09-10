@@ -1,0 +1,10 @@
+{
+    "tactic_order": 5,
+    "title": "Persistence",
+    "summary": "Keep your malicious prompt there for future conversations",
+    "description": "",
+    "frameworks": [
+        {"title": "MITRE ATLAS", "id": "AML.TA0006", "href": "https://atlas.mitre.org/tactics/AML.TA0006"},
+        {"title": "MITRE ATT&CK", "id": "TA0003", "href": "https://attack.mitre.org/tactics/TA0003/"}
+    ]
+}
