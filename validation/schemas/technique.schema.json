@@ -18,21 +18,27 @@
       "items": {
         "additionalProperties": false,
         "properties": {
-          "author": {
-            "type": "string"
-          },
           "href": {
             "format": "uri",
             "type": "string"
           },
-          "title": {
+          "ref_author": {
+            "allOf": [
+              {
+                "$ref": "common.schema.json#/definitions/id"
+              },
+              {
+                "pattern": "authors/"
+              }
+            ]
+          },
+          "ref_title": {
             "type": "string"
           }
         },
         "required": [
-          "author",
           "href",
-          "title"
+          "ref_title"
         ],
         "type": "object"
       },
@@ -43,7 +49,14 @@
     },
     "tactics": {
       "items": {
-        "type": "string"
+        "allOf": [
+          {
+            "$ref": "common.schema.json#/definitions/id"
+          },
+          {
+            "pattern": "tactics/"
+          }
+        ]
       },
       "type": "array"
     },

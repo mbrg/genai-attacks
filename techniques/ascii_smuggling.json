@@ -4,24 +4,23 @@
   "id": "$gai-techniques/ascii_smuggling",
   "references": [
     {
-      "author": "authors/riley_goodside.json",
       "href": "https://twitter.com/goodside/status/1745511940351287394",
-      "title": "Tweeter thread on the discovery of ASCII Smuggling."
+      "ref_author": "$gai-authors/riley_goodside.json",
+      "ref_title": "Tweeter thread on the discovery of ASCII Smuggling."
     },
     {
-      "author": "authors/johann_rehberger.json",
       "href": "https://embracethered.com/blog/posts/2024/hiding-and-finding-text-with-unicode-tags/",
-      "title": "ASCII Smuggler Tool: Crafting Invisible Text and Decoding Hidden Codes."
+      "ref_author": "$gai-authors/johann_rehberger.json",
+      "ref_title": "ASCII Smuggler Tool: Crafting Invisible Text and Decoding Hidden Codes."
     },
     {
-      "author": "Wikipedia",
       "href": "https://en.wikipedia.org/wiki/Tags_(Unicode_block)",
-      "title": "Tags (Unicode block)"
+      "ref_title": "Tags (Unicode block)"
     }
   ],
   "summary": "The adversary uses Tags Unicode Block to write instructions that are visible to machine but not to humans.",
   "tactics": [
-    "tactics/defense_evasion.json"
+    "$gai-tactics/defense_evasion.json"
   ],
   "title": "ASCII SMuggling"
 }
