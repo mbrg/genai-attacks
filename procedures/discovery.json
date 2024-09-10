@@ -1,10 +1,18 @@
 {
-    "tactic_order": 9,
-    "title": "Discovery",
-    "summary": "Understand the capabilities and mitigations in place.",
-    "description": "",
-    "frameworks": [
-        {"title": "MITRE ATLAS", "id": "AML.TA0008", "href": "https://atlas.mitre.org/tactics/AML.TA0008"},
-        {"title": "MITRE ATT&CK", "id": "TA0007", "href": "https://attack.mitre.org/tactics/TA0007/"}
-    ]
+  "description": "",
+  "frameworks": [
+    {
+      "href": "https://atlas.mitre.org/tactics/AML.TA0008",
+      "id": "AML.TA0008",
+      "title": "MITRE ATLAS"
+    },
+    {
+      "href": "https://attack.mitre.org/tactics/TA0007/",
+      "id": "TA0007",
+      "title": "MITRE ATT&CK"
+    }
+  ],
+  "summary": "Understand the capabilities and mitigations in place.",
+  "tactic_order": 9,
+  "title": "Discovery"
 }

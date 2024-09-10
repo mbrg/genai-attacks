@@ -1,10 +1,18 @@
 {
-    "tactic_order": 12,
-    "title": "Impact",
-    "summary": "The adversary is trying to communicate with compromised systems to control them.",
-    "description": "",
-    "frameworks": [
-        {"title": "MITRE ATLAS", "id": "AML.TA0011", "href": "https://atlas.mitre.org/tactics/AML.TA0011"},
-        {"title": "MITRE ATT&CK", "id": "TA0040", "href": "https://attack.mitre.org/tactics/TA0040/"}
-    ]
+  "description": "",
+  "frameworks": [
+    {
+      "href": "https://atlas.mitre.org/tactics/AML.TA0011",
+      "id": "AML.TA0011",
+      "title": "MITRE ATLAS"
+    },
+    {
+      "href": "https://attack.mitre.org/tactics/TA0040/",
+      "id": "TA0040",
+      "title": "MITRE ATT&CK"
+    }
+  ],
+  "summary": "The adversary is trying to communicate with compromised systems to control them.",
+  "tactic_order": 12,
+  "title": "Impact"
 }

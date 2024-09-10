@@ -1,10 +1,18 @@
 {
-    "tactic_order": 3,
-    "title": "Initial Access",
-    "summary": "Get your text into the LLM prompt",
-    "description": "",
-    "frameworks": [
-        {"title": "MITRE ATLAS", "id": "AML.TA0004", "href": "https://atlas.mitre.org/tactics/AML.TA0004"},
-        {"title": "MITRE ATT&CK", "id": "TA0001", "href": "https://attack.mitre.org/tactics/TA0001/"}
-    ]
+  "description": "",
+  "frameworks": [
+    {
+      "href": "https://atlas.mitre.org/tactics/AML.TA0004",
+      "id": "AML.TA0004",
+      "title": "MITRE ATLAS"
+    },
+    {
+      "href": "https://attack.mitre.org/tactics/TA0001/",
+      "id": "TA0001",
+      "title": "MITRE ATT&CK"
+    }
+  ],
+  "summary": "Get your text into the LLM prompt",
+  "tactic_order": 3,
+  "title": "Initial Access"
 }

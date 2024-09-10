@@ -1,10 +1,18 @@
 {
-    "tactic_order": 7,
-    "title": "Defense Evasion",
-    "summary": "The adversary is trying to avoid being detected by security software and native controls.",
-    "description": "",
-    "frameworks": [
-        {"title": "MITRE ATLAS", "id": "AML.TA0007", "href": "https://atlas.mitre.org/tactics/AML.TA0007"},
-        {"title": "MITRE ATT&CK", "id": "TA0005", "href": "https://attack.mitre.org/tactics/TA0005/"}
-    ]
+  "description": "",
+  "frameworks": [
+    {
+      "href": "https://atlas.mitre.org/tactics/AML.TA0007",
+      "id": "AML.TA0007",
+      "title": "MITRE ATLAS"
+    },
+    {
+      "href": "https://attack.mitre.org/tactics/TA0005/",
+      "id": "TA0005",
+      "title": "MITRE ATT&CK"
+    }
+  ],
+  "summary": "The adversary is trying to avoid being detected by security software and native controls.",
+  "tactic_order": 7,
+  "title": "Defense Evasion"
 }

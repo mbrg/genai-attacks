@@ -1,5 +1,7 @@
 {
-    "title": "Execution",
-    "summary": "Make the LLM interpret your text as instructions not data",
-    "frameworks": ["AML.TA0005"]
+  "frameworks": [
+    "AML.TA0005"
+  ],
+  "summary": "Make the LLM interpret your text as instructions not data",
+  "title": "Execution"
 }
