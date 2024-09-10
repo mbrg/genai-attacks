@@ -12,6 +12,7 @@
       "title": "MITRE ATT&CK"
     }
   ],
+  "id": "tactics/defense_evasion",
   "summary": "The adversary is trying to avoid being detected by security software and native controls.",
   "tactic_order": 7,
   "title": "Defense Evasion"

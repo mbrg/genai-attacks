@@ -12,6 +12,7 @@
       "title": "MITRE ATT&CK"
     }
   ],
+  "id": "tactics/discovery",
   "summary": "Understand the capabilities and mitigations in place.",
   "tactic_order": 9,
   "title": "Discovery"

@@ -12,6 +12,7 @@
       "title": "MITRE ATT&CK"
     }
   ],
+  "id": "tactics/reconnaissance",
   "summary": "The adversary is trying to gather information about the GenAI system they can use to plan future operations.",
   "tactic_order": 1,
   "title": "Reconnaissance"

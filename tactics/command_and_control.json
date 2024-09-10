@@ -7,6 +7,7 @@
       "title": "MITRE ATT&CK"
     }
   ],
+  "id": "tactics/command_and_control",
   "summary": "The adversary is trying to communicate with compromised systems to control them.",
   "tactic_order": 12,
   "title": "Command and Control"

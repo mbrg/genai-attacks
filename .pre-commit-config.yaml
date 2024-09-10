@@ -7,8 +7,7 @@ repos:
     -   id: trailing-whitespace
     -   id: check-added-large-files
     -   id: pretty-format-json
-        args:
-            - "--autofix"
+        args: ["--autofix"]
     -   id: requirements-txt-fixer
 -   repo: https://github.com/psf/black
     rev: 24.8.0
@@ -18,9 +17,18 @@ repos:
     rev: 5.13.2
     hooks:
     -   id: isort
-- repo: https://github.com/python-jsonschema/check-jsonschema
-  rev: 0.29.2
-  hooks:
-    - id: check-jsonschema
-      files: ^procedures/.*\.json$
-      args: ["--schemafile", "validation/schemas/procedures.schema.json"]
+-   repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.29.2
+    hooks:
+    -   id: check-jsonschema
+        name: "tactics schema"
+        files: ^tactics/.*\.json$
+        args: ["--schemafile", "validation/schemas/tactic.schema.json"]
+    -   id: check-jsonschema
+        name: "authors schema"
+        files: ^authors/.*\.json$
+        args: ["--schemafile", "validation/schemas/author.schema.json"]
+    -   id: check-jsonschema
+        name: "techniques schema"
+        files: ^techniques/.*\.json$
+        args: ["--schemafile", "validation/schemas/technique.schema.json"]

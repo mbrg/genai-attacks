@@ -12,6 +12,7 @@
       "title": "MITRE ATT&CK"
     }
   ],
+  "id": "tactics/privilege_escalation",
   "summary": "Confused deputy / Request forgery",
   "tactic_order": 6,
   "title": "Privilege Escalation"

@@ -12,6 +12,7 @@
       "title": "MITRE ATT&CK"
     }
   ],
+  "id": "tactics/execution",
   "summary": "Make the LLM interpret your text as instructions not data",
   "tactic_order": 4,
   "title": "Execution"

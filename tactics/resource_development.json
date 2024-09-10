@@ -12,6 +12,7 @@
       "title": "MITRE ATT&CK"
     }
   ],
+  "id": "tactics/resource_development",
   "summary": "The adversary is trying to establish resources they can use to support operations.",
   "tactic_order": 2,
   "title": "Resource Development"

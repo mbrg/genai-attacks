@@ -12,6 +12,7 @@
       "title": "MITRE ATT&CK"
     }
   ],
+  "id": "tactics/initial_access",
   "summary": "Get your text into the LLM prompt",
   "tactic_order": 3,
   "title": "Initial Access"

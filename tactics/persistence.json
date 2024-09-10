@@ -12,6 +12,7 @@
       "title": "MITRE ATT&CK"
     }
   ],
+  "id": "tactics/persistence",
   "summary": "Keep your malicious prompt there for future conversations",
   "tactic_order": 5,
   "title": "Persistence"

@@ -1,17 +1,28 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
   "properties": {
     "description": {
       "type": "string"
     },
     "frameworks": {
       "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "id": {
+      "type": "string"
+    },
+    "references": {
+      "items": {
+        "additionalProperties": false,
         "properties": {
-          "href": {
-            "format": "uri",
+          "author": {
             "type": "string"
           },
-          "id": {
+          "href": {
+            "format": "uri",
             "type": "string"
           },
           "title": {
@@ -19,9 +30,9 @@
           }
         },
         "required": [
-          "title",
-          "id",
-          "href"
+          "author",
+          "href",
+          "title"
         ],
         "type": "object"
       },
@@ -30,18 +41,22 @@
     "summary": {
       "type": "string"
     },
-    "tactic_order": {
-      "type": "integer"
+    "tactics": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
     },
     "title": {
       "type": "string"
     }
   },
   "required": [
-    "tactic_order",
-    "title",
+    "id",
+    "references",
     "summary",
-    "frameworks"
+    "tactics",
+    "title"
   ],
   "type": "object"
 }

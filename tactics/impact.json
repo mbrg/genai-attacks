@@ -12,6 +12,7 @@
       "title": "MITRE ATT&CK"
     }
   ],
+  "id": "tactics/impact",
   "summary": "The adversary is trying to communicate with compromised systems to control them.",
   "tactic_order": 14,
   "title": "Impact"

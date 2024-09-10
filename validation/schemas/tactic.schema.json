@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "frameworks": {
+      "items": {
+        "properties": {
+          "href": {
+            "format": "uri",
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "id",
+          "href"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "id": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "tactic_order": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "tactic_order",
+    "title",
+    "summary",
+    "frameworks",
+    "id"
+  ],
+  "type": "object"
+}
