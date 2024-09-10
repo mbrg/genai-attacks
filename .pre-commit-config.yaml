@@ -23,4 +23,4 @@ repos:
   hooks:
     - id: check-jsonschema
       files: ^procedures/.*\.json$
-      args: ["--schemafile", "schemas/procedures.schema.json"]
+      args: ["--schemafile", "validation/schemas/procedures.schema.json"]
