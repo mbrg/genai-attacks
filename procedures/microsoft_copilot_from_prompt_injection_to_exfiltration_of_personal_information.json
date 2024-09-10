@@ -1,7 +1,11 @@
 {
   "description": "",
-  "frameworks": [],
-  "id": "$gai-techniques/ascii_smuggling",
+  "id": "$gai-procedures/microsoft_copilot_from_prompt_injection_to_exfiltration_of_personal_information",
+  "platforms": [
+    {
+      "platform_id": "$gai-platforms/microsoft_copilot_for_m365"
+    }
+  ],
   "references": [
     {
       "href": "https://embracethered.com/blog/posts/2024/hiding-and-finding-text-with-unicode-tags/",
@@ -10,8 +14,11 @@
     }
   ],
   "summary": "A vulnerability in Microsoft 365 Copilot that allowed the theft of a users emails and other personal information. ",
-  "tactics": [
-    "tactics/defense_evasion.json"
+  "techniques": [
+    {
+      "technique_id": "$gai-techniques/ascii_smuggling",
+      "use": "Stage, to the user invisible, data for exfiltration."
+    }
   ],
   "title": "Microsoft Copilot: From Prompt Injection to Exfiltration of Personal Information"
 }

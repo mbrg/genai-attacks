@@ -1,0 +1,106 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "id": {
+      "$ref": "common.schema.json#/definitions/id"
+    },
+    "platforms": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "platform_id": {
+            "allOf": [
+              {
+                "$ref": "common.schema.json#/definitions/id"
+              },
+              {
+                "pattern": "platforms/"
+              }
+            ]
+          }
+        },
+        "required": [
+          "platform_id"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "references": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "href": {
+            "type": "string"
+          },
+          "ref_author": {
+            "allOf": [
+              {
+                "$ref": "common.schema.json#/definitions/id"
+              },
+              {
+                "pattern": "authors/"
+              }
+            ]
+          },
+          "ref_title": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "href",
+          "ref_author",
+          "ref_title"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "techniques": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "technique_id": {
+            "allOf": [
+              {
+                "$ref": "common.schema.json#/definitions/id"
+              },
+              {
+                "pattern": "techniques/"
+              }
+            ]
+          },
+          "use": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "technique_id",
+          "use"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "title": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "description",
+    "id",
+    "references",
+    "summary",
+    "techniques",
+    "platforms",
+    "title"
+  ],
+  "type": "object"
+}
