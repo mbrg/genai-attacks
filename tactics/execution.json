@@ -1,19 +1,22 @@
 {
-  "description": "",
-  "frameworks": [
+  "$id": "$gai-tactics/execution",
+  "$schema": "../schemas/tactic.schema.json",
+  "$type": "tactic",
+  "description": "Make the LLM interpret your text as instructions not data",
+  "external_references": [],
+  "framework_references": [
     {
       "framework_id": "AML.TA0005",
-      "framework_title": "MITRE ATLAS",
+      "framework_name": "MITRE ATLAS",
       "href": "https://atlas.mitre.org/tactics/AML.TA0005"
     },
     {
       "framework_id": "TA0002",
-      "framework_title": "MITRE ATT&CK",
+      "framework_name": "MITRE ATT&CK",
       "href": "https://attack.mitre.org/tactics/TA0002/"
     }
   ],
-  "id": "$gai-tactics/execution",
-  "summary": "Make the LLM interpret your text as instructions not data",
-  "tactic_order": 4,
-  "title": "Execution"
+  "name": "Execution",
+  "object_references": [],
+  "tactic_order": 4
 }

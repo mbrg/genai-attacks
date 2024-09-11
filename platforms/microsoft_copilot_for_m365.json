@@ -1,5 +1,14 @@
 {
-  "full_name": "Microsoft Copilot for M365",
-  "href": "https://www.microsoft.com/en-us/microsoft-365/enterprise/copilot-for-microsoft-365",
-  "id": "$gai-platforms/microsoft_copilot_for_m365"
+  "$id": "$gai-platform/microsoft_copilot_for_m365",
+  "$schema": "../schemas/platform.schema.json",
+  "$type": "platform",
+  "description": "",
+  "external_references": [
+    {
+      "href": "https://www.microsoft.com/en-us/microsoft-365/enterprise/copilot-for-microsoft-365",
+      "source": "Microsoft",
+      "title": "Microsoft Copilot for M365"
+    }
+  ],
+  "name": "Microsoft Copilot for M365"
 }

@@ -1,0 +1,71 @@
+{
+  "$id": "procedure.schema.json",
+  "additionalProperties": false,
+  "properties": {
+    "$id": {
+      "$ref": "../schemas/common.schema.json#/definitions/$id",
+      "pattern": "procedure"
+    },
+    "$schema": {
+      "type": "string"
+    },
+    "$type": {
+      "$ref": "../schemas/common.schema.json#/definitions/$type",
+      "default": "procedure",
+      "enum": [
+        "procedure"
+      ]
+    },
+    "description": {
+      "$comment": "A description of the procedure.",
+      "type": "string"
+    },
+    "external_references": {
+      "items": {
+        "$ref": "../schemas/common.schema.json#/definitions/uri_reference"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "framework_references": {
+      "items": {
+        "$ref": "../schemas/common.schema.json#/definitions/framework_reference"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "name": {
+      "$comment": "The name of the procedure.",
+      "type": "string"
+    },
+    "object_references": {
+      "$comment": "References to objects that are related to the procedure, must have at least one technique reference.",
+      "contains": {
+        "$ref": "../schemas/common.schema.json#/definitions/object_reference",
+        "$type": {
+          "$ref": "/definitions/$type",
+          "enum": [
+            "technique"
+          ]
+        }
+      },
+      "items": {
+        "$ref": "../schemas/common.schema.json#/definitions/object_reference"
+      },
+      "type": "array",
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "$id",
+    "$type",
+    "name",
+    "description",
+    "object_references",
+    "external_references",
+    "framework_references",
+    "$schema"
+  ],
+  "title": "Procedure Schema",
+  "type": "object"
+}

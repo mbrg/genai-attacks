@@ -1,19 +1,22 @@
 {
-  "description": "",
-  "frameworks": [
+  "$id": "$gai-tactics/impact",
+  "$schema": "../schemas/tactic.schema.json",
+  "$type": "tactic",
+  "description": "The adversary is trying to communicate with compromised systems to control them.",
+  "external_references": [],
+  "framework_references": [
     {
       "framework_id": "AML.TA0011",
-      "framework_title": "MITRE ATLAS",
+      "framework_name": "MITRE ATLAS",
       "href": "https://atlas.mitre.org/tactics/AML.TA0011"
     },
     {
       "framework_id": "TA0040",
-      "framework_title": "MITRE ATT&CK",
+      "framework_name": "MITRE ATT&CK",
       "href": "https://attack.mitre.org/tactics/TA0040/"
     }
   ],
-  "id": "$gai-tactics/impact",
-  "summary": "The adversary is trying to communicate with compromised systems to control them.",
-  "tactic_order": 14,
-  "title": "Impact"
+  "name": "Impact",
+  "object_references": [],
+  "tactic_order": 14
 }

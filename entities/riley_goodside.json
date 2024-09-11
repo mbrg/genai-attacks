@@ -1,0 +1,15 @@
+{
+  "$id": "$gai-entity/riley_goodside",
+  "$schema": "../schemas/entity.schema.json",
+  "$type": "entity",
+  "description": "",
+  "entity_type": "person",
+  "external_references": [
+    {
+      "href": "https://twitter.com/goodside",
+      "source": "Twitter",
+      "title": "Riley Goodside's Twitter"
+    }
+  ],
+  "name": "Riley Goodside"
+}

@@ -23,20 +23,20 @@ repos:
     -   id: check-jsonschema
         name: "tactics schema"
         files: ^tactics/.*\.json$
-        args: ["--schemafile", "validation/schemas/tactics.schema.json"]
+        args: ["--schemafile", "schemas/tactic.schema.json"]
     -   id: check-jsonschema
-        name: "authors schema"
-        files: ^authors/.*\.json$
-        args: ["--schemafile", "validation/schemas/authors.schema.json"]
+        name: "entities schema"
+        files: ^entities/.*\.json$
+        args: ["--schemafile", "schemas/entity.schema.json"]
     -   id: check-jsonschema
         name: "techniques schema"
         files: ^techniques/.*\.json$
-        args: ["--schemafile", "validation/schemas/techniques.schema.json"]
+        args: ["--schemafile", "schemas/technique.schema.json"]
     -   id: check-jsonschema
         name: "platforms schema"
         files: ^platforms/.*\.json$
-        args: ["--schemafile", "validation/schemas/platforms.schema.json"]
+        args: ["--schemafile", "schemas/platform.schema.json"]
     -   id: check-jsonschema
         name: "procedures schema"
         files: ^procedures/.*\.json$
-        args: ["--schemafile", "validation/schemas/procedures.schema.json"]
+        args: ["--schemafile", "schemas/procedure.schema.json"]

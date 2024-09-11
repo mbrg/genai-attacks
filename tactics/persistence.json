@@ -1,19 +1,22 @@
 {
-  "description": "",
-  "frameworks": [
+  "$id": "$gai-tactics/persistence",
+  "$schema": "../schemas/tactic.schema.json",
+  "$type": "tactic",
+  "description": "Keep your malicious prompt there for future conversations",
+  "external_references": [],
+  "framework_references": [
     {
       "framework_id": "AML.TA0006",
-      "framework_title": "MITRE ATLAS",
+      "framework_name": "MITRE ATLAS",
       "href": "https://atlas.mitre.org/tactics/AML.TA0006"
     },
     {
       "framework_id": "TA0003",
-      "framework_title": "MITRE ATT&CK",
+      "framework_name": "MITRE ATT&CK",
       "href": "https://attack.mitre.org/tactics/TA0003/"
     }
   ],
-  "id": "$gai-tactics/persistence",
-  "summary": "Keep your malicious prompt there for future conversations",
-  "tactic_order": 5,
-  "title": "Persistence"
+  "name": "Persistence",
+  "object_references": [],
+  "tactic_order": 5
 }
