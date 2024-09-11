@@ -1,0 +1,39 @@
+name: Release Action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  versioning:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install GitVersion
+      uses: gittools/actions/gitversion/execute@v0.9.10
+      id: gitversion
+
+    - name: Update ver.txt with new version
+      run: echo "${{ steps.gitversion.outputs.semver }}" > ver.txt
+
+    - name: Commit and push ver.txt
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add ver.txt
+        git commit -m "Update version to ${{ steps.gitversion.outputs.semver }}"
+        git push origin main
+
+    - name: Create GitHub Release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ steps.gitversion.outputs.semver }}
+        release_name: Release ${{ steps.gitversion.outputs.semver }}
+        draft: false
+        prerelease: true
