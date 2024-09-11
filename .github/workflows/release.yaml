@@ -11,7 +11,10 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
+      with:
+        # In order for the GitVersion to properly work you need to clone the repository with the entire history
+        fetch-depth: 0
 
     - name: Install GitVersion
       uses: gittools/actions/gitversion/setup@v1.1.1
@@ -21,6 +24,9 @@ jobs:
     - name: Install GitVersion
       uses: gittools/actions/gitversion/execute@v1.1.1
       id: gitversion
+    
+    - name: Output version to log
+      run: echo "Version ${{ steps.gitversion.outputs.semver }}"
 
     - name: Update ver.txt with new version
       run: echo "${{ steps.gitversion.outputs.semver }}" > ver.txt
