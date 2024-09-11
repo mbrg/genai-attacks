@@ -24,7 +24,7 @@ jobs:
     - name: Install GitVersion
       uses: gittools/actions/gitversion/execute@v1.1.1
       id: gitversion
-    
+
     - name: Output version to log
       run: echo "Version ${{ steps.gitversion.outputs.semver }}"
 
