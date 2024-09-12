@@ -19,25 +19,38 @@ logger = logging.getLogger(__name__)
 def get_git_timestamps(file_path):
     try:
         # Get the earliest commit date for this file
-        created_at = subprocess.check_output(
-            ["git", "log", "--follow", "--format=%ai", "--reverse", file_path]
-        ).decode().split("\n")[0].strip()
+        created_at = (
+            subprocess.check_output(
+                ["git", "log", "--follow", "--format=%ai", "--reverse", file_path]
+            )
+            .decode()
+            .split("\n")[0]
+            .strip()
+        )
 
         # Get the latest commit date for this file
-        modified_at = subprocess.check_output(
-            ["git", "log", "-1", "--format=%ai", file_path]
-        ).decode().strip()
+        modified_at = (
+            subprocess.check_output(["git", "log", "-1", "--format=%ai", file_path])
+            .decode()
+            .strip()
+        )
 
         # If created_at is empty, the file might not be tracked by git yet
         if not created_at:
             # Use file system creation time as a fallback
-            logger.debug(f"File {file_path} is not tracked by Git. Using file system creation time.")
+            logger.debug(
+                f"File {file_path} is not tracked by Git. Using file system creation time."
+            )
             created_at = datetime.fromtimestamp(os.path.getctime(file_path)).isoformat()
 
         # If modified_at is empty, use the file system modification time
         if not modified_at:
-            logger.debug(f"File {file_path} has no Git modification time. Using file system modification time.")
-            modified_at = datetime.fromtimestamp(os.path.getmtime(file_path)).isoformat()
+            logger.debug(
+                f"File {file_path} has no Git modification time. Using file system modification time."
+            )
+            modified_at = datetime.fromtimestamp(
+                os.path.getmtime(file_path)
+            ).isoformat()
 
         return created_at, modified_at
     except subprocess.CalledProcessError:
