@@ -1,6 +1,6 @@
 {
   "$id": "$gai-procedure/microsoft_copilot_from_prompt_injection_to_exfiltration_of_personal_information",
-  "$schema": "../schemas/procedure.schema.json",
+  "$schema": "../schema/procedure.schema.json",
   "$type": "procedure",
   "description": "A vulnerability in Microsoft 365 Copilot that allowed the theft of a users emails and other personal information.",
   "external_references": [

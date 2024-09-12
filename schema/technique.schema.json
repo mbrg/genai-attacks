@@ -3,14 +3,14 @@
   "additionalProperties": false,
   "properties": {
     "$id": {
-      "$ref": "../schemas/common.schema.json#/definitions/$id",
-      "pattern": "technique"
+      "$ref": "../schema/common.schema.json#/definitions/$id",
+      "pattern": "technique/"
     },
     "$schema": {
       "type": "string"
     },
     "$type": {
-      "$ref": "../schemas/common.schema.json#/definitions/$type",
+      "$ref": "../schema/common.schema.json#/definitions/$type",
       "default": "technique",
       "enum": [
         "technique"
@@ -22,14 +22,14 @@
     },
     "external_references": {
       "items": {
-        "$ref": "../schemas/common.schema.json#/definitions/uri_reference"
+        "$ref": "../schema/common.schema.json#/definitions/uri_reference"
       },
       "type": "array",
       "uniqueItems": true
     },
     "framework_references": {
       "items": {
-        "$ref": "../schemas/common.schema.json#/definitions/framework_reference"
+        "$ref": "../schema/common.schema.json#/definitions/framework_reference"
       },
       "type": "array",
       "uniqueItems": true
@@ -41,16 +41,16 @@
     "object_references": {
       "$comment": "References to objects that are related to the procedure, must have at least one tactic reference.",
       "contains": {
-        "$ref": "../schemas/common.schema.json#/definitions/object_reference",
+        "$ref": "../schema/common.schema.json#/definitions/object_reference",
         "$type": {
-          "$ref": "../schemas/common.schema.json#/definitions/$type",
+          "$ref": "../schema/common.schema.json#/definitions/$type",
           "enum": [
             "tactic"
           ]
         }
       },
       "items": {
-        "$ref": "../schemas/common.schema.json#/definitions/object_reference"
+        "$ref": "../schema/common.schema.json#/definitions/object_reference"
       },
       "type": "array",
       "uniqueItems": true

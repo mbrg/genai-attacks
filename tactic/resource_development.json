@@ -1,6 +1,6 @@
 {
-  "$id": "$gai-tactics/resource_development",
-  "$schema": "../schemas/tactic.schema.json",
+  "$id": "$gai-tactic/resource_development",
+  "$schema": "../schema/tactic.schema.json",
   "$type": "tactic",
   "description": "The adversary is trying to establish resources they can use to support operations.",
   "external_references": [],

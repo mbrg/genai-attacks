@@ -1,6 +1,6 @@
 {
-  "$id": "$gai-tactics/persistence",
-  "$schema": "../schemas/tactic.schema.json",
+  "$id": "$gai-tactic/persistence",
+  "$schema": "../schema/tactic.schema.json",
   "$type": "tactic",
   "description": "Keep your malicious prompt there for future conversations",
   "external_references": [],

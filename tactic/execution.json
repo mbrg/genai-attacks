@@ -1,6 +1,6 @@
 {
-  "$id": "$gai-tactics/execution",
-  "$schema": "../schemas/tactic.schema.json",
+  "$id": "$gai-tactic/execution",
+  "$schema": "../schema/tactic.schema.json",
   "$type": "tactic",
   "description": "Make the LLM interpret your text as instructions not data",
   "external_references": [],

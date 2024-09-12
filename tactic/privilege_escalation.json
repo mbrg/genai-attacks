@@ -1,6 +1,6 @@
 {
-  "$id": "$gai-tactics/privilege_escalation",
-  "$schema": "../schemas/tactic.schema.json",
+  "$id": "$gai-tactic/privilege_escalation",
+  "$schema": "../schema/tactic.schema.json",
   "$type": "tactic",
   "description": "Confused deputy / Request forgery",
   "external_references": [],

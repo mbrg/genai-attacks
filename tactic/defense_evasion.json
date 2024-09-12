@@ -1,6 +1,6 @@
 {
-  "$id": "$gai-tactics/defense_evasion",
-  "$schema": "../schemas/tactic.schema.json",
+  "$id": "$gai-tactic/defense_evasion",
+  "$schema": "../schema/tactic.schema.json",
   "$type": "tactic",
   "description": "The adversary is trying to avoid being detected by security software and native controls.",
   "external_references": [],

@@ -1,6 +1,6 @@
 {
-  "$id": "$gai-tactics/command_and_control",
-  "$schema": "../schemas/tactic.schema.json",
+  "$id": "$gai-tactic/command_and_control",
+  "$schema": "../schema/tactic.schema.json",
   "$type": "tactic",
   "description": "The adversary is trying to communicate with compromised systems to control them.",
   "external_references": [],

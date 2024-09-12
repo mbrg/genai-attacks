@@ -3,14 +3,14 @@
   "additionalProperties": false,
   "properties": {
     "$id": {
-      "$ref": "../schemas/common.schema.json#/definitions/$id",
-      "pattern": "entity"
+      "$ref": "../schema/common.schema.json#/definitions/$id",
+      "pattern": "entity/"
     },
     "$schema": {
       "type": "string"
     },
     "$type": {
-      "$ref": "../schemas/common.schema.json#/definitions/$type",
+      "$ref": "../schema/common.schema.json#/definitions/$type",
       "default": "entity",
       "enum": [
         "entity"
@@ -30,14 +30,14 @@
     },
     "external_references": {
       "items": {
-        "$ref": "../schemas/common.schema.json#/definitions/uri_reference"
+        "$ref": "../schema/common.schema.json#/definitions/uri_reference"
       },
       "type": "array",
       "uniqueItems": true
     },
     "framework_references": {
       "items": {
-        "$ref": "../schemas/common.schema.json#/definitions/framework_reference"
+        "$ref": "../schema/common.schema.json#/definitions/framework_reference"
       },
       "type": "array",
       "uniqueItems": true
@@ -48,7 +48,7 @@
     },
     "object_references": {
       "items": {
-        "$ref": "../schemas/common.schema.json#/definitions/object_reference"
+        "$ref": "../schema/common.schema.json#/definitions/object_reference"
       },
       "type": "array",
       "uniqueItems": true

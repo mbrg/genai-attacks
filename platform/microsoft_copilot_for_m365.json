@@ -1,6 +1,6 @@
 {
   "$id": "$gai-platform/microsoft_copilot_for_m365",
-  "$schema": "../schemas/platform.schema.json",
+  "$schema": "../schema/platform.schema.json",
   "$type": "platform",
   "description": "",
   "external_references": [

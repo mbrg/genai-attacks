@@ -1,6 +1,6 @@
 {
-  "$id": "$gai-tactics/collection",
-  "$schema": "../schemas/tactic.schema.json",
+  "$id": "$gai-tactic/collection",
+  "$schema": "../schema/tactic.schema.json",
   "$type": "tactic",
   "description": "The adversary is trying to gather data, artifacts and other related information relevant to their goal.",
   "external_references": [],

@@ -1,6 +1,6 @@
 {
-  "$id": "$gai-tactics/discovery",
-  "$schema": "../schemas/tactic.schema.json",
+  "$id": "$gai-tactic/discovery",
+  "$schema": "../schema/tactic.schema.json",
   "$type": "tactic",
   "description": "Understand the capabilities and mitigations in place.",
   "external_references": [],

@@ -1,6 +1,6 @@
 {
-  "$id": "$gai-tactics/impact",
-  "$schema": "../schemas/tactic.schema.json",
+  "$id": "$gai-tactic/impact",
+  "$schema": "../schema/tactic.schema.json",
   "$type": "tactic",
   "description": "The adversary is trying to communicate with compromised systems to control them.",
   "external_references": [],

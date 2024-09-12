@@ -1,6 +1,6 @@
 {
-  "$id": "$gai-tactics/reconnaissance",
-  "$schema": "../schemas/tactic.schema.json",
+  "$id": "$gai-tactic/reconnaissance",
+  "$schema": "../schema/tactic.schema.json",
   "$type": "tactic",
   "description": "The adversary is trying to gather information about the GenAI system they can use to plan future operations.",
   "external_references": [],

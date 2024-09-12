@@ -1,6 +1,6 @@
 {
-  "$id": "$gai-tactics/lateral_movement",
-  "$schema": "../schemas/tactic.schema.json",
+  "$id": "$gai-tactic/lateral_movement",
+  "$schema": "../schema/tactic.schema.json",
   "$type": "tactic",
   "description": "The adversary is trying to move through your environment.",
   "external_references": [],

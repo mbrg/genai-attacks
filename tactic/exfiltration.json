@@ -1,6 +1,6 @@
 {
-  "$id": "$gai-tactics/exfiltration",
-  "$schema": "../schemas/tactic.schema.json",
+  "$id": "$gai-tactic/exfiltration",
+  "$schema": "../schema/tactic.schema.json",
   "$type": "tactic",
   "description": "The adversary is trying to steal data or other information from your genai system.",
   "external_references": [],

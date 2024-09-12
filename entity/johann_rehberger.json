@@ -1,6 +1,6 @@
 {
   "$id": "$gai-entity/johann_rehberger",
-  "$schema": "../schemas/entity.schema.json",
+  "$schema": "../schema/entity.schema.json",
   "$type": "entity",
   "description": "",
   "entity_type": "person",

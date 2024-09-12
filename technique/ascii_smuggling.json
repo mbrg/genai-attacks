@@ -1,6 +1,6 @@
 {
-  "$id": "$gai-techniques/ascii_smuggling",
-  "$schema": "../schemas/technique.schema.json",
+  "$id": "$gai-technique/ascii_smuggling",
+  "$schema": "../schema/technique.schema.json",
   "$type": "technique",
   "description": "The adversary uses Tags Unicode Block to write instructions that are visible to machine but not to humans.",
   "external_references": [
@@ -24,7 +24,7 @@
   "name": "ASCII SMuggling",
   "object_references": [
     {
-      "$id": "$gai-tactic/defense_evasion.json",
+      "$id": "$gai-tactic/defense_evasion",
       "$type": "tactic",
       "description": "The adversary is trying to avoid being detected."
     },

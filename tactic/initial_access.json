@@ -1,6 +1,6 @@
 {
-  "$id": "$gai-tactics/initial_access",
-  "$schema": "../schemas/tactic.schema.json",
+  "$id": "$gai-tactic/initial_access",
+  "$schema": "../schema/tactic.schema.json",
   "$type": "tactic",
   "description": "Get your text into the LLM prompt",
   "external_references": [],

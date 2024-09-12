@@ -1,6 +1,6 @@
 {
   "$id": "$gai-entity/riley_goodside",
-  "$schema": "../schemas/entity.schema.json",
+  "$schema": "../schema/entity.schema.json",
   "$type": "entity",
   "description": "",
   "entity_type": "person",
