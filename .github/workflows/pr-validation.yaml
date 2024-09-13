@@ -25,10 +25,8 @@ jobs:
 
     - name: Run pre-commit
       id: pre-commit
-      run: pre-commit run --all-files || true
-
-    - name: Run pre-commit again to verify success
       run: pre-commit run --all-files
+
 
     - name: Commit and push changes if pre-commit fixes issues
       if: steps.pre-commit.outputs.changes == 'true'
