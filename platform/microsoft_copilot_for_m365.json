@@ -3,9 +3,7 @@
   "$schema": "../schema/platform.schema.json",
   "$type": "platform",
   "description": "",
-  "external_references": [
-    {
-      "href": "https://www.microsoft.com/en-us/microsoft-365/enterprise/copilot-for-microsoft-365",
+  "external_references": [{ "href": "https://www.microsoft.com/en-us/microsoft-365/enterprise/copilot-for-microsoft-365",
       "source": "Microsoft",
       "title": "Microsoft Copilot for M365"
     }
