@@ -25,3 +25,12 @@ jobs:
 
     - name: Run pre-commit
       run: pre-commit run --all-files
+
+    - name: Commit and push changes if pre-commit fixes issues
+      if: success()
+      uses: devops-infra/action-commit-push@v0.9.2
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        commit_message: "apply pre-commit fixes"
+        add_timestamp: true
+        commit_prefix: "[AUTO]"
