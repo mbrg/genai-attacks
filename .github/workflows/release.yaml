@@ -28,24 +28,22 @@ jobs:
     - name: Output version to log
       run: echo "Version ${{ steps.gitversion.outputs.semver }}"
 
-    - name: Update ver.txt with new version
-      run: echo "${{ steps.gitversion.outputs.semver }}" > ver.txt
+    - name: Build with mdBook
+      run: mdbook build
 
-    - name: Commit and push ver.txt
-      uses: devops-infra/action-commit-push@v0.9.2
-      with:
-        github_token: "${{ secrets.GITHUB_TOKEN }}"
-        add_timestamp: true
-        commit_prefix: "[AUTO]"
-        commit_message: "Automated version update to ${{ steps.gitversion.outputs.semver }}"
-        force: false
+    - name: Setup Pages
+      id: pages
+      uses: actions/configure-pages@v5
 
-    - name: Create GitHub Release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
       with:
-        tag_name: ${{ steps.gitversion.outputs.semver }}
-        release_name: Release ${{ steps.gitversion.outputs.semver }}
-        draft: false
-        prerelease: true
+        path: ./book
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        branch: gh-pages
+        folder: book
