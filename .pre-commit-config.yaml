@@ -4,15 +4,11 @@ repos:
     hooks:
     -   id: check-json
     -   id: end-of-file-fixer
-        fail_on_modified_files: false
     -   id: trailing-whitespace
-        fail_on_modified_files: false
     -   id: check-added-large-files
     -   id: pretty-format-json
         args: ["--autofix"]
-        fail_on_modified_files: false
     -   id: requirements-txt-fixer
-        fail_on_modified_files: false
 -   repo: https://github.com/psf/black
     rev: 24.8.0
     hooks:
