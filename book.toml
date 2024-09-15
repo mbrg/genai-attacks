@@ -2,6 +2,7 @@
 title = "GenAI Attacks Matrix"
 authors = ["ZenitySec"]
 description = "Documentation for the GenAI Attacks Matrix"
+src = "build"
 
 [build]
 build-dir = "book"
