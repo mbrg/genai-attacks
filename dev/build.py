@@ -210,6 +210,36 @@ def generate_object_page(obj, all_objects, base_dir):
     return content
 
 
+def generate_summary_page(tactics, techniques, procedures, platforms, entities, matrix):
+    logger.debug("Generating summary page content")
+    content = "# GenAI Attacks\n\n"
+    content += "* [Attacks Matrix](matrix.md)\n"
+
+    sorted_tactics = sorted(tactics.values(), key=lambda x: x["tactic_order"])
+    for tactic in sorted_tactics:
+        content += f"  * [{tactic['name']}](tactic/{tactic['$id'].split('/')[-1]}.md)\n"
+        for tech_id in matrix[tactic["$id"]]:
+            content += f"    * [{techniques[tech_id]['name']}](technique/{tech_id.split('/')[-1]}.md)\n"
+
+    content += "\n## Procedures\n"
+    for procedure in procedures.values():
+        content += (
+            f"* [{procedure['name']}](procedure/{procedure['$id'].split('/')[-1]}.md)\n"
+        )
+
+    content += "\n## Platforms\n"
+    for platform in platforms.values():
+        content += (
+            f"* [{platform['name']}](platform/{platform['$id'].split('/')[-1]}.md)\n"
+        )
+
+    content += "\n## Entities\n"
+    for entity in entities.values():
+        content += f"* [{entity['name']}](entity/{entity['$id'].split('/')[-1]}.md)\n"
+
+    return content
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Generate documentation for GenAI Attacks Matrix"
@@ -244,8 +274,13 @@ def main():
 
     tactics = {k: v for k, v in all_objects.items() if v["$type"] == "tactic"}
     techniques = {k: v for k, v in all_objects.items() if v["$type"] == "technique"}
+    procedures = {k: v for k, v in all_objects.items() if v["$type"] == "procedure"}
+    platforms = {k: v for k, v in all_objects.items() if v["$type"] == "platform"}
+    entities = {k: v for k, v in all_objects.items() if v["$type"] == "entity"}
 
-    logger.info(f"Found {len(tactics)} tactics and {len(techniques)} techniques")
+    logger.info(
+        f"Found {len(tactics)} tactics, {len(techniques)} techniques, {len(procedures)} procedures, {len(platforms)} platforms, and {len(entities)} entities"
+    )
 
     if not tactics or not techniques:
         logger.error("No tactics or techniques found. Please check your JSON files.")
@@ -253,12 +288,12 @@ def main():
 
     matrix = create_matrix(tactics, techniques)
 
-    # Generate main page (README.md)
-    readme_content = generate_main_page(tactics, techniques, matrix)
-    readme_path = os.path.join(build_dir, "README.md")
-    logger.info(f"Writing main page to: {readme_path}")
-    with open(readme_path, "w") as f:
-        f.write(readme_content)
+    # Generate main page (MATRIX.md)
+    matrix_content = generate_main_page(tactics, techniques, matrix)
+    matrix_path = os.path.join(build_dir, "MATRIX.md")
+    logger.info(f"Writing main matrix page to: {matrix_path}")
+    with open(matrix_path, "w") as f:
+        f.write(matrix_content)
 
     object_types = ["tactic", "technique", "procedure", "platform", "entity"]
 
@@ -278,6 +313,15 @@ def main():
                     logger.debug(f"Successfully wrote file: {file_path}")
                 except Exception as e:
                     logger.error(f"Error writing file {file_path}: {str(e)}")
+
+    # Generate summary page (SUMMARY.md)
+    summary_content = generate_summary_page(
+        tactics, techniques, procedures, platforms, entities, matrix
+    )
+    summary_path = os.path.join(build_dir, "SUMMARY.md")
+    logger.info(f"Writing summary page to: {summary_path}")
+    with open(summary_path, "w") as f:
+        f.write(summary_content)
 
     logger.info("Documentation generation complete.")
 
