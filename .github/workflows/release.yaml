@@ -76,6 +76,13 @@ jobs:
       - name: Generate Markdown
         run: python dev/build.py --version ${{ needs.versioning.outputs.semver }}
 
+      - name: Debug - Check file location and permissions
+        run: |
+          echo "MATRIX.md location and permissions:"
+          ls -l build/MATRIX.md || ls -l build/matrix.md
+          echo "Content of build directory:"
+          ls -R build
+
       - name: Debug - Check SUMMARY.md content
         run: |
           echo "Contents of SUMMARY.md:"
