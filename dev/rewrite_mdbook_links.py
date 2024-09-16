@@ -13,16 +13,30 @@ def update_edit_urls(book_dir):
                 with open(file_path, "r", encoding="utf-8") as f:
                     soup = BeautifulSoup(f, "html.parser")
 
-                edit_link = soup.find("a", title="Suggest an edit")
-                if edit_link and "href" in edit_link.attrs:
-                    old_url = edit_link["href"]
-                    new_url = re.sub(
-                        r"/edit/main/build/([^\.]*?)\.md",
-                        r"/edit/main/\1.json",
-                        old_url,
-                    )
-                    edit_link["href"] = new_url
-                    print("Changed URL from", old_url, "to", new_url)
+                # Identify Matrix and Object list pages by their file names or content
+                if file in (
+                    "matrix.html",
+                    "entities.html",
+                    "techniques.html",
+                    "platforms.html",
+                    "tactics.html",
+                ):
+                    # Remove Change links from the identified pages
+                    change_links = soup.find_all("a", title="Suggest an edit")
+                    for link in change_links:
+                        link.decompose()
+                    print(f"Removed Change links from {file_path}")
+                else:
+                    edit_link = soup.find("a", title="Suggest an edit")
+                    if edit_link and "href" in edit_link.attrs:
+                        old_url = edit_link["href"]
+                        new_url = re.sub(
+                            r"/edit/main/build/([^\.]*?)\.md",
+                            r"/edit/main/\1.json",
+                            old_url,
+                        )
+                        edit_link["href"] = new_url
+                        print("Changed URL from", old_url, "to", new_url)
 
                 with open(file_path, "w", encoding="utf-8") as f:
                     f.write(str(soup))
