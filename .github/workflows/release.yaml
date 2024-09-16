@@ -76,8 +76,29 @@ jobs:
       - name: Generate Markdown
         run: python dev/build.py --version ${{ needs.versioning.outputs.semver }}
 
+      - name: Debug - Check MATRIX.md content
+        run: |
+          echo "Contents of MATRIX.md:"
+          cat build/MATRIX.md
+
+      - name: Debug - List build directory contents
+        run: |
+          echo "Contents of build directory:"
+          ls -R build
+
       - name: Build with mdBook
         run: bin/mdbook build
+
+      - name: Debug - Check environment
+        run: |
+          echo "Python version:"
+          python --version
+          echo "mdBook version:"
+          bin/mdbook --version
+          echo "Current working directory:"
+          pwd
+          echo "GitHub workspace:"
+          echo $GITHUB_WORKSPACE
 
       - name: Rewrite edit links
         run: python dev/rewrite_mdbook_links.py --book-dir book/
