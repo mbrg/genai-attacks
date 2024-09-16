@@ -76,25 +76,8 @@ jobs:
       - name: Generate Markdown
         run: python dev/build.py --version ${{ needs.versioning.outputs.semver }}
 
-      - name: Debug - Check file location and permissions
-        run: |
-          echo "MATRIX.md location and permissions:"
-          ls -l build/MATRIX.md || ls -l build/matrix.md
-          echo "Content of build directory:"
-          ls -R build
-
-      - name: Debug - Check SUMMARY.md content
-        run: |
-          echo "Contents of SUMMARY.md:"
-          cat build/SUMMARY.md
-
       - name: Build with mdBook
         run: bin/mdbook build
-
-      - name: Debug - Check matrix.html content
-        run: |
-          echo "Contents of matrix.html:"
-          cat book/matrix.html
 
       - name: Rewrite edit links
         run: python dev/rewrite_mdbook_links.py --book-dir book/
