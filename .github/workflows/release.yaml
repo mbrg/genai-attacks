@@ -80,7 +80,7 @@ jobs:
         run: bin/mdbook build
 
       - name: Rewrite edit links
-        run: python dev/rewrite_mdbook_links.py
+        run: python dev/rewrite_mdbook_links.py --book-dir book/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

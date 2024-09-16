@@ -30,7 +30,7 @@ def update_edit_urls(book_dir):
 
 def main():
     parser = argparse.ArgumentParser(description="Update edit URLs in mdBook output.")
-    parser.add_argument("book_dir", help="Path to the mdBook output directory")
+    parser.add_argument("--book-dir", help="Path to the mdBook output directory")
     args = parser.parse_args()
 
     book_dir = args.book_dir
