@@ -284,9 +284,9 @@ def main():
 
     matrix = create_matrix(tactics, techniques)
 
-    # Generate main page (MATRIX.md)
+    # Generate main page (matrix.md)
     matrix_content = generate_main_page(tactics, techniques, matrix)
-    matrix_path = os.path.join(build_dir, "MATRIX.md")
+    matrix_path = os.path.join(build_dir, "matrix.md")
     logger.info(f"Writing main matrix page to: {matrix_path}")
     with open(matrix_path, "w") as f:
         f.write(matrix_content)
