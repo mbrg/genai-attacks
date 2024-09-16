@@ -200,13 +200,6 @@ def generate_object_page(obj, all_objects, base_dir):
             f"- [{ref['framework_name']} - {ref['framework_id']}]({ref['href']})\n"
         )
 
-    # Add link to source JSON file
-    relative_path = os.path.relpath(
-        os.path.join(base_dir, obj["$type"], f"{obj['$id'].split('/')[-1]}.json"),
-        os.path.join(base_dir, "build", obj["$type"]),
-    )
-    content += f"\n\n---\n\n[Edit this page]({relative_path})\n"
-
     return content
 
 
