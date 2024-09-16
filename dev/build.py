@@ -215,6 +215,8 @@ def generate_summary_page(tactics, techniques, procedures, platforms, entities, 
     content = "# GenAI Attacks\n\n"
     content += "* [Attacks Matrix](matrix.md)\n"
 
+    content += "\n## Tactics\n"
+    content += "* [Tactics](tactics.md)\n"
     sorted_tactics = sorted(tactics.values(), key=lambda x: x["tactic_order"])
     for tactic in sorted_tactics:
         content += f"  * [{tactic['name']}](tactic/{tactic['$id'].split('/')[-1]}.md)\n"
@@ -222,20 +224,21 @@ def generate_summary_page(tactics, techniques, procedures, platforms, entities, 
             content += f"    * [{techniques[tech_id]['name']}](technique/{tech_id.split('/')[-1]}.md)\n"
 
     content += "\n## Procedures\n"
+    content += "* [Procedures](procedures.md)\n"
     for procedure in procedures.values():
-        content += (
-            f"* [{procedure['name']}](procedure/{procedure['$id'].split('/')[-1]}.md)\n"
-        )
+        content += f"    * [{procedure['name']}](procedure/{procedure['$id'].split('/')[-1]}.md)\n"
 
     content += "\n## Platforms\n"
+    content += "* [Platforms](platforms.md)\n"
     for platform in platforms.values():
-        content += (
-            f"* [{platform['name']}](platform/{platform['$id'].split('/')[-1]}.md)\n"
-        )
+        content += f"    * [{platform['name']}](platform/{platform['$id'].split('/')[-1]}.md)\n"
 
     content += "\n## Entities\n"
+    content += "* [Entities](entities.md)\n"
     for entity in entities.values():
-        content += f"* [{entity['name']}](entity/{entity['$id'].split('/')[-1]}.md)\n"
+        content += (
+            f"    * [{entity['name']}](entity/{entity['$id'].split('/')[-1]}.md)\n"
+        )
 
     return content
 
