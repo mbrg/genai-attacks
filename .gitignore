@@ -3,3 +3,4 @@
 build/
 book/
 bin/
+.DS_Store
