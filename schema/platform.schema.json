@@ -1,0 +1,59 @@
+{
+  "$id": "platform.schema.json",
+  "additionalProperties": false,
+  "properties": {
+    "$id": {
+      "$ref": "../schema/common.schema.json#/definitions/$id",
+      "pattern": "platform/"
+    },
+    "$schema": {
+      "type": "string"
+    },
+    "$type": {
+      "$ref": "../schema/common.schema.json#/definitions/$type",
+      "default": "platform",
+      "enum": [
+        "platform"
+      ]
+    },
+    "description": {
+      "$comment": "A description of the platform.",
+      "type": "string"
+    },
+    "external_references": {
+      "items": {
+        "$ref": "../schema/common.schema.json#/definitions/uri_reference"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "framework_references": {
+      "items": {
+        "$ref": "../schema/common.schema.json#/definitions/framework_reference"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "name": {
+      "$comment": "The name of the object.",
+      "type": "string"
+    },
+    "object_references": {
+      "items": {
+        "$ref": "../schema/common.schema.json#/definitions/object_reference"
+      },
+      "type": "array",
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "$id",
+    "$type",
+    "name",
+    "description",
+    "external_references",
+    "$schema"
+  ],
+  "title": "Platform Schema",
+  "type": "object"
+}

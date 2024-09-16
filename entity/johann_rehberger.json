@@ -1,0 +1,15 @@
+{
+  "$id": "$gai-entity/johann_rehberger",
+  "$schema": "../schema/entity.schema.json",
+  "$type": "entity",
+  "description": "",
+  "entity_type": "person",
+  "external_references": [
+    {
+      "href": "https://twitter.com/wunderwuzzi23",
+      "source": "Twitter",
+      "title": "Johann Rehberger's Twitter"
+    }
+  ],
+  "name": "Johann Rehberger"
+}

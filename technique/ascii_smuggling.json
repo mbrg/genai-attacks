@@ -1,0 +1,37 @@
+{
+  "$id": "$gai-technique/ascii_smuggling",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary uses Tags Unicode Block to write instructions that are visible to machine but not to humans.",
+  "external_references": [
+    {
+      "href": "https://twitter.com/goodside/status/1745511940351287394",
+      "source": "Embrace the Red",
+      "title": "Tweeter thread on the discovery of ASCII Smuggling."
+    },
+    {
+      "href": "https://embracethered.com/blog/posts/2024/hiding-and-finding-text-with-unicode-tags/",
+      "source": "Embrace the Red",
+      "title": "ASCII Smuggler Tool: Crafting Invisible Text and Decoding Hidden Codes."
+    },
+    {
+      "href": "https://en.wikipedia.org/wiki/Tags_(Unicode_block)",
+      "source": "Wikipedia",
+      "title": "Tags (Unicode block)"
+    }
+  ],
+  "framework_references": [],
+  "name": "ASCII SMuggling",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/defense_evasion",
+      "$type": "tactic",
+      "description": "The adversary is trying to avoid being detected."
+    },
+    {
+      "$id": "$gai-entity/johann_rehberger",
+      "$type": "entity",
+      "description": "Reported by"
+    }
+  ]
+}

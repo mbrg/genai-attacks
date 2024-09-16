@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-tactic/reconnaissance",
+  "$schema": "../schema/tactic.schema.json",
+  "$type": "tactic",
+  "description": "The adversary is trying to gather information about the GenAI system they can use to plan future operations.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.TA0002",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/tactics/AML.TA0002/"
+    },
+    {
+      "framework_id": "TA0043",
+      "framework_name": "MITRE ATT&CK",
+      "href": "https://attack.mitre.org/tactics/TA0043/"
+    }
+  ],
+  "name": "Reconnaissance",
+  "object_references": [],
+  "tactic_order": 1
+}

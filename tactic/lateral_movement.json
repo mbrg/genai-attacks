@@ -1,0 +1,17 @@
+{
+  "$id": "$gai-tactic/lateral_movement",
+  "$schema": "../schema/tactic.schema.json",
+  "$type": "tactic",
+  "description": "The adversary is trying to move through your environment.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "TA0008",
+      "framework_name": "MITRE ATT&CK",
+      "href": "https://attack.mitre.org/tactics/TA0008/"
+    }
+  ],
+  "name": "Lateral Movement",
+  "object_references": [],
+  "tactic_order": 10
+}

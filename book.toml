@@ -1,0 +1,11 @@
+[book]
+title = "GenAI Attacks Matrix"
+authors = ["ZenitySec"]
+description = "Documentation for the GenAI Attacks Matrix"
+src = "build"
+
+[build]
+build-dir = "book"
+
+[output.html]
+edit-url-template = "https://github.com/zenitysec/genai-app-attacks/edit/main/{path}"
