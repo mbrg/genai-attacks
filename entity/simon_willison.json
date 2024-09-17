@@ -1,0 +1,20 @@
+{
+  "$id": "$gai-entity/simon_willison",
+  "$schema": "../schema/entity.schema.json",
+  "$type": "entity",
+  "description": "",
+  "entity_type": "person",
+  "external_references": [
+    {
+      "href": "https://twitter.com/simonw",
+      "source": "Twitter",
+      "title": "Simon Willison on Twitter"
+    },
+    {
+      "href": "https://simonwillison.net",
+      "source": "Simon Willison",
+      "title": "Personal blog"
+    }
+  ],
+  "name": "Simon Willison"
+}

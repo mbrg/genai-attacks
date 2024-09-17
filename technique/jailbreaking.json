@@ -1,0 +1,31 @@
+{
+  "$id": "$gai-technique/jailbreaking",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary nullifies the system prompt to bypass safeguards and subvert the application's intent.",
+  "external_references": [
+    {
+      "href": "https://venturebeat.com/ai/an-interview-with-the-most-prolific-jailbreaker-of-chatgpt-and-other-leading-llms/",
+      "source": "VentureBeat",
+      "title": "An interview with the most prolific jailbreaker of ChatGPT and other leading LLMs."
+    },
+    {
+      "href": "https://simonwillison.net/2024/Mar/5/prompt-injection-jailbreaking/",
+      "source": "Simon Willison's blog",
+      "title": "Prompt injection and jailbreaking are not the same thing."
+    }
+  ],
+  "framework_references": [],
+  "name": "Jailbreaking",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/privilege_escalation",
+      "$type": "tactic"
+    },
+    {
+      "$id": "$gai-entity/pliny",
+      "$type": "entity",
+      "description": "Reported by"
+    }
+  ]
+}

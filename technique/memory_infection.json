@@ -1,0 +1,26 @@
+{
+  "$id": "$gai-technique/memory_infection",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary gets AI to commit malicious text into memory to compromise future threads.",
+  "external_references": [
+    {
+      "href": "https://embracethered.com/blog/posts/2024/chatgpt-hacking-memories/",
+      "source": "Embrace the Red",
+      "title": "ChatGPT: Hacking Memories with Prompt Injection."
+    }
+  ],
+  "framework_references": [],
+  "name": "Memory Infection",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/persistence",
+      "$type": "tactic"
+    },
+    {
+      "$id": "$gai-entity/johann_rehberger",
+      "$type": "entity",
+      "description": "Reported by"
+    }
+  ]
+}
