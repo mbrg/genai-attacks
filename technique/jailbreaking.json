@@ -21,7 +21,7 @@
     {
       "$id": "$gai-tactic/privilege_escalation",
       "$type": "tactic",
-      "description": "Jailbreaking allows the adversary to override system-level prompts using user-level prompts."
+      "description": "An adversary can override system-level prompts using user-level prompts."
     },
     {
       "$id": "$gai-entity/pliny",

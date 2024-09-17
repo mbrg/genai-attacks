@@ -16,7 +16,7 @@
     {
       "$id": "$gai-tactic/defense_evasion",
       "$type": "tactic",
-      "description": "The adversary is trying to avoid being detected."
+      "description": "An adversary can bypass security mechanisms and audit logs that rely on citations."
     },
     {
       "$id": "$gai-entity/tamir_ishai_sharbat",

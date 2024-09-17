@@ -21,7 +21,7 @@
     {
       "$id": "$gai-tactic/execution",
       "$type": "tactic",
-      "description": "Prompt injection allows an adversary to change the execution flow of a GenAI app by controlling a part of its data."
+      "description": "An adversary can change the execution flow of a GenAI app by controlling a part of its data."
     },
     {
       "$id": "$gai-entity/simon_willison",
