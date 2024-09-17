@@ -1,0 +1,32 @@
+{
+  "$id": "$gai-technique/citation_silencing",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary uses Tags Unicode Block to write instructions that are visible to machine but not to humans.",
+  "external_references": [
+    {
+      "href": "https://labs.zenity.io/p/phantom-references-microsoft-copilot/",
+      "source": "Zenity Labs",
+      "title": "Phantom References in Microsoft Copilot."
+    }
+  ],
+  "framework_references": [],
+  "name": "Citation Silencing",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/defense_evasion",
+      "$type": "tactic",
+      "description": "The adversary is trying to avoid being detected."
+    },
+    {
+      "$id": "$gai-entity/tamir_ishai_sharbat",
+      "$type": "entity",
+      "description": "Reported by"
+    },
+    {
+      "$id": "$gai-entity/gal_malka",
+      "$type": "entity",
+      "description": "Reported by"
+    }
+  ]
+}
