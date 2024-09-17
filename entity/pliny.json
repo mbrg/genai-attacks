@@ -1,0 +1,15 @@
+{
+  "$id": "$gai-entity/pliny",
+  "$schema": "../schema/entity.schema.json",
+  "$type": "entity",
+  "description": "",
+  "entity_type": "person",
+  "external_references": [
+    {
+      "href": "https://twitter.com/elder_plinius",
+      "source": "Twitter",
+      "title": "Pliny on Twitter"
+    }
+  ],
+  "name": "Pliny the Liberator"
+}

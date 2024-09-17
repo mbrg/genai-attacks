@@ -26,7 +26,7 @@
     {
       "$id": "$gai-tactic/defense_evasion",
       "$type": "tactic",
-      "description": "The adversary is trying to avoid being detected."
+      "description": "An adversary can avoid raising user suspicion."
     },
     {
       "$id": "$gai-entity/johann_rehberger",

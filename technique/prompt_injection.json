@@ -1,0 +1,32 @@
+{
+  "$id": "$gai-technique/prompt_injection",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary gets AI to interpret data to be analyzed with instructions to be executed.",
+  "external_references": [
+    {
+      "href": "https://simonwillison.net/2022/Sep/12/prompt-injection/",
+      "source": "Simon Willison's blog",
+      "title": "Prompt injection attacks against GPT-3."
+    },
+    {
+      "href": "https://simonwillison.net/2024/Mar/5/prompt-injection-jailbreaking/",
+      "source": "Simon Willison's blog",
+      "title": "Prompt injection and jailbreaking are not the same thing."
+    }
+  ],
+  "framework_references": [],
+  "name": "Prompt Injection",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/execution",
+      "$type": "tactic",
+      "description": "An adversary can change the execution flow of a GenAI app by controlling a part of its data."
+    },
+    {
+      "$id": "$gai-entity/simon_willison",
+      "$type": "entity",
+      "description": "Reported by"
+    }
+  ]
+}
