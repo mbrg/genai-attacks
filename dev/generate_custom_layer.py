@@ -75,9 +75,9 @@ def generate_custom_layer(base_dir, output_file, layer_version):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate custom layer for MITRE ATT&CK Navigator")
-    parser.add_argument("input_dir", help="Input directory containing tactic and technique JSON files")
-    parser.add_argument("output_file", help="Output file for the custom layer JSON")
-    parser.add_argument("layer_version", help="Version number for the custom layer")
+    parser.add_argument("--input-dir", type=str, default=".", help="Input directory containing tactic and technique JSON files")
+    parser.add_argument("--output-file", type=str, default="gai_nav.json", help="Output file for the custom layer JSON")
+    parser.add_argument("--layer-version", type=str, default="0.0.0", help="Version number for the custom layer")
     args = parser.parse_args()
 
     generate_custom_layer(args.input_dir, args.output_file, args.layer_version)
