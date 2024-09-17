@@ -2,7 +2,7 @@
   "$id": "$gai-technique/citation_silencing",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
-  "description": "The adversary uses Tags Unicode Block to write instructions that are visible to machine but not to humans.",
+  "description": "The adversary forces AI to avoid using citations, thus silencing security mechanisms that rely on.",
   "external_references": [
     {
       "href": "https://labs.zenity.io/p/phantom-references-microsoft-copilot/",
