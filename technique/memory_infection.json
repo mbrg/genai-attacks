@@ -15,7 +15,8 @@
   "object_references": [
     {
       "$id": "$gai-tactic/persistence",
-      "$type": "tactic"
+      "$type": "tactic",
+      "description": "Memory infection allows an adversary that succesfuly infected one thread to infect others."
     },
     {
       "$id": "$gai-entity/johann_rehberger",

@@ -20,7 +20,8 @@
   "object_references": [
     {
       "$id": "$gai-tactic/privilege_escalation",
-      "$type": "tactic"
+      "$type": "tactic",
+      "description": "Jailbreaking allows the adversary to override system-level prompts using user-level prompts."
     },
     {
       "$id": "$gai-entity/pliny",
