@@ -13,6 +13,11 @@
       "href": "https://simonwillison.net/2024/Mar/5/prompt-injection-jailbreaking/",
       "source": "Simon Willison's blog",
       "title": "Prompt injection and jailbreaking are not the same thing."
+    },
+    {
+      "href": "https://www.microsoft.com/en-us/security/blog/2024/06/04/ai-jailbreaks-what-they-are-and-how-they-can-be-mitigated/",
+      "source": "Microsoft",
+      "title": "AI jailbreaks: What they are and how they can be mitigated."
     }
   ],
   "framework_references": [],

@@ -1,0 +1,15 @@
+{
+  "$id": "$gai-entity/gal_malka",
+  "$schema": "../schema/entity.schema.json",
+  "$type": "entity",
+  "description": "",
+  "entity_type": "person",
+  "external_references": [
+    {
+      "href": "https://twitter.com/GalMalka6",
+      "source": "Twitter",
+      "title": "Gal Malka on Twitter"
+    }
+  ],
+  "name": "Gal Malka"
+}
