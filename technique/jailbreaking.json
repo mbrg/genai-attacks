@@ -1,0 +1,37 @@
+{
+  "$id": "$gai-technique/jailbreaking",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary nullifies the system prompt to bypass safeguards and subvert the application's intent.",
+  "external_references": [
+    {
+      "href": "https://github.com/elder-plinius/L1B3RT45",
+      "source": "Github",
+      "title": "L1B3RT45: Jailbreak prompts for all major AI models."
+    },
+    {
+      "href": "https://simonwillison.net/2024/Mar/5/prompt-injection-jailbreaking/",
+      "source": "Simon Willison's blog",
+      "title": "Prompt injection and jailbreaking are not the same thing."
+    },
+    {
+      "href": "https://www.microsoft.com/en-us/security/blog/2024/06/04/ai-jailbreaks-what-they-are-and-how-they-can-be-mitigated/",
+      "source": "Microsoft",
+      "title": "AI jailbreaks: What they are and how they can be mitigated."
+    }
+  ],
+  "framework_references": [],
+  "name": "Jailbreaking",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/privilege_escalation",
+      "$type": "tactic",
+      "description": "An adversary can override system-level prompts using user-level prompts."
+    },
+    {
+      "$id": "$gai-entity/pliny",
+      "$type": "entity",
+      "description": "Reported by"
+    }
+  ]
+}

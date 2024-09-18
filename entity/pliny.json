@@ -1,15 +1,15 @@
 {
-  "$id": "$gai-entity/riley_goodside",
+  "$id": "$gai-entity/pliny",
   "$schema": "../schema/entity.schema.json",
   "$type": "entity",
   "description": "",
   "entity_type": "person",
   "external_references": [
     {
-      "href": "https://twitter.com/goodside",
+      "href": "https://twitter.com/elder_plinius",
       "source": "Twitter",
-      "title": "Riley Goodside on Twitter"
+      "title": "Pliny on Twitter"
     }
   ],
-  "name": "Riley Goodside"
+  "name": "Pliny the Liberator"
 }

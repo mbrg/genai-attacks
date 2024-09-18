@@ -1,0 +1,32 @@
+{
+  "$id": "$gai-technique/citation_silencing",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary forces AI to avoid using citations, thus silencing security mechanisms that rely on.",
+  "external_references": [
+    {
+      "href": "https://labs.zenity.io/p/phantom-references-microsoft-copilot/",
+      "source": "Zenity Labs",
+      "title": "Phantom References in Microsoft Copilot."
+    }
+  ],
+  "framework_references": [],
+  "name": "Citation Silencing",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/defense_evasion",
+      "$type": "tactic",
+      "description": "An adversary can bypass security mechanisms and audit logs that rely on citations."
+    },
+    {
+      "$id": "$gai-entity/tamir_ishai_sharbat",
+      "$type": "entity",
+      "description": "Reported by"
+    },
+    {
+      "$id": "$gai-entity/gal_malka",
+      "$type": "entity",
+      "description": "Reported by"
+    }
+  ]
+}
