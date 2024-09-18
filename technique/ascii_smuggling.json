@@ -21,7 +21,7 @@
     }
   ],
   "framework_references": [],
-  "name": "ASCII SMuggling",
+  "name": "ASCII Smuggling",
   "object_references": [
     {
       "$id": "$gai-tactic/defense_evasion",
