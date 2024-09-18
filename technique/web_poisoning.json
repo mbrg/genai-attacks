@@ -1,0 +1,17 @@
+{
+  "$id": "$gai-technique/web_poisoning",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary injects malicious content into a public website to contaminate a future thread through web search results.",
+  "external_references": [
+  ],
+  "framework_references": [],
+  "name": "Web Poisoning",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/initial_access",
+      "$type": "tactic",
+      "description": "An adversary can indirectly inject malicious content into a thread by hiding it in a public website that the AI system might search for and read."
+    }
+  ]
+}

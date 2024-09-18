@@ -1,0 +1,17 @@
+{
+  "$id": "$gai-technique/user_manipulation",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary manipulates a user to copy-and-paste data into the AI system, which contains malicious content.",
+  "external_references": [
+  ],
+  "framework_references": [],
+  "name": "User Manipulation",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/initial_access",
+      "$type": "tactic",
+      "description": "An adversary can indirectly inject malicious content into a thread by manipulating a user to do it unwittingly."
+    }
+  ]
+}
