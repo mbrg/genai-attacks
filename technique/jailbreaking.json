@@ -5,9 +5,9 @@
   "description": "The adversary nullifies the system prompt to bypass safeguards and subvert the application's intent.",
   "external_references": [
     {
-      "href": "https://venturebeat.com/ai/an-interview-with-the-most-prolific-jailbreaker-of-chatgpt-and-other-leading-llms/",
-      "source": "VentureBeat",
-      "title": "An interview with the most prolific jailbreaker of ChatGPT and other leading LLMs."
+      "href": "https://github.com/elder-plinius/L1B3RT45",
+      "source": "Github",
+      "title": "L1B3RT45: Jailbreak prompts for all major AI models."
     },
     {
       "href": "https://simonwillison.net/2024/Mar/5/prompt-injection-jailbreaking/",
