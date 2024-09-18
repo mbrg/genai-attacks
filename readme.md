@@ -1,25 +1,25 @@
-# Welcome!
+# Welcome to GenAI Attacks Matrix!
 
 ## How To Contribute Content?
 
-Just edit any `.json` file or add a new one in the relevant directory. That's it!
+Edit any `.json` file in the directories listed below, or add a new one. That's it!
 
 * Your change will be automatically tested for compliance with the [schema](/schema/) once a PR is created.
-* Once a PR gets merged to `main`, the website will automatically update within a few monutes.
+* Once a PR gets merged to `main`, the website will automatically update within a few minutes.
 * You can check out the [schema](/schema/) directory or look at other files for example, you'll find them at:
 
-    ```
-    .
-    --| tactic:
-    --| technique:
-    --| procedure
-    --| entity
-    --| platform
-    ```
+```
+|
+--| tactic
+--| technique
+--| procedure
+--| entity
+--| platform
+```
 
----
+## How To Work With the Repo?
 
-If you want to contribute as a developer or just prefer to work with git and benefit from auto-fixes for some of the common issues: 
+If you want to contribute as a developer or just prefer to work with git, and benefit from auto-fixes for some of the common issues:
 
 ### Set Up
 
@@ -42,5 +42,8 @@ pre-commit run --all-files
 
 ### Submit a PR to main
 
-Tests will run and reviewers will be notified.
-Once your PR is merged, an action will trigger to build and deploy your changes to the Github Pages website.
+Any PR to `main` will trigger the [PR Validation](/.github/workflows/pr-validation.yaml) action, running the same tests that `pre-commit` runs.
+These tests must pass for the PR to be merged.
+
+Once merged to `main`, the [Release](/.github/workflows/release.yaml) action will trigger.
+It will build the new website and upload it to Github Pages, within a few minutes.
