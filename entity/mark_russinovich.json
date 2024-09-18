@@ -1,0 +1,15 @@
+{
+  "$id": "$gai-entity/mark_russinovich",
+  "$schema": "../schema/entity.schema.json",
+  "$type": "entity",
+  "description": "",
+  "entity_type": "person",
+  "external_references": [
+    {
+      "href": "https://twitter.com/markrussinovich",
+      "source": "Twitter",
+      "title": "Mark Russinovich on Twitter"
+    }
+  ],
+  "name": "Mark Russinovich"
+}
