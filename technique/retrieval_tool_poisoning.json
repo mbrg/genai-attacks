@@ -3,8 +3,7 @@
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
   "description": "The adversary injects malicious content into data that is accessible to the AI system via an invokable retrieval tool. Variants include plugins and CRM data.",
-  "external_references": [
-  ],
+  "external_references": [],
   "framework_references": [],
   "name": "Retrieval Tool Poisoning",
   "object_references": [
