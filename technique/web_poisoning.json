@@ -3,8 +3,7 @@
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
   "description": "The adversary injects malicious content into a public website to contaminate a future thread through web search results.",
-  "external_references": [
-  ],
+  "external_references": [],
   "framework_references": [],
   "name": "Web Poisoning",
   "object_references": [

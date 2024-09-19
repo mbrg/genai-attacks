@@ -3,8 +3,7 @@
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
   "description": "The adversary manipulates a user to copy-and-paste data into the AI system, which contains malicious content.",
-  "external_references": [
-  ],
+  "external_references": [],
   "framework_references": [],
   "name": "User Manipulation",
   "object_references": [

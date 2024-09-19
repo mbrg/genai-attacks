@@ -3,8 +3,7 @@
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
   "description": "The adversary gets AI to present an image to the user, which is rendered by the user's client application with no user clicks required. The image is hosted on an attacker-controlled website, allowing the adversary to exfiltrate data through image request parameters. Variants include HTML tags and markdown.",
-  "external_references": [
-  ],
+  "external_references": [],
   "framework_references": [],
   "name": "Image Rendering",
   "object_references": [
