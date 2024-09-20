@@ -1,0 +1,21 @@
+{
+  "$id": "$gai-technique/shared_resource_poisoning",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary entices the user or uses access by the AI system to create a resource with malicious instructions and share it widely within the organization. Variants include SharePoint and Google Drive documents accessible company-wide.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Shared Resource Poisoning",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/lateral_movement",
+      "$type": "tactic",
+      "description": "An adversary can infect threads by other uses by creating a company-wide shared resource indexes by the RAG system."
+    },
+    {
+      "$id": "$gai-technique/rag_poisoning",
+      "$type": "technique",
+      "description": "Shared Resource Poisoning is a form of RAG Poisoning, leveraging acquired intra-company access for lateral movement."
+    }
+  ]
+}
