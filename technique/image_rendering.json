@@ -8,7 +8,7 @@
   "name": "Image Rendering",
   "object_references": [
     {
-      "$id": "$gai-tactic/data_exfiltration",
+      "$id": "$gai-tactic/exfiltration",
       "$type": "tactic",
       "description": "An adversary can exfiltrate data by embedding it in the query parameters of an image, and getting AI to render it."
     }

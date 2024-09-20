@@ -8,7 +8,7 @@
   "name": "URL Rendering",
   "object_references": [
     {
-      "$id": "$gai-tactic/data_exfiltration",
+      "$id": "$gai-tactic/exfiltration",
       "$type": "tactic",
       "description": "An adversary can exfiltrate data by embedding it in the parameters of a URL, and getting AI to render it as a clickable link to the user, which clicks it."
     }
