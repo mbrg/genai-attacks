@@ -11,6 +11,11 @@
       "$id": "$gai-tactic/collection",
       "$type": "tactic",
       "description": "An adversary can harvest sensitive data from various systems through invokable retrieval tools."
+    },
+    {
+      "$id": "$gai-technique/retrieval_tool_credential_harvesting",
+      "$type": "technique",
+      "description": "The two techniques are similar apart from their target data and purpose."
     }
   ]
 }
