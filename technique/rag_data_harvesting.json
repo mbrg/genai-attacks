@@ -1,0 +1,16 @@
+{
+  "$id": "$gai-technique/rag_data_harvesting",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary uses the AI system to query for sensitive data indexed by the RAG. Variants include searching through sensitive information in email, chat and shared documents.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "RAG Data Harvesting",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/collection",
+      "$type": "tactic",
+      "description": "An adversary can harvest sensitive data from various systems through RAG queries."
+    }
+  ]
+}
