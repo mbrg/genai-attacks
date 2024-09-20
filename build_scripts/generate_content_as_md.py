@@ -117,6 +117,11 @@ def create_matrix(tactics, techniques):
                 logger.debug(
                     f"Added technique {technique['$id']} to tactic {ref['$id']}"
                 )
+
+    invalid_tactic_ids = set(matrix.keys()) - set(tactics.keys())
+    if len(invalid_tactic_ids) > 0:
+        raise ValueError(f"Matrix contains invalid tactic $ids: {invalid_tactic_ids}")
+
     return matrix
 
 
