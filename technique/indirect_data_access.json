@@ -5,7 +5,7 @@
   "description": "The adversary uses the RAG system to extract full documents without directly accessing them.",
   "external_references": [],
   "framework_references": [],
-  "name": "RAG Credential Harvesting",
+  "name": "Indirect Data Access",
   "object_references": [
     {
       "$id": "$gai-tactic/defense_evasion",
