@@ -1,0 +1,27 @@
+{
+  "$id": "$gai-technique/rag_injection",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary abuses spotlightning defense techniques to inject a new RAG result providing fake legitimacy to data under their control.",
+  "external_references": [
+    {
+      "href": "https://arxiv.org/abs/2403.14720",
+      "source": "Arxiv",
+      "title": "Defending Against Indirect Prompt Injection Attacks With Spotlighting."
+    }
+  ],
+  "framework_references": [],
+  "name": "RAG Injection",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/defense_evasion",
+      "$type": "tactic",
+      "description": "An adversary can inject RAG results that are treated by the AI system as authentic."
+    },
+    {
+      "$id": "$gai-entity/tamir_ishay_sharbat",
+      "$type": "entity",
+      "description": "Reported by"
+    }
+  ]
+}
