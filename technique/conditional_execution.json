@@ -1,0 +1,16 @@
+{
+  "$id": "$gai-technique/conditional_execution",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary conditions the AI system to only execute instructions under certain conditions to pinpoint their targeting and avoid detection. Variants include conditioning for specific users, user metadata or user prompt.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Conditional Execution",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/defense_evasion",
+      "$type": "tactic",
+      "description": "An adversary can limit their attack to their specified targets to reduce their detection surface."
+    }
+  ]
+}
