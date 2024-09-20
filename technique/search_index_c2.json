@@ -1,0 +1,21 @@
+{
+  "$id": "$gai-technique/search_index_c2",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary instructs the AI system to query and follow further instructions available on a search index of a public website under their control, to achieve dynamic command execution.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Search Index C2",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/command_and_control",
+      "$type": "tactic",
+      "description": "An adversary can dynamically change instructions to-be-followed by instructing the compromised AI system to follow instructions on a search index of a public website under their control."
+    },
+    {
+      "$id": "$gai-technique/public_web_c2",
+      "$type": "technique",
+      "description": "Search Index C2 is a form of Public Web C2, bypassing a popular defense mechanism of allowing the AI system to read only search index results rather than the read website content directly."
+    }
+  ]
+}
