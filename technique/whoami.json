@@ -1,0 +1,21 @@
+{
+  "$id": "$gai-technique/whoami",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary extracts data available to the AI system to discover information about the compromised thread and the identity that the AI system is running on behalf of.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Whoami",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/discovery",
+      "$type": "tactic",
+      "description": "An adversary can discover information about the identity that the AI system is running on behalf of."
+    },
+    {
+      "$id": "$gai-entity/michael_bargury",
+      "$type": "entity",
+      "description": "Reported by"
+    }
+  ]
+}
