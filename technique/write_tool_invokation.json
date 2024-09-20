@@ -1,0 +1,16 @@
+{
+  "$id": "$gai-technique/write_tool_invocation",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary invokes a tool capable of performing a write operation with for data exfiltration. Data is encoded into the tool input parameters. Variants include sending an email, creating a document, updating the CRM or creating a video.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Write Tool Invocation",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/exfiltration",
+      "$type": "tactic",
+      "description": "An adversary can exfiltrate data by encoding it into the input of an invocable tool capable performing a write operation."
+    }
+  ]
+}
