@@ -5,7 +5,7 @@
   "description": "The adversary purchases a license to a commercially available AI system. They use the access to probe the AI system for properties that are shared across customer tenants, including its architecture and system instructions.",
   "external_references": [],
   "framework_references": [],
-  "name": "Write Tool Invocation",
+  "name": "Commercial License Abuse",
   "object_references": [
     {
       "$id": "$gai-tactic/resource_development",
