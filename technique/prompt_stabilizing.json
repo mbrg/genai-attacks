@@ -1,0 +1,16 @@
+{
+  "$id": "$gai-technique/prompt_stabilizing",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary fine-tunes a prompt that works as-intended some portion of the time into one that works repeatedly.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Prompt Stabilizing",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/resource_development",
+      "$type": "tactic",
+      "description": "An adversary can fine-tune a malicious prompt to perform its intended goals repeatedly once deployed in a payload."
+    }
+  ]
+}
