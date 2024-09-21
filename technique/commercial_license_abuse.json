@@ -1,0 +1,16 @@
+{
+  "$id": "$gai-technique/commercial_license_abuse",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary purchases a license to a commercially available AI system. They use the access to probe the AI system for properties that are shared across customer tenants, including its architecture and system instructions.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Write Tool Invocation",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/resource_development",
+      "$type": "tactic",
+      "description": "An adversary can learn about a commercially available system to craft their payloads accordingly."
+    }
+  ]
+}
