@@ -1,3 +1,7 @@
+"""
+AI-generated mdbook link rewrite script
+"""
+
 import argparse
 import logging
 import os
