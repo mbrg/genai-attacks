@@ -5,7 +5,7 @@
 | :point_up:    | You can edit any `.json` file or create a new one directly in your browser to easily contribute! |
 |------|:---|
 
-Improving or add to our knowledge base by editing or adding files to these directories:
+Improve our knowledge base by editing or adding files within these directories:
 
 ```
 |
