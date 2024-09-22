@@ -26,7 +26,7 @@
     {
       "$id": "$gai-entity/simon_willison",
       "$type": "entity",
-      "description": "Simon has coined the term Prompt Injection in his post `Prompt injection attacks against GPT-3.`"
+      "description": "Simon has coined the term Prompt Injection in his post \"Prompt injection attacks against GPT-3.\""
     }
   ]
 }
