@@ -41,7 +41,7 @@
     {
       "$id": "$gai-technique/url_rendering",
       "$type": "technique",
-      "description": "Rendering of hyperlinks to attacker controlled domains."
+      "description": "Rendering of hyperlinks to attacker controlled domains, resulting in 1-click data exfiltration."
     },
     {
       "$id": "$gai-platform/microsoft_copilot_for_m365",
