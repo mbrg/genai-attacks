@@ -212,6 +212,9 @@ def generate_summary_page(tactics, techniques, procedures, platforms, entities, 
     logger.debug("Generating summary page content")
     content = "# GenAI Attacks\n\n"
     content += "* [Attacks Matrix](matrix.md)\n"
+    content += "    * [Introduction](intro/readme.md)\n"
+    content += "    * [How to Contribute](intro/contribute.md)\n"
+    content += "    * [Q&A](intro/qna.md)\n"
 
     content += "\n## Tactics\n"
     content += "* [Tactics](tactics.md)\n"
@@ -314,6 +317,16 @@ def main():
                     logger.debug(f"Successfully wrote file: {file_path}")
                 except Exception as e:
                     logger.error(f"Error writing file {file_path}: {str(e)}")
+
+    # Copy repo md files to build directory
+    intro_dir = os.path.join(build_dir, "intro")
+    logger.info(f"Creating directory: {intro_dir}")
+    os.makedirs(intro_dir, exist_ok=True)
+    for fname in ("readme.md", "qna.md", "contribute.md"):
+        src = os.path.join(base_dir, fname)
+        dst = os.path.join(intro_dir, fname)
+        logger.debug(f"Copying {src} to {dst}")
+        shutil.copy(src, dst)
 
     # Generate summary page (SUMMARY.md)
     summary_content = generate_summary_page(
