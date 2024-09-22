@@ -5,7 +5,7 @@
   "description": "The adversary gets AI to present a URL to the user, which is rendered as a link, and can be clicked by a user. The URL leads to an attacker-controlled domain. The URL is automatically chosen based on answers to a series of questions the AI system answers, allowing the adversary to leak the answers to those questions by the choice of a granular web link.",
   "external_references": [],
   "framework_references": [],
-  "name": "Clickable Link Rendering",
+  "name": "Granular Clickable Link Rendering",
   "object_references": [
     {
       "$id": "$gai-tactic/exfiltration",
