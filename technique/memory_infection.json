@@ -16,7 +16,7 @@
     {
       "$id": "$gai-tactic/persistence",
       "$type": "tactic",
-      "description": "An adversary that succesfuly infected one thread can infect others threads."
+      "description": "An adversary that successfully infected one thread can infect others threads."
     },
     {
       "$id": "$gai-entity/johann_rehberger",
