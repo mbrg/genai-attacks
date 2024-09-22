@@ -1,0 +1,21 @@
+{
+  "$id": "$gai-technique/resource_poisoning",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary embeds malicious instructions within a document the user has access to, thereby infecting future threads that would discover this document through RAG-based search.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Resource Poisoning",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/persistence",
+      "$type": "tactic",
+      "description": "An adversary can infect future threads by injecting a malicious document into data indexed by a RAG system."
+    },
+    {
+      "$id": "$gai-technique/rag_poisoning",
+      "$type": "technique",
+      "description": "Resource Poisoning is a form of RAG Poisoning, targeting future threads of the same user."
+    }
+  ]
+}

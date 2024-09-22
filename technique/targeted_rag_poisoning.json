@@ -21,7 +21,7 @@
     {
       "$id": "$gai-tactic/rag_poisoning",
       "$type": "tactic",
-      "description": "This technique is a form of RAG Poisoning."
+      "description": "Targeted RAG Poisoning is a form of RAG Poisoning, crafting malicious content to surface for a specific user query."
     },
     {
       "$id": "$gai-entity/tamir_ishay_sharbat",
