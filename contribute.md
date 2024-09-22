@@ -1,4 +1,4 @@
-# How To Contribute [Developer Docs]
+# How To Contribute
 
 ## How To Contribute Content?
 
@@ -19,8 +19,7 @@ Improve our knowledge base by editing or adding files within these directories:
 File schema and how things work:
 * Your change will be automatically tested for compliance with the [schema](/schema/) once a PR is created.
 * Once a PR gets merged to `main`, the website will automatically update within a few minutes.
-* You can check out the [schema](/schema/) directory or look at other files for example, you'll find them at:
-
+* You can check out the [schema](/schema/) directory or look at other files for reference.
 
 ## How To Work With this Repo? [Optional]
 
