@@ -1,11 +1,11 @@
 # Welcome to GenAI Attacks Matrix!
 
-## How To Easily Contribute Content?
+## How To Contribute Content?
 
 | :point_up:    | You can edit any `.json` file or create a new one directly in your browser to easily contribute! |
 |------|:---|
 
-Contribute by improving or adding to our knowledge base by editing or adding files to these directories:
+Improving or add to our knowledge base by editing or adding files to these directories:
 
 ```
 |
