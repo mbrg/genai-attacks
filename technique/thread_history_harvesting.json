@@ -1,0 +1,16 @@
+{
+  "$id": "$gai-technique/thread_history_harvesting",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary uses the AI system to summarize or encode previous interactions on the same thread to the current message, including the user prompts and AI system responses.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "RAG Data Harvesting",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/collection",
+      "$type": "tactic",
+      "description": "An adversary can harvest sensitive data from previous interactions on the same thread."
+    }
+  ]
+}
