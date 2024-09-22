@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/url_familiarizing",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Some AI systems implement a defense mechanism where only URLs that appear directly and completely in the thread can be accessed. The adversary adds, typically multiple, URLs to the thread to enable future data exfiltration to these URLs or their prefixes.",
+  "external_references": [
+    {
+      "href": "https://arxiv.org/pdf/2406.00199",
+      "source": "arXiv",
+      "title": "Defense mechanism in ChatGPT | Exfiltration of personal information from ChatGPT via prompt injection"
+    }
+  ],
+  "framework_references": [],
+  "name": "URL Familiarizing",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/defense_evasion",
+      "$type": "tactic",
+      "description": "An adversary can bypass security mechanisms to allow future data exfiltration through URL in an attacker-controlled domain."
+    }
+  ]
+}
