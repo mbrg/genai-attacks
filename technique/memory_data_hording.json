@@ -1,5 +1,5 @@
 {
-  "$id": "$gai-technique/memory_infection",
+  "$id": "$gai-technique/memory_data_hording",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
   "description": "The adversary gets AI to commit malicious text into memory that instructs it to retain sensitive data in its memory in future threads, for future exfiltration.",
