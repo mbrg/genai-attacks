@@ -11,7 +11,7 @@ By letting GenAI reason on behalf of our users with their identities, we've open
 
 Our first collective attempt at fighting malware was Antivirus software which tried to enumerate every known malware out there. We've taken the same approach with promptware, trying to fix the problem by enumerating bad prompts. This does not work, nor is prompt injection a problem [we can simply fix](https://simonwillison.net/2022/Sep/17/prompt-injection-more-ai/). Instead, its a problem we can to manage. Learning from EDRs, we need to adopt a defense-in-depth approach that is focused on malicious behavior rather than malicious static content. The goal of this project is to document and share knowledge of those behaviors and to look beyond prompt injection at the entire lifecycle of a promptware attack.
 
-This project was inspired by the awesome work of others who successfully applied the attacks approach to [M365](https://medium.com/@johnlatwc/the-githubification-of-infosec-afbdbfaad1d1),[containers](https://www.microsoft.com/en-us/security/blog/2021/07/21/the-evolution-of-a-matrix-how-attck-for-containers-was-built/) and [SaaS](https://github.com/pushsecurity/saas-attacks).
+This project was inspired by the awesome work of others: the [MITRE ATT&CK](https://attack.mitre.org), and others who successfully applied the attacks approach to [M365](https://medium.com/@johnlatwc/the-githubification-of-infosec-afbdbfaad1d1),[containers](https://www.microsoft.com/en-us/security/blog/2021/07/21/the-evolution-of-a-matrix-how-attck-for-containers-was-built/) and [SaaS](https://github.com/pushsecurity/saas-attacks).
 
 
 ## How To Contribute Content?
