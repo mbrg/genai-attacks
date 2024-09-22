@@ -19,8 +19,8 @@
       "description": "An adversary can target a specific user prompt by crafting content that would be surfaced by a RAG system to respond to that query."
     },
     {
-      "$id": "$gai-tactic/rag_poisoning",
-      "$type": "tactic",
+      "$id": "$gai-technique/rag_poisoning",
+      "$type": "technique",
       "description": "Targeted RAG Poisoning is a form of RAG Poisoning, crafting malicious content to surface for a specific user query."
     },
     {
