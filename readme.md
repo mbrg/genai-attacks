@@ -1,6 +1,6 @@
 # Welcome to GenAI Attacks Matrix!
 
-## How To Contribute Content?
+## How To Easily Contribute Content?
 
 | :point_up:    | You can edit any `.json` file or create a new one directly in your browser to easily contribute! |
 |------|:---|
@@ -21,7 +21,7 @@ File schema and how things work:
 * Once a PR gets merged to `main`, the website will automatically update within a few minutes.
 * You can check out the [schema](/schema/) directory or look at other files for example, you'll find them at:
 
-## How To Work With the Repo?
+## How To Work With the Repo? [Optional]
 
 If you want to contribute as a developer or just prefer to work with git, and benefit from auto-fixes for some of the common issues:
 
