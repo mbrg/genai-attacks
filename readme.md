@@ -40,4 +40,4 @@ File schema and how things work:
 Check out additional resources and docs:
 
 - [Developer Docs](contribute.md)
-- [Q&A][qna.md]
+- [Q&A](qna.md)
