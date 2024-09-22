@@ -5,7 +5,7 @@
   "description": "The adversary uses the AI system to summarize or encode previous interactions on the same thread to the current message, including the user prompts and AI system responses.",
   "external_references": [],
   "framework_references": [],
-  "name": "RAG Data Harvesting",
+  "name": "Thread History Harvesting",
   "object_references": [
     {
       "$id": "$gai-tactic/collection",
