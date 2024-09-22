@@ -193,7 +193,7 @@ def generate_object_page(obj, all_objects, base_dir):
         else:
             content += f"- {ref['$id']} ({ref['$type']}): {ref['description']} (Reference not found)\n"
 
-    content += "\n### Referenced By Over Objects\n"
+    content += "\n### Referenced By Other Objects\n"
     for other_obj in all_objects.values():
         for ref in other_obj.get("object_references", []):
             if ref["$id"] == obj["$id"]:
