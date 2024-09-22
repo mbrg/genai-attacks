@@ -11,11 +11,6 @@
       "$id": "$gai-tactic/discovery",
       "$type": "tactic",
       "description": "An adversary can discover information about the identity that the AI system is running on behalf of."
-    },
-    {
-      "$id": "$gai-entity/michael_bargury",
-      "$type": "entity",
-      "description": "Reported by"
     }
   ]
 }

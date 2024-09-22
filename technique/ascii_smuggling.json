@@ -29,9 +29,9 @@
       "description": "An adversary can avoid raising user suspicion."
     },
     {
-      "$id": "$gai-entity/johann_rehberger",
+      "$id": "$gai-entity/riley_goodside",
       "$type": "entity",
-      "description": "Reported by"
+      "description": "Discovered by"
     }
   ]
 }

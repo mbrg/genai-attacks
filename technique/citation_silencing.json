@@ -19,14 +19,24 @@
       "description": "An adversary can bypass security mechanisms and audit logs that rely on citations."
     },
     {
+      "$id": "$gai-entity/michael_bargury",
+      "$type": "entity",
+      "description": "Discovered by"
+    },
+    {
       "$id": "$gai-entity/tamir_ishai_sharbat",
       "$type": "entity",
-      "description": "Reported by"
+      "description": "Discovered by"
     },
     {
       "$id": "$gai-entity/gal_malka",
       "$type": "entity",
-      "description": "Reported by"
+      "description": "Discovered by"
+    },
+    {
+      "$id": "$gai-entity/ayush_roychowdhury",
+      "$type": "entity",
+      "description": "Discovered by"
     }
   ]
 }
