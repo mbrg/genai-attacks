@@ -303,7 +303,7 @@ def main():
 
     for obj_type in object_types:
         type_dir = os.path.join(build_dir, obj_type)
-        logger.info(f"Creating directory: {type_dir}")
+        logger.debug(f"Creating directory: {type_dir}")
         os.makedirs(type_dir, exist_ok=True)
         for obj in all_objects.values():
             if obj["$type"] == obj_type:
