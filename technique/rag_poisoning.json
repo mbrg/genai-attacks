@@ -5,11 +5,6 @@
   "description": "The adversary injects malicious content into data indexed by a RAG system to contaminate a future thread through RAG-based search results.",
   "external_references": [
     {
-      "href": "https://labs.zenity.io/p/rag-poisoning-need-one-document",
-      "source": "Zenity",
-      "title": "RAG Poisoning: All You Need is One Document."
-    },
-    {
       "href": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
       "source": "Wikipedia",
       "title": "Retrieval-augmented generation."

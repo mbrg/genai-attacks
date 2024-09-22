@@ -1,0 +1,32 @@
+{
+  "$id": "$gai-technique/targeted_rag_poisoning",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary crafts content that, when indexed by a RAG system, would always surface as a search result for a specific user query. The adversary then embeds malicious instructions with that content and injects it into data indexed by the system.",
+  "external_references": [
+    {
+      "href": "https://labs.zenity.io/p/rag-poisoning-need-one-document",
+      "source": "Zenity",
+      "title": "RAG Poisoning: All You Need is One Document."
+    }
+  ],
+  "framework_references": [],
+  "name": "Targeted RAG Poisoning",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/initial_access",
+      "$type": "tactic",
+      "description": "An adversary can target a specific user prompt by crafting content that would be surfaced by a RAG system to respond to that query."
+    },
+    {
+      "$id": "$gai-tactic/rag_poisoning",
+      "$type": "tactic",
+      "description": "This technique is a form of RAG Poisoning."
+    },
+    {
+      "$id": "$gai-entity/tamir_ishay_sharbat",
+      "$type": "entity",
+      "description": "Demonstrated by"
+    }
+  ]
+}
