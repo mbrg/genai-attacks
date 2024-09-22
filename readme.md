@@ -2,11 +2,10 @@
 
 ## How To Contribute Content?
 
-Edit any `.json` file in the directories listed below, or add a new one. That's it!
+| :point_up:    | You can edit any `.json` file or create a new one directly in your browser to easily contribute! |
+|------|:---|
 
-* Your change will be automatically tested for compliance with the [schema](/schema/) once a PR is created.
-* Once a PR gets merged to `main`, the website will automatically update within a few minutes.
-* You can check out the [schema](/schema/) directory or look at other files for example, you'll find them at:
+Contribute by improving or adding to our knowledge base by editing or adding files to these directories:
 
 ```
 |
@@ -16,6 +15,11 @@ Edit any `.json` file in the directories listed below, or add a new one. That's 
 --| entity
 --| platform
 ```
+
+File schema and how things work:
+* Your change will be automatically tested for compliance with the [schema](/schema/) once a PR is created.
+* Once a PR gets merged to `main`, the website will automatically update within a few minutes.
+* You can check out the [schema](/schema/) directory or look at other files for example, you'll find them at:
 
 ## How To Work With the Repo?
 
