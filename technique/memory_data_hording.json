@@ -1,0 +1,16 @@
+{
+  "$id": "$gai-technique/memory_infection",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary gets AI to commit malicious text into memory that instructs it to retain sensitive data in its memory in future threads, for future exfiltration.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Memory Data Hording",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/collection",
+      "$type": "tactic",
+      "description": "An adversary that successfully infected one thread can get the AI system to collect information from other threads."
+    }
+  ]
+}
