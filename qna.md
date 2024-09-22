@@ -6,6 +6,13 @@ MITRE Atlas is a knowledge resource about attacks that target the _creators_ of 
 It covers training data, the training environment, model artifacts and more, all crucial components when building an AI system.
 By contrast, the GenAI Attacks matrix is focused on attacks that target the _users_ of an GenAI system. The focus is on how AI systems interact with the rest of the business environment on behalf of their uses. Furthermore, Atlas has a wider scope covering ML while this project is focused on GenAI.
 
+## How does this project differ from MITRE ATT&CK?
+
+MITRE ATT&CK is an incredible resource, and one that we have personally used over and over again.
+We wanted to take a focused approach on GenAI systems, diverging from MITRE's endpoint-focused approach.
+Furthermore, we document both observed attacks and security researcher demonstrated by the community.
+We believe that with the fast pace of innovation with GenAI, its important we share information about potential attacks as soon as they are discovered to guide mitigation.
+
 ## How does this project differ from OWASP LLM Top 10?
 
 The OWASP LLM Top 10 is a knowledge resource about common vulnerabilities for applications using GenAI.
