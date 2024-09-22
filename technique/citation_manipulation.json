@@ -26,12 +26,12 @@
     {
       "$id": "$gai-entity/michael_bargury",
       "$type": "entity",
-      "description": "Discovered by"
+      "description": "Demonstrated by"
     },
     {
       "$id": "$gai-entity/tamir_ishai_sharbat",
       "$type": "entity",
-      "description": "Discovered by"
+      "description": "Demonstrated by"
     }
   ]
 }
