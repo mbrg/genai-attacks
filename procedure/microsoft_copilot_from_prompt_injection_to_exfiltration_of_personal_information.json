@@ -39,7 +39,7 @@
       "description": "Automatically read other emails or documents without a human in the loop."
     },
     {
-      "$id": "$gai-technique/url_rendering",
+      "$id": "$gai-technique/clickable_link_rendering",
       "$type": "technique",
       "description": "Rendering of hyperlinks to attacker controlled domains, resulting in 1-click data exfiltration."
     },
