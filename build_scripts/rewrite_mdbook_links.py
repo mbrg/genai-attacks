@@ -46,7 +46,7 @@ def update_edit_urls(book_dir):
                         )
                         edit_link["href"] = new_url
                         logger.debug(
-                            f"Changed URL from {old_url} to {new_url}",
+                            f"Changed URL from '{old_url}' to '{new_url}'",
                         )
 
                 with open(file_path, "w", encoding="utf-8") as f:
