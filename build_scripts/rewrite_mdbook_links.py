@@ -34,7 +34,7 @@ def update_edit_urls(book_dir):
                     change_links = soup.find_all("a", title="Suggest an edit")
                     for link in change_links:
                         link.decompose()
-                    logger.info(f"Removed Change links from {file_path}")
+                    logger.info(f"Removed change links from {file_path}")
                 else:
                     edit_link = soup.find("a", title="Suggest an edit")
                     if edit_link and "href" in edit_link.attrs:
