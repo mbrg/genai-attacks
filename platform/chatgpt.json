@@ -1,0 +1,14 @@
+{
+  "$id": "$gai-platform/chatgpt",
+  "$schema": "../schema/platform.schema.json",
+  "$type": "platform",
+  "description": "",
+  "external_references": [
+    {
+      "href": "https://chatgpt.com/",
+      "source": "OpenAI",
+      "title": "ChatGPT"
+    }
+  ],
+  "name": "ChatGPT"
+}

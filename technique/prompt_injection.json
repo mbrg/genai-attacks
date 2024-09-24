@@ -10,11 +10,6 @@
       "title": "Prompt injection attacks against GPT-3."
     },
     {
-      "href": "https://simonwillison.net/2024/Mar/5/prompt-injection-jailbreaking/",
-      "source": "Simon Willison's blog",
-      "title": "Prompt injection and jailbreaking are not the same thing."
-    },
-    {
       "href": "https://embracethered.com/blog/posts/2023/ai-injections-direct-and-indirect-prompt-injection-basics/",
       "source": "Embrace the Red",
       "title": "AI Injections: Direct and Indirect Prompt Injections and Their Implications."
@@ -31,7 +26,7 @@
     {
       "$id": "$gai-entity/simon_willison",
       "$type": "entity",
-      "description": "Reported by"
+      "description": "Simon has coined the term Prompt Injection in his post \"Prompt injection attacks against GPT-3.\""
     }
   ]
 }

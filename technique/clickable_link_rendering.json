@@ -1,0 +1,16 @@
+{
+  "$id": "$gai-technique/clickable_link_rendering",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary gets AI to present a URL to the user, which is rendered as a link, and can be clicked by a user. The URL leads to an an attacker-controlled website, allowing the adversary to exfiltrate data through URL parameters. Variants include HTML tags and markdown.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Clickable Link Rendering",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/exfiltration",
+      "$type": "tactic",
+      "description": "An adversary can exfiltrate data by embedding it in the parameters of a URL, and getting AI to render it as a clickable link to the user, which clicks it."
+    }
+  ]
+}

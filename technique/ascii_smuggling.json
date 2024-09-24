@@ -21,7 +21,7 @@
     }
   ],
   "framework_references": [],
-  "name": "ASCII SMuggling",
+  "name": "ASCII Smuggling",
   "object_references": [
     {
       "$id": "$gai-tactic/defense_evasion",
@@ -29,9 +29,9 @@
       "description": "An adversary can avoid raising user suspicion."
     },
     {
-      "$id": "$gai-entity/johann_rehberger",
+      "$id": "$gai-entity/riley_goodside",
       "$type": "entity",
-      "description": "Reported by"
+      "description": "Demonstrated by"
     }
   ]
 }

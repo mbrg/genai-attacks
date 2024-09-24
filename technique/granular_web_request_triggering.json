@@ -1,0 +1,16 @@
+{
+  "$id": "$gai-technique/granular_web_request_triggering",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary triggers the AI system to issue a web request to an attacker-controlled domain, using questions about the data to choose which URL will be browsed. The request is triggered by the client application with no user clicks required.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Granular Web Request Triggering",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/exfiltration",
+      "$type": "tactic",
+      "description": "An adversary can exfiltrate data by asking questions about it and using the answers to choose which URL will be visited."
+    }
+  ]
+}

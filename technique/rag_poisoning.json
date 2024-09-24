@@ -2,13 +2,8 @@
   "$id": "$gai-technique/rag_poisoning",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
-  "description": "The adversary injects malicious content into data indexed by a RAG system to contaminate a future thread through its RAG information retrieval.",
+  "description": "The adversary injects malicious content into data indexed by a RAG system to contaminate a future thread through RAG-based search results.",
   "external_references": [
-    {
-      "href": "https://twitter.com/goodside/status/1745511940351287394",
-      "source": "Embrace the Red",
-      "title": "Tweeter thread on the discovery of ASCII Smuggling."
-    },
     {
       "href": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
       "source": "Wikipedia",
@@ -21,7 +16,22 @@
     {
       "$id": "$gai-tactic/initial_access",
       "$type": "tactic",
-      "description": "An adversary can indirectly inject malicious content to the thread by contaminating RAG data."
+      "description": "An adversary can indirectly inject malicious content into a thread by contaminating RAG data."
+    },
+    {
+      "$id": "$gai-entity/johann_rehberger",
+      "$type": "entity",
+      "description": "Demonstrated by"
+    },
+    {
+      "$id": "$gai-entity/michael_bargury",
+      "$type": "entity",
+      "description": "Demonstrated by"
+    },
+    {
+      "$id": "$gai-entity/tamir_ishay_sharbat",
+      "$type": "entity",
+      "description": "Demonstrated by"
     }
   ]
 }

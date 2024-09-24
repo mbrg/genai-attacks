@@ -1,0 +1,16 @@
+{
+  "$id": "$gai-technique/failure_mode_mapping",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary intentionally triggers anti-injection defense mechanisms to probe them for reverse engineering.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Failure Mode Mapping",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/discovery",
+      "$type": "tactic",
+      "description": "An adversary can discover information about how the AI system is protected to guide bypass development."
+    }
+  ]
+}

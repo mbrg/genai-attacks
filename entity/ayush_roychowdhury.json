@@ -1,15 +1,15 @@
 {
-  "$id": "$gai-entity/pliny",
+  "$id": "$gai-entity/ayush_roychowdhury",
   "$schema": "../schema/entity.schema.json",
   "$type": "entity",
   "description": "",
   "entity_type": "person",
   "external_references": [
     {
-      "href": "https://twitter.com/elder_plinius",
+      "href": "https://twitter.com/coder10101",
       "source": "Twitter",
-      "title": "Pliny the Liberator on Twitter"
+      "title": "Ayush RoyChowdhury on Twitter"
     }
   ],
-  "name": "Pliny the Liberator"
+  "name": "Ayush RoyChowdhury"
 }

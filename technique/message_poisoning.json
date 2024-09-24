@@ -1,0 +1,16 @@
+{
+  "$id": "$gai-technique/message_poisoning",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary uses a compromised user's identity to send a message to other users with malicious instructions.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Message Poisoning",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/lateral_movement",
+      "$type": "tactic",
+      "description": "An adversary can move laterally by sending a message with malicious instructions to other users."
+    }
+  ]
+}

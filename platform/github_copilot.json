@@ -1,0 +1,14 @@
+{
+  "$id": "$gai-platform/github_copilot",
+  "$schema": "../schema/platform.schema.json",
+  "$type": "platform",
+  "description": "",
+  "external_references": [
+    {
+      "href": "https://github.com/features/copilot",
+      "source": "GitHub",
+      "title": "GitHub Copilot"
+    }
+  ],
+  "name": "GitHub Copilot"
+}

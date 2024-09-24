@@ -1,0 +1,16 @@
+{
+  "$id": "$gai-technique/indirect_data_access",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary uses the RAG system to extract full documents without directly accessing them.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Indirect Data Access",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/defense_evasion",
+      "$type": "tactic",
+      "description": "An adversary can extract full documents through the RAG circumventing data security controls."
+    }
+  ]
+}

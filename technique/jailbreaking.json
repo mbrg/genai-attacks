@@ -27,11 +27,6 @@
       "$id": "$gai-tactic/privilege_escalation",
       "$type": "tactic",
       "description": "An adversary can override system-level prompts using user-level prompts."
-    },
-    {
-      "$id": "$gai-entity/pliny",
-      "$type": "entity",
-      "description": "Reported by"
     }
   ]
 }

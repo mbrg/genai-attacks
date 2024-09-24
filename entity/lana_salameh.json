@@ -1,15 +1,15 @@
 {
-  "$id": "$gai-entity/pliny",
+  "$id": "$gai-entity/lana_salameh",
   "$schema": "../schema/entity.schema.json",
   "$type": "entity",
   "description": "",
   "entity_type": "person",
   "external_references": [
     {
-      "href": "https://twitter.com/elder_plinius",
+      "href": "https://twitter.com/@lana__salameh",
       "source": "Twitter",
-      "title": "Pliny the Liberator on Twitter"
+      "title": "Lana Salameh on Twitter"
     }
   ],
-  "name": "Pliny the Liberator"
+  "name": "Lana Salameh"
 }

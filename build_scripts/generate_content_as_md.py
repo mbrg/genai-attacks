@@ -117,6 +117,11 @@ def create_matrix(tactics, techniques):
                 logger.debug(
                     f"Added technique {technique['$id']} to tactic {ref['$id']}"
                 )
+
+    invalid_tactic_ids = set(matrix.keys()) - set(tactics.keys())
+    if len(invalid_tactic_ids) > 0:
+        raise ValueError(f"Matrix contains invalid tactic $ids: {invalid_tactic_ids}")
+
     return matrix
 
 
@@ -188,7 +193,7 @@ def generate_object_page(obj, all_objects, base_dir):
         else:
             content += f"- {ref['$id']} ({ref['$type']}): {ref['description']} (Reference not found)\n"
 
-    content += "\n### Referenced By Over Objects\n"
+    content += "\n### Referenced By Other Objects\n"
     for other_obj in all_objects.values():
         for ref in other_obj.get("object_references", []):
             if ref["$id"] == obj["$id"]:
@@ -207,6 +212,9 @@ def generate_summary_page(tactics, techniques, procedures, platforms, entities, 
     logger.debug("Generating summary page content")
     content = "# GenAI Attacks\n\n"
     content += "* [Attacks Matrix](matrix.md)\n"
+    content += "    * [Introduction](intro/readme.md)\n"
+    content += "    * [How to Contribute](intro/contribute.md)\n"
+    content += "    * [Q&A](intro/qna.md)\n"
 
     content += "\n## Tactics\n"
     content += "* [Tactics](tactics.md)\n"
@@ -295,7 +303,7 @@ def main():
 
     for obj_type in object_types:
         type_dir = os.path.join(build_dir, obj_type)
-        logger.info(f"Creating directory: {type_dir}")
+        logger.debug(f"Creating directory: {type_dir}")
         os.makedirs(type_dir, exist_ok=True)
         for obj in all_objects.values():
             if obj["$type"] == obj_type:
@@ -309,6 +317,16 @@ def main():
                     logger.debug(f"Successfully wrote file: {file_path}")
                 except Exception as e:
                     logger.error(f"Error writing file {file_path}: {str(e)}")
+
+    # Copy repo md files to build directory
+    intro_dir = os.path.join(build_dir, "intro")
+    logger.info(f"Creating directory: {intro_dir}")
+    os.makedirs(intro_dir, exist_ok=True)
+    for fname in ("readme.md", "qna.md", "contribute.md"):
+        src = os.path.join(base_dir, fname)
+        dst = os.path.join(intro_dir, fname)
+        logger.debug(f"Copying {src} to {dst}")
+        shutil.copy(src, dst)
 
     # Generate summary page (SUMMARY.md)
     summary_content = generate_summary_page(

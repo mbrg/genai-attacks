@@ -74,13 +74,13 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Generate Markdown
-        run: python build_scripts/generate_content_as_md.py --version ${{ needs.versioning.outputs.semver }}
+        run: python build_scripts/generate_content_as_md.py --version ${{ needs.versioning.outputs.semver }} --debug
 
       - name: Build with mdBook
         run: bin/mdbook build
 
       - name: Rewrite edit links
-        run: python build_scripts/rewrite_mdbook_links.py --book-dir book/
+        run: python build_scripts/rewrite_mdbook_links.py --book-dir book/ --debug
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

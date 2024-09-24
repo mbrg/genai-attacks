@@ -1,0 +1,37 @@
+{
+  "$id": "$gai-technique/citation_manipulation",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary manipulates citations provided by the AI system to add trustworthiness to their social engineering attack. Variants include providing the wrong citation, making up a new one or providing the right citation for the wrong data.",
+  "external_references": [
+    {
+      "href": "https://labs.zenity.io/p/phantom-references-microsoft-copilot",
+      "source": "Zenity",
+      "title": "Phantom References in Microsoft Copilot."
+    }
+  ],
+  "framework_references": [],
+  "name": "Citation Manipulation",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/impact",
+      "$type": "tactic",
+      "description": "An adversary can social engineer by providing trustworthy sources to maliciously-crafted messages or data."
+    },
+    {
+      "$id": "$gai-technique/citation_silencing",
+      "$type": "technique",
+      "description": "An adjacent technique which also includes adversary control over citations."
+    },
+    {
+      "$id": "$gai-entity/michael_bargury",
+      "$type": "entity",
+      "description": "Demonstrated by"
+    },
+    {
+      "$id": "$gai-entity/tamir_ishai_sharbat",
+      "$type": "entity",
+      "description": "Demonstrated by"
+    }
+  ]
+}
