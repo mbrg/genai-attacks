@@ -1,0 +1,16 @@
+{
+  "$id": "$gai-technique/tool_definition_discovery",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary extracts details about the tools available to the LLM, including their names, input parameters, output formats, and usage instructions defined by the AI system builder. This helps the adversary understand how to use and manipulate the LLM\u2019s actions for their purposes.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Tool Definition Discovery",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/discovery",
+      "$type": "tactic",
+      "description": "Understand the capabilities and mitigations in place."
+    }
+  ]
+}
