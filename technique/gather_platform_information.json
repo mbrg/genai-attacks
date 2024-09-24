@@ -2,7 +2,7 @@
   "$id": "$gai-technique/gather_platform_information",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
-  "description": "The adversary actively collects information on the underlying platform of an AI system since this increases the attack surface and potential resources that can be found by reconnaissance. This technique is focused on identifying key components that will aid the adversary in finding AI systems, and can vary according to the platform.",
+  "description": "The adversary actively collects information on the underlying platform of an AI system since this increases the attack surface and potential resources that can be found by reconnaissance. This technique is focused on identifying key components that will aid the adversary in finding AI systems, and can vary according to the platform. For example, some platforms have certain unique values to distinct between environments and resource groups. These types of discoveries, along with certain naming conventions used by the target, could aid scanning for AI systems, since these are sometimes part of AI systems' URIs.",
   "external_references": [
     {
       "href": "https://github.com/pushsecurity/saas-attacks/blob/main/techniques/subdomain_tenant_discovery/description.md",
