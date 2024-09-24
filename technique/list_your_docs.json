@@ -10,7 +10,7 @@
     {
       "$id": "$gai-tactic/discovery",
       "$type": "tactic",
-      "description": "An adversary can discover information that's been embedded to the AI system with the misconception that it would only be used for training and wouldn't be directly accessible by the AI system's users."
+      "description": "An adversary can discover information that's been embedded in the AI system under the misconception that it would only be used for training and wouldn't be directly accessible to the AI system's users."
     }
   ]
 }
