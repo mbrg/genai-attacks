@@ -1,0 +1,32 @@
+{
+  "$id": "$gai-technique/gather_platform_information",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary actively collects information on the underlying platform of an AI system since this increases the attack surface and potential resources that can be found by reconnaissance. This technique is focused on identifying key components that will aid the adversary in finding AI systems, and can vary according to the platform.",
+  "external_references": [
+    {
+      "href": "https://github.com/pushsecurity/saas-attacks/blob/main/techniques/subdomain_tenant_discovery/description.md",
+      "source": "Github",
+      "title": "Subdomain tenant discovery (saas-attacks)."
+    },
+    {
+      "href": "https://github.com/mbrg/power-pwn/wiki",
+      "source": "Github",
+      "title": "powerpwn (Copilot Studio Hunter module)"
+    }
+  ],
+  "framework_references": [],
+  "name": "Gather Platform Information",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/reconnaissance",
+      "$type": "tactic",
+      "description": "An adversary that can access exposed AI resources might be able to exploit weaknesses, gather intelligence, or perform unauthorized actions in an AI systems."
+    },
+    {
+      "$id": "$gai-technique/active_scanning",
+      "$type": "technique",
+      "description": "An adversary performs active scanning in tandem with information discovery on the underlying platform."
+    }
+  ]
+}
