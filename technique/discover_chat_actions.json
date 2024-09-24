@@ -2,10 +2,10 @@
   "$id": "$gai-technique/discover_chat_actions",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
-  "description": "The adversary uses obscure and incomplete-sentence interactions in order to confuse the chat engine into suggesting supported actions and intentions.",
+  "description": "The adversary extracts details about the tools available to the LLM, including their names, input parameters, output formats, and usage instructions defined by the AI system builder. This helps the adversary understand how to use and manipulate the LLM’s actions for their purposes.",
   "external_references": [],
   "framework_references": [],
-  "name": "Discover Chat Actions",
+  "name": "Tool Definition Discovery",
   "object_references": [
     {
       "$id": "$gai-tactic/discovery",
