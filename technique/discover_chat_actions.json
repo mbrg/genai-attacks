@@ -1,0 +1,16 @@
+{
+  "$id": "$gai-technique/discover_chat_actions",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary uses obscure and incomplete-sentence interactions in order to confuse the chat engine into suggesting supported actions and intentions.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Discover Chat Actions",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/discovery",
+      "$type": "tactic",
+      "description": "Understand the capabilities and mitigations in place."
+    }
+  ]
+}
