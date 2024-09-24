@@ -2,7 +2,7 @@
   "$id": "$gai-technique/search_closed_sources",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
-  "description": "Adversaries may search and gather information on publicly accessible AI systems from closed sources or private datasets which may reveal resources that may otherwise be difficult to find. This is sometimes possible, for example, via backlinks, in which references or iFrames of AI systems are embedded in other  web resources which are searchable by dedicated search engines.",
+  "description": "Adversaries may use 3rd-party closed sources or private datasets for finding Internet-facing AI systems, which would otherwise be hard to find. One example is backlinks, in which references or iFrames of AI systems are embedded in other web resources which are searchable by dedicated search engines.",
   "external_references": [],
   "framework_references": [],
   "name": "Search Closed Sources",
