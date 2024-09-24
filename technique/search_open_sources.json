@@ -2,7 +2,7 @@
   "$id": "$gai-technique/search_open_sources",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
-  "description": "Adversaries may search and gather information on accessible AI systems from freely available sources which may reveal targets that may otherwise be difficult to find. For example, this could sometimes be possible using public search engines.",
+  "description": "Adversaries may search and gather information on accessible AI systems from freely available sources, which might reveal targets that would otherwise be hard to find. One example would be using public search engines.",
   "external_references": [],
   "framework_references": [],
   "name": "Search Open Sources",
