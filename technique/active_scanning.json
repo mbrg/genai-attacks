@@ -5,17 +5,18 @@
   "description": "The adversary actively scan for publicly accessible AI systems and resources to identify vulnerabilities or misconfigurations. Since AI systems are often deployed in cloud environments, adversaries can use different enumeration methods to effectively discover AI systems.",
   "external_references": [
     {
-      "href": "https://github.com/pushsecurity/saas-attacks/blob/main/techniques/subdomain_tenant_discovery/description.md",
-      "source": "Github",
-      "title": "Subdomain tenant discovery (saas-attacks)."
-    },
-    {
       "href": "https://github.com/mbrg/power-pwn/wiki",
       "source": "Github",
       "title": "powerpwn (Copilot Studio Hunter module)"
     }
   ],
-  "framework_references": [],
+  "framework_references": [
+    {
+      "framework_id": "SAT1035",
+      "framework_name": "Subdomain tenant discovery (saas-attacks)",
+      "href": "https://github.com/pushsecurity/saas-attacks/blob/main/techniques/subdomain_tenant_discovery/description.md"
+    }
+  ],
   "name": "Active Scanning",
   "object_references": [
     {
