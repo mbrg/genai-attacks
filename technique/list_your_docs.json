@@ -2,7 +2,7 @@
   "$id": "$gai-technique/list_your_docs",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
-  "description": "The adversary intentionally inquires an AI system about it's embedded knowledge. Since some AI systems fully share these resources to explain the sources for certain answers, full knowledge sources or artifacts can sometimes be listed and even leaked if targeted directly by an adversary.",
+  "description": "The adversary intentionally inquires an AI system about its embedded knowledge. Since some AI systems fully share these resources when explaining certain answers, full knowledge sources or artifacts can sometimes be listed and even leaked if targeted directly by an adversary.",
   "external_references": [],
   "framework_references": [],
   "name": "List Your Docs",
