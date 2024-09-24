@@ -2,7 +2,7 @@
   "$id": "$gai-technique/list_your_docs",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
-  "description": "The adversary intentionally inquires an AI system about it's embedded knowledge. Since some AI systems fully share these resources to explain the source of a certain answer, full knowledge sources or artifacts can sometimes be listed or leaked if targeted directly by an adversary.",
+  "description": "The adversary intentionally inquires an AI system about it's embedded knowledge. Since some AI systems fully share these resources to explain the sources for certain answers, full knowledge sources or artifacts can sometimes be listed and even leaked if targeted directly by an adversary.",
   "external_references": [],
   "framework_references": [],
   "name": "List Your Docs",
@@ -10,7 +10,7 @@
     {
       "$id": "$gai-tactic/discovery",
       "$type": "tactic",
-      "description": "An adversary can discover information that's been embedded to the the AI system, with the misconception that it would only be used for training and wouldn't be directly accesible."
+      "description": "An adversary can discover information that's been embedded to the AI system with the misconception that it would only be used for training and wouldn't be directly accessible by the AI system's users."
     }
   ]
 }
