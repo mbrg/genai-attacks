@@ -1,5 +1,5 @@
 {
-  "$id": "$gai-technique/discover_chat_actions",
+  "$id": "$gai-technique/tool_definition_discovery",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
   "description": "The adversary extracts details about the tools available to the LLM, including their names, input parameters, output formats, and usage instructions defined by the AI system builder. This helps the adversary understand how to use and manipulate the LLM’s actions for their purposes.",
