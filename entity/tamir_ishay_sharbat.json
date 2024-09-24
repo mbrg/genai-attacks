@@ -1,5 +1,5 @@
 {
-  "$id": "$gai-entity/tamir_ishai_sharbat",
+  "$id": "$gai-entity/tamir_ishay_sharbat",
   "$schema": "../schema/entity.schema.json",
   "$type": "entity",
   "description": "",
@@ -8,8 +8,8 @@
     {
       "href": "https://twitter.com/tamirishaysh",
       "source": "Twitter",
-      "title": "Tamir Ishai Sharbat on Twitter"
+      "title": "Tamir Ishay Sharbat on Twitter"
     }
   ],
-  "name": "Tamir Ishai Sharbat"
+  "name": "Tamir Ishay Sharbat"
 }
