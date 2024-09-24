@@ -2,7 +2,7 @@
   "$id": "$gai-technique/search_closed_sources",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
-  "description": "Adversaries may search and gather information on publicly accessible AI systems from closed sources or private datasets which may reveal resources that may otherwise be difficult to find. This is sometimes possible, for example, when AI systems are embedded in other public resources and searchable by dedicated search engines.",
+  "description": "Adversaries may search and gather information on publicly accessible AI systems from closed sources or private datasets which may reveal resources that may otherwise be difficult to find. This is sometimes possible, for example, via backlinks, in which references or iFrames of AI systems are embedded in other  web resources which are searchable by dedicated search engines.",
   "external_references": [],
   "framework_references": [],
   "name": "Search Closed Sources",
@@ -10,7 +10,7 @@
     {
       "$id": "$gai-tactic/reconnaissance",
       "$type": "tactic",
-      "description": "An adversary that identifies relevant closed sources that include information about existing AI systems could quickly discover targets without needing to actively scan them first."
+      "description": "An adversary that identifies closed sources that include information about existing AI systems, could quickly discover targets without needing to actively scan them first."
     }
   ]
 }
