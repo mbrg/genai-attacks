@@ -2,7 +2,7 @@
   "$id": "$gai-technique/search_open_sources",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
-  "description": "Adversaries may search and gather information on publicly accessible AI systems from freely available sources which may reveal resources that may otherwise be difficult to find. This could be available in some cases by search engine indexing.",
+  "description": "Adversaries may search and gather information on accessible AI systems from freely available sources which may reveal targets that may otherwise be difficult to find. For example, this could sometimes be possible using public search engines.",
   "external_references": [],
   "framework_references": [],
   "name": "Search Open Sources",
@@ -10,7 +10,7 @@
     {
       "$id": "$gai-tactic/reconnaissance",
       "$type": "tactic",
-      "description": "An adversary that identifies relevant openly available sources that include information about existing AI systems could quickly discover targets without needing to actively scan them first."
+      "description": "An adversary that identifies relevant openly available sources that include information about existing AI systems, could quickly discover targets without needing to actively scan them first."
     }
   ]
 }
