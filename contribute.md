@@ -44,6 +44,27 @@ These tests must pass to merge to `main`. They will also auto-fix any issue they
 pre-commit run --all-files
 ```
 
+### Build Locally
+
+#### Setup
+
+```bash
+# install mdbook (replace the binary if you're not using Linux)
+mkdir bin
+curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.4.40/mdbook-v0.4.40-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=bin
+chmod +x bin/mdbook
+# enable script execution
+chmod +x build_scripts/local.sh
+```
+
+#### Build
+
+```bash
+# build mdbook
+./build_scripts/local.sh
+# open book/index.html to review the book
+```
+
 ### Submit a PR to main
 
 Any PR to `main` will trigger the [PR Validation](/.github/workflows/pr-validation.yaml) action, running the same tests that `pre-commit` runs.
