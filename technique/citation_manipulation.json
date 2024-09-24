@@ -32,6 +32,11 @@
       "$id": "$gai-entity/tamir_ishai_sharbat",
       "$type": "entity",
       "description": "Demonstrated by"
+    },
+    {
+      "$id": "$gai-entity/gal_malka",
+      "$type": "entity",
+      "description": "Demonstrated by"
     }
   ]
 }
