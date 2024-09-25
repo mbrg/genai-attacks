@@ -3,7 +3,13 @@
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
   "description": "The adversary extracts system instructions provided by the AI system builder to learn about the system's capabilities and circumvent its guardrails.",
-  "external_references": [],
+  "external_references": [
+    {
+      "href": "https://labs.zenity.io/p/stealing-copilots-system-prompt",
+      "source": "Zenity Labs",
+      "title": "Extracting Microsoft Copilot's System Instructions"
+    }
+  ],
   "framework_references": [],
   "name": "System Instructions Extraction",
   "object_references": [
