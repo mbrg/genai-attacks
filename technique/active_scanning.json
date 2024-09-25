@@ -2,7 +2,7 @@
   "$id": "$gai-technique/active_scanning",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
-  "description": "The adversary actively scans for publicly accessible AI systems and resources in order to identify vulnerabilities or misconfigurations. Since AI systems are often deployed in cloud environments, adversaries can use various enumeration methods to effectively discover AI systems.",
+  "description": "The adversary actively scans for publicly accessible AI systems and resources in order to identify vulnerabilities or misconfigurations. Since AI systems are often deployed in cloud environments, adversaries can use various enumeration methods to effectively discover AI systems and uncover information about their supporting underlying platforms.",
   "external_references": [
     {
       "href": "https://github.com/mbrg/power-pwn/wiki",
@@ -23,11 +23,6 @@
       "$id": "$gai-tactic/reconnaissance",
       "$type": "tactic",
       "description": "An adversary that can access exposed AI resources might be able to exploit weaknesses, gather intelligence, or perform unauthorized actions in an AI systems."
-    },
-    {
-      "$id": "$gai-technique/gather_platform_information",
-      "$type": "technique",
-      "description": "Attackers collect information about the underlying platform to increase active scanning."
     }
   ]
 }
