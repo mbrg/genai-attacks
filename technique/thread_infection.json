@@ -1,0 +1,16 @@
+{
+  "$id": "$gai-technique/thread_infection",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary embeds malicious instructions within the thread history either through user or AI system messages. These instructions lead to a prompt injection in a future interaction on the same thread.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Thread Infection",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/persistence",
+      "$type": "tactic",
+      "description": "An adversary can infect future interactions on the same thread by injecting a malicious content into the thread history."
+    }
+  ]
+}
