@@ -1,11 +1,11 @@
 {
-  "$id": "$gai-technique/ai_social_engineering",
+  "$id": "$gai-technique/social_engineering_via_ai",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
   "description": "The adversary uses the AI system as a malicious insider, social engineering the system's user abusing its trustworthiness.",
   "external_references": [],
   "framework_references": [],
-  "name": "AI Social Engineering",
+  "name": "Social Engineering Via AI",
   "object_references": [
     {
       "$id": "$gai-tactic/impact",
