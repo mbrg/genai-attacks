@@ -1,0 +1,16 @@
+{
+  "$id": "$gai-technique/fingerprinting_ai_system",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary seeks to gather information about the LLM to inform future strategies. They analyze the architecture and operational characteristics of the LLM to identify potential vulnerabilities or misconfigurations. By employing a range of methods, they aim to develop a comprehensive understanding of the target, which could facilitate their operational objectives.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Fingerprint AI System",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/reconnaissance",
+      "$type": "tactic",
+      "description": "An adversary that aims to gather information about the LLM to identify vulnerabilities and develop strategies for future operations."
+    }
+  ]
+}
