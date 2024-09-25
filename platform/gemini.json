@@ -1,0 +1,14 @@
+{
+  "$id": "$gai-platform/gemini",
+  "$schema": "../schema/platform.schema.json",
+  "$type": "platform",
+  "description": "",
+  "external_references": [
+    {
+      "href": "https://gemini.google.com/?hl=en-GB",
+      "source": "Google",
+      "title": "Gemini"
+    }
+  ],
+  "name": "Gemini"
+}
