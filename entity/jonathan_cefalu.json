@@ -1,0 +1,15 @@
+{
+  "$id": "$gai-entity/jonathan_cefalu",
+  "$schema": "../schema/entity.schema.json",
+  "$type": "entity",
+  "description": "",
+  "entity_type": "person",
+  "external_references": [
+    {
+      "href": "https://www.linkedin.com/in/joncefalu/",
+      "source": "LinkedIn",
+      "title": "Jonathan Cefalu on LinkedIn"
+    }
+  ],
+  "name": "Jonathan Cefalu"
+}

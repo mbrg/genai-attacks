@@ -24,6 +24,11 @@
       "description": "An adversary can change the execution flow of a GenAI app by controlling a part of its data."
     },
     {
+      "$id": "$gai-entity/jonathan_cefalu",
+      "$type": "entity",
+      "description": "The concept of prompt injection was first discovered by Jonathan Cefalu from Preamble in May 2022 in a letter to OpenAI who called it \"command injection\"."
+    },
+    {
       "$id": "$gai-entity/simon_willison",
       "$type": "entity",
       "description": "Simon has coined the term Prompt Injection in his post \"Prompt injection attacks against GPT-3.\""
