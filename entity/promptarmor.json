@@ -1,0 +1,15 @@
+{
+  "$id": "$gai-entity/promptarmor",
+  "$schema": "../schema/entity.schema.json",
+  "$type": "entity",
+  "description": "",
+  "entity_type": "organization",
+  "external_references": [
+    {
+      "href": "https://promptarmor.substack.com",
+      "source": "Substack",
+      "title": "PromptArmor on Substack"
+    }
+  ],
+  "name": "PromptArmor"
+}

@@ -1,0 +1,16 @@
+{
+  "$id": "$gai-technique/compromised_user",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary compromises a user account by other means, and uses it to directly interact with the AI system.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Compromised User",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/initial_access",
+      "$type": "tactic",
+      "description": "An adversary can directly access the AI system by using a compromised user account."
+    }
+  ]
+}
