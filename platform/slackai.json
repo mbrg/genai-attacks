@@ -1,0 +1,14 @@
+{
+  "$id": "$gai-platform/slackai",
+  "$schema": "../schema/platform.schema.json",
+  "$type": "platform",
+  "description": "",
+  "external_references": [
+    {
+      "href": "https://chatgpt.com/",
+      "source": "Slack",
+      "title": "SlackAI"
+    }
+  ],
+  "name": "SlackAI"
+}
