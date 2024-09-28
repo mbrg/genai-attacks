@@ -15,7 +15,7 @@
     {
       "$id": "$gai-platform/chatgpt",
       "$type": "platform",
-      "description": "When a user asks ChatGPT to access a URL, ChatGPT will only access it if the URL is explicitly written in the user prompt."
+      "description": "When a user asks ChatGPT to access a URL, ChatGPT will only access it if the URL is explicitly written in the user prompt. Access to prefixes of explicitly-written URLs is also allowed."
     },
     {
       "$id": "$gai-entity/gregory_schwartzman",
