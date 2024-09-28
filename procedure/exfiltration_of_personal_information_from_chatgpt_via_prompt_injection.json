@@ -57,6 +57,11 @@
       "$id": "$gai-entity/gregory_schwartzman",
       "$type": "entity",
       "description": "Demonstrated by"
+    },
+    {
+      "$id": "$gai-mitigation/url_anchoring",
+      "$type": "mitigation",
+      "description": "Demonstrates two bypasses of the URL anchoring defense mechanism."
     }
   ]
 }
