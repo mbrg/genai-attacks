@@ -145,7 +145,7 @@ def generate_main_page(tactics, techniques, matrix):
 
     # Find the maximum number of techniques for any tactic
     max_techniques = max(len(matrix[tactic["$id"]]) for tactic in sorted_tactics)
-    logger.debug(f"Found max techniques-per-tactic: {max_techniques}")
+    logger.info(f"Found max techniques-per-tactic: {max_techniques}")
 
     # Generate rows for techniques
     for i in range(max_techniques):
@@ -185,19 +185,55 @@ def generate_object_page(obj, all_objects, base_dir):
     for ref in obj.get("external_references", []):
         content += f"- [{ref['title']}]({ref['href']}), {ref['source']}\n"
 
-    content += "\n### Reference To Other Objects\n"
+    if obj["$type"] == "procedure":
+        content += "\n### Techniques\n"
+        content += "\n| Tactic | Technique | Details |\n"
+        content += "| -- | -- | -- |\n"
+
+        techniques = []
+        for ref in obj.get("object_references", []):
+            if ref["$id"] in all_objects and ref["$type"] == "technique":
+                technique_obj = all_objects[ref["$id"]]
+
+                # tactic id is either the '$tactic_id' property, or the first related tactic
+                for technique_ref in technique_obj.get("object_references", []):
+                    if (
+                        technique_ref["$id"] in all_objects
+                        and technique_ref["$type"] == "tactic"
+                    ):
+                        tactic_id = technique_ref["$id"]
+                        break
+                tactic_id = technique_obj.get("$tactic_id", tactic_id)
+                tactic_obj = all_objects[tactic_id]
+
+                techniques.append(
+                    (
+                        tactic_obj["tactic_order"],
+                        f"[{tactic_obj['name']}](../{tactic_obj['$type']}/{tactic_obj['$id'].split('/')[-1]}.md)",
+                        f"[{technique_obj['name']}](../{technique_obj['$type']}/{technique_obj['$id'].split('/')[-1]}.md)",
+                        ref["description"],
+                    )
+                )
+
+        for _, tactic_name, technique_name, description in sorted(
+            techniques, key=lambda x: x[0]
+        ):
+            content += f"| {tactic_name} | {technique_name} | {description} |\n"
+
+    content += "\n### Related Objects\n"
     for ref in obj.get("object_references", []):
+        # filter out techniques in procedure pages
+        if ref["$type"] == "technique" and obj["$type"] == "procedure":
+            continue
         if ref["$id"] in all_objects:
             referenced_obj = all_objects[ref["$id"]]
-            content += f"- [{referenced_obj['name']}](../{referenced_obj['$type']}/{ref['$id'].split('/')[-1]}.md) ({referenced_obj['$type']}): {ref['description']}\n"
+            content += f"- --> [{referenced_obj['name']}](../{referenced_obj['$type']}/{ref['$id'].split('/')[-1]}.md) ({referenced_obj['$type']}){': ' if ref['description'] else ''}{ref['description']}\n"
         else:
-            content += f"- {ref['$id']} ({ref['$type']}): {ref['description']} (Reference not found)\n"
-
-    content += "\n### Referenced By Other Objects\n"
+            logger.warning(f"{ref['$id']} ({ref['$type']}): Reference not found")
     for other_obj in all_objects.values():
         for ref in other_obj.get("object_references", []):
             if ref["$id"] == obj["$id"]:
-                content += f"- [{other_obj['name']}](../{other_obj['$type']}/{other_obj['$id'].split('/')[-1]}.md) ({other_obj['$type']}): {ref['description']}\n"
+                content += f"- <-- [{other_obj['name']}](../{other_obj['$type']}/{other_obj['$id'].split('/')[-1]}.md) ({other_obj['$type']}){': ' if ref['description'] else ''}{ref['description']}\n"
 
     content += "\n### Related Frameworks\n"
     for ref in obj.get("framework_references", []):
@@ -240,6 +276,16 @@ def generate_summary_page(tactics, techniques, procedures, platforms, entities, 
         content += (
             f"    * [{entity['name']}](entity/{entity['$id'].split('/')[-1]}.md)\n"
         )
+
+    return content
+
+
+def generate_object_list_page(objects, title):
+    logger.debug(f"Generating object list page for {title}")
+    content = f"# {title}\n\n"
+
+    for obj in objects:
+        content += f"- [{obj['name']}]({obj['$type']}/{obj['$id'].split('/')[-1]}.md)\n"
 
     return content
 
@@ -317,6 +363,19 @@ def main():
                     logger.debug(f"Successfully wrote file: {file_path}")
                 except Exception as e:
                     logger.error(f"Error writing file {file_path}: {str(e)}")
+
+    # generate object list pages
+    for objects, title in (
+        (tactics.values(), "tactics"),
+        (techniques.values(), "techniques"),
+        (procedures.values(), "procedures"),
+        (platforms.values(), "platforms"),
+        (entities.values(), "entities"),
+    ):
+        page_content = generate_object_list_page(objects, title.capitalize())
+        page_path = os.path.join(build_dir, f"{title}.md")
+        with open(page_path, "w") as f:
+            f.write(page_content)
 
     # Copy repo md files to build directory
     intro_dir = os.path.join(build_dir, "intro")

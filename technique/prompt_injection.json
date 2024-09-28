@@ -2,7 +2,7 @@
   "$id": "$gai-technique/prompt_injection",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
-  "description": "The adversary gets AI to interpret data to be analyzed with instructions to be executed.",
+  "description": "The adversary gets AI to interpret data to be analyzed as instructions to be executed.",
   "external_references": [
     {
       "href": "https://simonwillison.net/2022/Sep/12/prompt-injection/",

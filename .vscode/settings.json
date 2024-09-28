@@ -26,5 +26,8 @@
     "tamir",
     "tapowerplatform",
     "willison"
+  ],
+  "python.testing.pytestArgs": [
+    "tests"
   ]
 }
