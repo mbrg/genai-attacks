@@ -11,6 +11,11 @@
       "$id": "$gai-tactic/exfiltration",
       "$type": "tactic",
       "description": "An adversary can exfiltrate data by embedding it in the query parameters of an image, and getting AI to render it."
+    },
+    {
+      "$id": "$gai-mitigation/content_security_policy",
+      "$type": "mitigation",
+      "description": "Setting a Content Security Policy can mitigate this technique by disrupting an attacker's ability to provide a URL to a domain under their control."
     }
   ]
 }

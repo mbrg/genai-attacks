@@ -11,6 +11,11 @@
       "$id": "$gai-tactic/exfiltration",
       "$type": "tactic",
       "description": "An adversary can exfiltrate data by embedding it in the parameters of a URL, and getting AI to render it as a clickable link to the user, which clicks it."
+    },
+    {
+      "$id": "$gai-mitigation/content_security_policy",
+      "$type": "mitigation",
+      "description": "Setting a Content Security Policy can mitigate this technique by disrupting an attacker's ability to provide a URL to a domain under their control."
     }
   ]
 }
