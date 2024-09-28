@@ -10,7 +10,7 @@
       "title": "Data, privacy, and security for web queries in Microsoft 365 Copilot and Microsoft Copilot"
     }
   ],
-  "name": "Content Security Policy",
+  "name": "Index-Based Browsing",
   "object_references": [
     {
       "$id": "$gai-platform/microsoft_copilot_for_m365",
