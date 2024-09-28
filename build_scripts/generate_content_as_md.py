@@ -185,6 +185,41 @@ def generate_object_page(obj, all_objects, base_dir):
     for ref in obj.get("external_references", []):
         content += f"- [{ref['title']}]({ref['href']}), {ref['source']}\n"
 
+    if obj["$type"] == "procedure":
+        content += "\n### Techniques\n"
+        content += "\n| Tactic | Technique | Details |\n"
+        content += "| -- | -- | -- |\n"
+
+        techniques = []
+        for ref in obj.get("object_references", []):
+            if ref["$id"] in all_objects and ref["$type"] == "technique":
+                technique_obj = all_objects[ref["$id"]]
+
+                # tactic id is either the '$tactic_id' property, or the first related tactic
+                for technique_ref in technique_obj.get("object_references", []):
+                    if (
+                        technique_ref["$id"] in all_objects
+                        and technique_ref["$type"] == "tactic"
+                    ):
+                        tactic_id = technique_ref["$id"]
+                        break
+                tactic_id = technique_obj.get("$tactic_id", tactic_id)
+                tactic_obj = all_objects[tactic_id]
+
+                techniques.append(
+                    (
+                        tactic_obj["tactic_order"],
+                        f"[{tactic_obj['name']}](../{tactic_obj['$type']}/{tactic_obj['$id'].split('/')[-1]}.md)",
+                        f"[{technique_obj['name']}](../{technique_obj['$type']}/{technique_obj['$id'].split('/')[-1]}.md)",
+                        ref["description"],
+                    )
+                )
+
+        for _, tactic_name, technique_name, description in sorted(
+            techniques, key=lambda x: x[0]
+        ):
+            content += f"| {tactic_name} | {technique_name} | {description} |\n"
+
     content += "\n### Reference To Other Objects\n"
     for ref in obj.get("object_references", []):
         if ref["$id"] in all_objects:
