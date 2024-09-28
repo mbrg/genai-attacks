@@ -1,0 +1,70 @@
+{
+  "$id": "entity.schema.json",
+  "additionalProperties": false,
+  "properties": {
+    "$id": {
+      "$ref": "../schema/common.schema.json#/definitions/$id",
+      "pattern": "mitigation/"
+    },
+    "$schema": {
+      "type": "string"
+    },
+    "$type": {
+      "$ref": "../schema/common.schema.json#/definitions/$type",
+      "default": "mitigation",
+      "enum": [
+        "mitigation"
+      ]
+    },
+    "description": {
+      "$comment": "A description of the mitigation, why is it useful and whats it's drawbacks.",
+      "type": "string"
+    },
+    "external_references": {
+      "items": {
+        "$ref": "../schema/common.schema.json#/definitions/uri_reference"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "framework_references": {
+      "items": {
+        "$ref": "../schema/common.schema.json#/definitions/framework_reference"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "name": {
+      "$comment": "The name of the mitigation.",
+      "type": "string"
+    },
+    "object_references": {
+      "contains": {
+        "$ref": "../schema/common.schema.json#/definitions/object_reference",
+        "properties": {
+          "$type": {
+            "enum": [
+              "platform"
+            ]
+          }
+        }
+      },
+      "items": {
+        "$ref": "../schema/common.schema.json#/definitions/object_reference"
+      },
+      "type": "array",
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "$id",
+    "$type",
+    "name",
+    "description",
+    "external_references",
+    "object_references",
+    "$schema"
+  ],
+  "title": "Entity Schema",
+  "type": "object"
+}
