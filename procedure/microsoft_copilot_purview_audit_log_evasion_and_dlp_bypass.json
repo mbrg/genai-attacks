@@ -11,7 +11,7 @@
     }
   ],
   "framework_references": [],
-  "name": "Microsoft Copilot: From Prompt Injection to Exfiltration of Personal Information",
+  "name": "Microsoft Copilot Purview Audit Log Evasion and DLP Bypass",
   "object_references": [
     {
       "$id": "$gai-technique/citation_silencing",
