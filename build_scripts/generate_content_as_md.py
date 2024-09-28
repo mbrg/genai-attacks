@@ -276,7 +276,7 @@ def generate_summary_page(
     content += "\n## Mitigations\n"
     content += "* [Mitigations](mitigations.md)\n"
     for mitigation in mitigations.values():
-        content += f"    * [{mitigation['name']}](entity/{mitigation['$id'].split('/')[-1]}.md)\n"
+        content += f"    * [{mitigation['name']}](mitigation/{mitigation['$id'].split('/')[-1]}.md)\n"
 
     content += "\n## Entities\n"
     content += "* [Entities](entities.md)\n"
