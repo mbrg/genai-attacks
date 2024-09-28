@@ -145,7 +145,7 @@ def generate_main_page(tactics, techniques, matrix):
 
     # Find the maximum number of techniques for any tactic
     max_techniques = max(len(matrix[tactic["$id"]]) for tactic in sorted_tactics)
-    logger.debug(f"Found max techniques-per-tactic: {max_techniques}")
+    logger.info(f"Found max techniques-per-tactic: {max_techniques}")
 
     # Generate rows for techniques
     for i in range(max_techniques):
