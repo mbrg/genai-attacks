@@ -2,7 +2,7 @@
   "$id": "$gai-technique/guest_user_abuse",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
-  "description": "The adversary could exploit misconfigurations related to guest user permissions in order to interact with the AI system. These platforms typically provide guest or unauthenticated users with restricted access for specific tasks. However, if guest access is misconfigured, it could unintentionally grant more extensive permissions than originally intended - including privileges for AI systems interaction.",
+  "description": "The adversary could exploit misconfigurations related to guest user permissions in order to interact with the AI system. The platforms on which these AI systems reside typically aim to provide guest accounts with restricted access for specific tasks. However, if guest access is misconfigured, it could unintentionally grant more extensive permissions than originally intended - including privileges for AI systems interaction.",
   "external_references": [],
   "framework_references": [
     {
@@ -16,7 +16,7 @@
     {
       "$id": "$gai-tactic/initial_access",
       "$type": "tactic",
-      "description": "An adversary could leverage guest a user account as a foothold into the target environment."
+      "description": "An adversary could leverage a guest user account as a foothold into the target environment."
     }
   ]
 }
