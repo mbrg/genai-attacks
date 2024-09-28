@@ -3,7 +3,7 @@ from test_utils import *
 
 
 @pytest.mark.parametrize("json_object_path", OBJECT_FILE_NAMES)
-@load_json_object
+@load_json_object_wrapper
 def test_multi_line_code_block_new_line_wrappers(obj):
     # get the description as a series of non-code-block, code-block segments
     desc = obj.get("description", "")

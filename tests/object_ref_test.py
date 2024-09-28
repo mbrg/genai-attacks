@@ -3,7 +3,7 @@ from test_utils import *
 
 
 @pytest.mark.parametrize("json_object_path", OBJECT_FILE_NAMES)
-@load_json_object
+@load_json_object_wrapper
 def test_reference_is_valid(obj):
     for ref in obj.get("object_references", []):
         ref_file_name = ref["$id"].replace("$gai-", "") + ".json"

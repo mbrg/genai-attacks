@@ -9,10 +9,15 @@ for object_type in OBJECT_TYPES:
         OBJECT_FILE_NAMES.append(os.path.join(object_type, name))
 
 
-def load_json_object(func):
+def load_json_object(json_object_path):
+    with open(json_object_path, "r") as fp:
+        obj = json.load(fp)
+    return obj
+
+
+def load_json_object_wrapper(func):
     def _func(json_object_path, *args, **kwargs):
-        with open(json_object_path, "r") as fp:
-            obj = json.load(fp)
+        obj = load_json_object(json_object_path)
         return func(obj, *args, **kwargs)
 
     return _func
