@@ -1,0 +1,21 @@
+{
+  "$id": "$gai-mitigation/index_based_browsing",
+  "$schema": "../schema/mitigation.schema.json",
+  "$type": "mitigation",
+  "description": "A defense mechanism that helps protect against use of web browser tools data exfiltration and initial access.\nWhen a user asks the AI system to access a URL, it will ask a web search and have access only to information that the index provides. The URL will is not accessed by the AI System at all.",
+  "external_references": [
+    {
+      "href": "https://learn.microsoft.com/en-us/copilot/microsoft-365/manage-public-web-access",
+      "source": "Microsoft",
+      "title": "Data, privacy, and security for web queries in Microsoft 365 Copilot and Microsoft Copilot"
+    }
+  ],
+  "name": "Content Security Policy",
+  "object_references": [
+    {
+      "$id": "$gai-platform/microsoft_copilot_for_m365",
+      "$type": "platform",
+      "description": "Microsoft Copilot for M365 cannot browse websites. Instead, its web browsing tool has access to the data available on Bing's index for the relevant website page."
+    }
+  ]
+}
