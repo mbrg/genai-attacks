@@ -41,13 +41,7 @@
     "object_references": {
       "$comment": "References to objects that are related to the procedure, must have at least one technique reference.",
       "contains": {
-        "$ref": "../schema/common.schema.json#/definitions/object_reference",
-        "$type": {
-          "$ref": "/definitions/$type",
-          "enum": [
-            "technique"
-          ]
-        }
+        "$ref": "../schema/common.schema.json#/definitions/technique_reference"
       },
       "items": {
         "$ref": "../schema/common.schema.json#/definitions/object_reference"
