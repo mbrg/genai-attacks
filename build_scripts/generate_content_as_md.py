@@ -69,6 +69,7 @@ def load_json_files(base_dir, version):
         os.path.join(base_dir, "procedure"),
         os.path.join(base_dir, "platform"),
         os.path.join(base_dir, "entity"),
+        os.path.join(base_dir, "mitigation"),
     ]
 
     for directory in search_dirs:
@@ -244,7 +245,9 @@ def generate_object_page(obj, all_objects, base_dir):
     return content
 
 
-def generate_summary_page(tactics, techniques, procedures, platforms, entities, matrix):
+def generate_summary_page(
+    tactics, techniques, procedures, platforms, entities, mitigations, matrix
+):
     logger.debug("Generating summary page content")
     content = "# GenAI Attacks\n\n"
     content += "* [Attacks Matrix](matrix.md)\n"
@@ -269,6 +272,11 @@ def generate_summary_page(tactics, techniques, procedures, platforms, entities, 
     content += "* [Platforms](platforms.md)\n"
     for platform in platforms.values():
         content += f"    * [{platform['name']}](platform/{platform['$id'].split('/')[-1]}.md)\n"
+
+    content += "\n## Mitigations\n"
+    content += "* [Mitigations](mitigations.md)\n"
+    for mitigation in mitigations.values():
+        content += f"    * [{mitigation['name']}](mitigation/{mitigation['$id'].split('/')[-1]}.md)\n"
 
     content += "\n## Entities\n"
     content += "* [Entities](entities.md)\n"
@@ -327,9 +335,10 @@ def main():
     procedures = {k: v for k, v in all_objects.items() if v["$type"] == "procedure"}
     platforms = {k: v for k, v in all_objects.items() if v["$type"] == "platform"}
     entities = {k: v for k, v in all_objects.items() if v["$type"] == "entity"}
+    mitigations = {k: v for k, v in all_objects.items() if v["$type"] == "mitigation"}
 
     logger.info(
-        f"Found {len(tactics)} tactics, {len(techniques)} techniques, {len(procedures)} procedures, {len(platforms)} platforms, and {len(entities)} entities"
+        f"Found {len(tactics)} tactics, {len(techniques)} techniques, {len(procedures)} procedures, {len(platforms)} platforms, {len(entities)} entities, {len(mitigations)} mitigations"
     )
 
     if not tactics or not techniques:
@@ -345,7 +354,14 @@ def main():
     with open(matrix_path, "w") as f:
         f.write(matrix_content)
 
-    object_types = ["tactic", "technique", "procedure", "platform", "entity"]
+    object_types = [
+        "tactic",
+        "technique",
+        "procedure",
+        "platform",
+        "entity",
+        "mitigation",
+    ]
 
     for obj_type in object_types:
         type_dir = os.path.join(build_dir, obj_type)
@@ -371,6 +387,7 @@ def main():
         (procedures.values(), "procedures"),
         (platforms.values(), "platforms"),
         (entities.values(), "entities"),
+        (mitigations.values(), "mitigations"),
     ):
         page_content = generate_object_list_page(objects, title.capitalize())
         page_path = os.path.join(build_dir, f"{title}.md")
@@ -389,7 +406,7 @@ def main():
 
     # Generate summary page (SUMMARY.md)
     summary_content = generate_summary_page(
-        tactics, techniques, procedures, platforms, entities, matrix
+        tactics, techniques, procedures, platforms, entities, mitigations, matrix
     )
     summary_path = os.path.join(build_dir, "SUMMARY.md")
     logger.info(f"Writing summary page to: {summary_path}")

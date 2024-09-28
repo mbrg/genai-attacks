@@ -42,3 +42,7 @@ repos:
         name: "procedure schema"
         files: ^procedure/.*\.json$
         args: ["--schemafile", "schema/procedure.schema.json"]
+    -   id: check-jsonschema
+        name: "mitigation schema"
+        files: ^mitigation/.*\.json$
+        args: ["--schemafile", "schema/mitigation.schema.json"]

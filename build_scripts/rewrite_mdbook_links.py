@@ -29,6 +29,7 @@ def update_edit_urls(book_dir):
                     "techniques.html",
                     "platforms.html",
                     "tactics.html",
+                    "mitigations.html",
                 ):
                     # Remove Change links from the identified pages
                     change_links = soup.find_all("a", title="Suggest an edit")

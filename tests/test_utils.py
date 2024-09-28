@@ -1,7 +1,7 @@
 import json
 import os
 
-OBJECT_TYPES = ["tactic", "technique", "procedure", "platform", "entity"]
+OBJECT_TYPES = ["tactic", "technique", "procedure", "platform", "entity", "mitigation"]
 
 OBJECT_FILE_NAMES = []
 for object_type in OBJECT_TYPES:

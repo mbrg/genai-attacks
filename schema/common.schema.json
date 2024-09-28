@@ -12,7 +12,8 @@
         "tactic",
         "technique",
         "procedure",
-        "entity"
+        "entity",
+        "mitigation"
       ],
       "type": "string"
     },
