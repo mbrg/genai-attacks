@@ -280,6 +280,16 @@ def generate_summary_page(tactics, techniques, procedures, platforms, entities, 
     return content
 
 
+def generate_object_list_page(objects, title):
+    logger.debug(f"Generating object list page for {title}")
+    content = f"# {title}\n\n"
+
+    for obj in objects:
+        content += f"- [{obj['name']}]({obj['$type']}/{obj['$id'].split('/')[-1]}.md)\n"
+
+    return content
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Generate documentation for GenAI Attacks Matrix"
@@ -353,6 +363,19 @@ def main():
                     logger.debug(f"Successfully wrote file: {file_path}")
                 except Exception as e:
                     logger.error(f"Error writing file {file_path}: {str(e)}")
+
+    # generate object list pages
+    for objects, title in (
+        (tactics.values(), "tactics"),
+        (techniques.values(), "techniques"),
+        (procedures.values(), "procedures"),
+        (platforms.values(), "platforms"),
+        (entities.values(), "entities"),
+    ):
+        page_content = generate_object_list_page(objects, title.capitalize())
+        page_path = os.path.join(build_dir, f"{title}.md")
+        with open(page_path, "w") as f:
+            f.write(page_content)
 
     # Copy repo md files to build directory
     intro_dir = os.path.join(build_dir, "intro")
