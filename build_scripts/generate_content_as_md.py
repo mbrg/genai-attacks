@@ -220,19 +220,20 @@ def generate_object_page(obj, all_objects, base_dir):
         ):
             content += f"| {tactic_name} | {technique_name} | {description} |\n"
 
-    content += "\n### Reference To Other Objects\n"
+    content += "\n### Related Objects\n"
     for ref in obj.get("object_references", []):
+        # filter out techniques in procedure pages
+        if ref["$type"] == "technique" and obj["$type"] == "procedure":
+            continue
         if ref["$id"] in all_objects:
             referenced_obj = all_objects[ref["$id"]]
-            content += f"- [{referenced_obj['name']}](../{referenced_obj['$type']}/{ref['$id'].split('/')[-1]}.md) ({referenced_obj['$type']}): {ref['description']}\n"
+            content += f"- --> [{referenced_obj['name']}](../{referenced_obj['$type']}/{ref['$id'].split('/')[-1]}.md) ({referenced_obj['$type']}){': ' if ref['description'] else ''}{ref['description']}\n"
         else:
-            content += f"- {ref['$id']} ({ref['$type']}): {ref['description']} (Reference not found)\n"
-
-    content += "\n### Referenced By Other Objects\n"
+            logger.warning(f"{ref['$id']} ({ref['$type']}): Reference not found")
     for other_obj in all_objects.values():
         for ref in other_obj.get("object_references", []):
             if ref["$id"] == obj["$id"]:
-                content += f"- [{other_obj['name']}](../{other_obj['$type']}/{other_obj['$id'].split('/')[-1]}.md) ({other_obj['$type']}): {ref['description']}\n"
+                content += f"- <-- [{other_obj['name']}](../{other_obj['$type']}/{other_obj['$id'].split('/')[-1]}.md) ({other_obj['$type']}){': ' if ref['description'] else ''}{ref['description']}\n"
 
     content += "\n### Related Frameworks\n"
     for ref in obj.get("framework_references", []):
