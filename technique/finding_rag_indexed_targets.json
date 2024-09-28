@@ -1,0 +1,16 @@
+{
+  "$id": "$gai-technique/finding_rag_indexed_targets",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "An adversary could identify GenAI systems that utilize components such as Retrieval-Augmented Generation (RAG) by mapping and interacting with AI bots and observing any indications for external data dependencies. Clues such as the bot's name, prompts mentioning external sources, or responses that reference specific online datasets could suggest the use of RAG. By pinpointing these targets, attackers can focus on poisoning, injecting or manipulating the external data repositories the AI relies on.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Finding RAG-Indexed Targets",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/reconnaissance",
+      "$type": "tactic",
+      "description": "An adversary could gather intelligence about GenAI systems to find vulnerabilities related to external data sources it uses and perform subsequent attacks that exploit these dependencies, such as data poisoning or indirect prompt injections."
+    }
+  ]
+}
