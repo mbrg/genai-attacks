@@ -13,7 +13,7 @@ def _validate_referenced_object_id(ref_obj_id):
 @load_json_object_wrapper
 def test_object_references(obj):
     for ref in obj.get("object_references", []):
-        _validate_referenced_object_id(ref)
+        _validate_referenced_object_id(ref["$id"])
 
 
 @pytest.mark.parametrize(
