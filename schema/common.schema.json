@@ -57,6 +57,11 @@
         "description": {
           "$comment": "More details about the relation between these objects.",
           "type": "string"
+        },
+        "is_sub_object": {
+          "$comment": "Is this object a sub-object of another. Used for sub-techniques, for example.",
+          "default": false,
+          "type": "boolean"
         }
       },
       "required": [

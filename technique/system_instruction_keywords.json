@@ -1,0 +1,38 @@
+{
+  "$id": "$gai-technique/system_instruction_keywords",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Including keywords from the system instructions can increase the probably that the AI system will interpret the content as privileged instructions.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "System Instruction Keywords",
+  "object_references": [
+    {
+      "$id": "$gai-technique/prompt_injection",
+      "$type": "technique",
+      "description": "Sub-technique of",
+      "is_sub_object": true
+    },
+    {
+      "$id": "$gai-technique/jailbreaking",
+      "$type": "technique",
+      "description": "Sub-technique of",
+      "is_sub_object": true
+    },
+    {
+      "$id": "$gai-technique/system_instructions_extraction",
+      "$type": "technique",
+      "description": "Extracting the system instructions is a pre-requisite to applying this technique"
+    },
+    {
+      "$id": "$gai-entity/tamir_ishay_sharbat",
+      "$type": "entity",
+      "description": "Demonstrated by"
+    },
+    {
+      "$id": "$gai-entity/michael_bargury",
+      "$type": "entity",
+      "description": "Demonstrated by"
+    }
+  ]
+}

@@ -111,12 +111,32 @@ def load_json_files(base_dir, version):
 def create_matrix(tactics, techniques):
     logger.debug("Creating matrix of tactics and techniques")
     matrix = defaultdict(list)
+
+    # primary techniques
     for technique in techniques.values():
         for ref in technique.get("object_references", []):
+            if "is_sub_object" in ref:
+                continue
             if ref["$type"] == "tactic":
                 matrix[ref["$id"]].append(technique["$id"])
                 logger.debug(
                     f"Added technique {technique['$id']} to tactic {ref['$id']}"
+                )
+
+    technique_to_tactic = defaultdict(list)
+    for tactic_id, technique_ids in matrix.items():
+        for technique_id in technique_ids:
+            technique_to_tactic[technique_id].append(tactic_id)
+
+    # sub techniques
+    for technique in techniques.values():
+        for ref in technique.get("object_references", []):
+            if "is_sub_object" not in ref:
+                continue
+            for inherited_tactic_id in technique_to_tactic[ref["$id"]]:
+                matrix[inherited_tactic_id].append(technique["$id"])
+                logger.debug(
+                    f"Added sub-technique {technique['$id']} to tactic {inherited_tactic_id}"
                 )
 
     invalid_tactic_ids = set(matrix.keys()) - set(tactics.keys())
