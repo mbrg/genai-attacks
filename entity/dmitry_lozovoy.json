@@ -1,0 +1,9 @@
+{
+  "$id": "$gai-entity/dmitry_lozovoy",
+  "$schema": "../schema/entity.schema.json",
+  "$type": "entity",
+  "description": "",
+  "entity_type": "person",
+  "external_references": [],
+  "name": "Dmitry Lozovoy"
+}
