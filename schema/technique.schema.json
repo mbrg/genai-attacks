@@ -56,14 +56,21 @@
       "uniqueItems": true
     },
     "sub_technique_of": {
-      "$comment": "If a technique id is provided, it indicates that this technique is a sub technique of the other.",
-      "$ref": "../schema/common.schema.json#/definitions/object_reference",
-      "$type": {
-        "$ref": "../schema/common.schema.json#/definitions/$type",
-        "enum": [
-          "technique"
-        ]
-      }
+      "$comment": "If a technique ids are provided, it indicates that this technique is a sub technique of the others.",
+      "contains": {
+        "$ref": "../schema/common.schema.json#/definitions/object_reference",
+        "$type": {
+          "$ref": "../schema/common.schema.json#/definitions/$type",
+          "enum": [
+            "technique"
+          ]
+        }
+      },
+      "items": {
+        "$ref": "../schema/common.schema.json#/definitions/object_reference"
+      },
+      "type": "array",
+      "uniqueItems": true
     }
   },
   "required": [

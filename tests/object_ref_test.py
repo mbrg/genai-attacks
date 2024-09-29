@@ -22,5 +22,5 @@ def test_object_references(obj):
 )
 @load_json_object_wrapper
 def test_sub_technique_references(obj):
-    if "sub_technique_of" in obj:
-        _validate_referenced_object_id(obj["sub_technique_of"])
+    for ref in obj.get("sub_technique_of", []):
+        _validate_referenced_object_id(ref["$id"])
