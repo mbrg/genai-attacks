@@ -57,7 +57,7 @@
     },
     "sub_technique_of": {
       "$comment": "If a technique ids are provided, it indicates that this technique is a sub technique of the others.",
-      "contains": {
+      "items": {
         "$ref": "../schema/common.schema.json#/definitions/object_reference",
         "$type": {
           "$ref": "../schema/common.schema.json#/definitions/$type",
@@ -65,9 +65,6 @@
             "technique"
           ]
         }
-      },
-      "items": {
-        "$ref": "../schema/common.schema.json#/definitions/object_reference"
       },
       "type": "array",
       "uniqueItems": true
