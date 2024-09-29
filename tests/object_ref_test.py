@@ -14,13 +14,3 @@ def _validate_referenced_object_id(ref_obj_id):
 def test_object_references(obj):
     for ref in obj.get("object_references", []):
         _validate_referenced_object_id(ref["$id"])
-
-
-@pytest.mark.parametrize(
-    "json_object_path",
-    [file_name for file_name in OBJECT_FILE_NAMES if file_name.startswith("technique")],
-)
-@load_json_object_wrapper
-def test_sub_technique_references(obj):
-    for ref in obj.get("sub_technique_of", []):
-        _validate_referenced_object_id(ref["$id"])

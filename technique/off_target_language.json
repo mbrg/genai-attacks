@@ -14,21 +14,21 @@
   "name": "Off-Target Language",
   "object_references": [
     {
-      "$id": "$gai-entity/dmitry_lozovoy",
-      "$type": "entity",
-      "description": "Demonstrated by"
-    }
-  ],
-  "sub_technique_of": [
-    {
       "$id": "$gai-technique/prompt_injection",
       "$type": "technique",
-      "description": ""
+      "description": "Sub-technique of",
+      "is_sub_object": true
     },
     {
       "$id": "$gai-technique/jailbreaking",
       "$type": "technique",
-      "description": ""
+      "description": "Sub-technique of",
+      "is_sub_object": true
+    },
+    {
+      "$id": "$gai-entity/dmitry_lozovoy",
+      "$type": "entity",
+      "description": "Demonstrated by"
     }
   ]
 }
