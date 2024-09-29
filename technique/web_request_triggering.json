@@ -11,6 +11,16 @@
       "$id": "$gai-tactic/exfiltration",
       "$type": "tactic",
       "description": "An adversary can exfiltrate data by embedding it in a URI and triggering the AI system to query it via its browsing capabilities."
+    },
+    {
+      "$id": "$gai-mitigation/index_based_browsing",
+      "$type": "mitigation",
+      "description": "Limiting an AI System to query a search index rather than perform a URL retrieval Setting a Content Security Policy can mitigate this technique by disrupting an attacker's ability to provide a URL to a domain under their control."
+    },
+    {
+      "$id": "$gai-mitigation/url_anchoring",
+      "$type": "mitigation",
+      "description": "Limiting an AI System to visit only URLs that were explicitly written by the user reduces an attacker's ability to exfiltrate data through request parameters."
     }
   ]
 }

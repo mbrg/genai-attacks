@@ -1,0 +1,14 @@
+{
+  "$id": "$gai-platform/microsoft_copilot",
+  "$schema": "../schema/platform.schema.json",
+  "$type": "platform",
+  "description": "The consumer-version of Microsoft's Copilot. Previously Bing Chat.",
+  "external_references": [
+    {
+      "href": "https://www.microsoft.com/en-us/bing/do-more-with-ai/what-is-bing-chat-and-how-can-you-use-it?form=MA13KP",
+      "source": "Microsoft",
+      "title": "What is Copilot, and how can you use it?"
+    }
+  ],
+  "name": "Microsoft Copilot"
+}

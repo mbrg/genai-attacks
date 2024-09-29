@@ -7,3 +7,5 @@ cp book_theme/head.hbs build/theme/head.hbs
 bin/mdbook build
 # rewrite book URLs
 python build_scripts/rewrite_mdbook_links.py --book-dir book/
+# echo book location for easy access
+echo "book/index.html"
