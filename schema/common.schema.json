@@ -12,7 +12,8 @@
         "tactic",
         "technique",
         "procedure",
-        "entity"
+        "entity",
+        "mitigation"
       ],
       "type": "string"
     },
@@ -52,6 +53,34 @@
         },
         "$type": {
           "$ref": "common.schema.json#/definitions/$type"
+        },
+        "description": {
+          "$comment": "More details about the relation between these objects.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "$id",
+        "$type",
+        "description"
+      ],
+      "type": "object"
+    },
+    "technique_reference": {
+      "additionalProperties": false,
+      "properties": {
+        "$id": {
+          "$ref": "common.schema.json#/definitions/$id"
+        },
+        "$tactic_id": {
+          "$comment": "Explicitly set a tactic id in cases where a technique can be used for multiple tactics.",
+          "$ref": "common.schema.json#/definitions/$id"
+        },
+        "$type": {
+          "$ref": "common.schema.json#/definitions/$type",
+          "enum": [
+            "technique"
+          ]
         },
         "description": {
           "$comment": "More details about the relation between these objects.",

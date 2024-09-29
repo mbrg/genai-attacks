@@ -1,3 +1,4 @@
 beautifulsoup4~=4.12.3
 pre-commit~=3.8.0
+pytest~=8.3.3
 types-beautifulsoup4~=4.12.0

@@ -3,10 +3,12 @@ repos:
     rev: v4.6.0
     hooks:
     -   id: check-json
+        exclude: '^\.vscode/settings\.json$'
     -   id: end-of-file-fixer
     -   id: trailing-whitespace
     -   id: check-added-large-files
     -   id: pretty-format-json
+        exclude: '^\.vscode/settings\.json$'
         args: ["--autofix"]
     -   id: requirements-txt-fixer
 -   repo: https://github.com/psf/black
@@ -40,3 +42,7 @@ repos:
         name: "procedure schema"
         files: ^procedure/.*\.json$
         args: ["--schemafile", "schema/procedure.schema.json"]
+    -   id: check-jsonschema
+        name: "mitigation schema"
+        files: ^mitigation/.*\.json$
+        args: ["--schemafile", "schema/mitigation.schema.json"]

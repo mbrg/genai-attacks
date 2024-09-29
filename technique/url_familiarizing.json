@@ -17,6 +17,11 @@
       "$id": "$gai-tactic/defense_evasion",
       "$type": "tactic",
       "description": "An adversary can bypass security mechanisms to allow future data exfiltration through URL in an attacker-controlled domain."
+    },
+    {
+      "$id": "$gai-mitigation/url_anchoring",
+      "$type": "mitigation",
+      "description": "URL Familiarizing bypasses URL Anchoring mitigation by introducing many possible URLs that an attacker can choose from to route the AI system to."
     }
   ]
 }
