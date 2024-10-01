@@ -1,5 +1,5 @@
 {
-  "$id": "$gai-technique/cresendo",
+  "$id": "$gai-technique/crescendo",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
   "description": "The adversary interacts with the model using mostly benign prompts, incrementally steering it to perform a desired task without explicitly mentioning it, by leveraging the model's own outputs.",
@@ -11,7 +11,7 @@
     }
   ],
   "framework_references": [],
-  "name": "Cresendo",
+  "name": "Crescendo",
   "object_references": [
     {
       "$id": "$gai-technique/jailbreaking",
