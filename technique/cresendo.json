@@ -1,0 +1,38 @@
+{
+  "$id": "$gai-technique/cresendo",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary interacts with the model using mostly benign prompts, incrementally steering it to perform a desired task without explicitly mentioning it, by leveraging the model's own outputs.",
+  "external_references": [
+    {
+      "href": "https://arxiv.org/html/2404.01833v1#abstract",
+      "source": "arXiv",
+      "title": "Great, Now Write an Article About That: The Crescendo Multi-Turn LLM Jailbreak Attack"
+    }
+  ],
+  "framework_references": [],
+  "name": "Cresendo",
+  "object_references": [
+    {
+      "$id": "$gai-technique/jailbreaking",
+      "$type": "technique",
+      "description": "Sub-technique of",
+      "is_sub_object": true
+    },
+    {
+      "$id": "$gai-entity/mark_russinovich",
+      "$type": "entity",
+      "description": "Demonstrated by"
+    },
+    {
+      "$id": "$gai-entity/ahmed_salem",
+      "$type": "entity",
+      "description": "Demonstrated by"
+    },
+    {
+      "$id": "$gai-entity/ronen_eldan",
+      "$type": "entity",
+      "description": "Demonstrated by"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "$id": "$gai-entity/ronen_eldan",
+  "$schema": "../schema/entity.schema.json",
+  "$type": "entity",
+  "description": "",
+  "entity_type": "person",
+  "external_references": [
+    {
+      "href": "https://twitter.com/eldanronen",
+      "source": "Twitter",
+      "title": "Ronen Eldan on Twitter"
+    }
+  ],
+  "name": "Ronen Eldan"
+}

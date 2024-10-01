@@ -1,0 +1,15 @@
+{
+  "$id": "$gai-entity/ahmed_salem",
+  "$schema": "../schema/entity.schema.json",
+  "$type": "entity",
+  "description": "",
+  "entity_type": "person",
+  "external_references": [
+    {
+      "href": "https://twitter.com/ahmedgasalem",
+      "source": "Twitter",
+      "title": "Ahmed Salem on Twitter"
+    }
+  ],
+  "name": "Ahmed Salem"
+}
