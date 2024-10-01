@@ -44,6 +44,11 @@ These tests must pass to merge to `main`. They will also auto-fix any issue they
 pre-commit run --all-files
 ```
 
+#### Common Issues
+* If you get an _end-of-file-fixer_ error in the PR's tests, make sure that there's an empty line at the end of the file. IDEs can sometimes change this automatically according to your plugins.
+* Make sure that the `$id` exactly matches the filename itself and the name field (both for best practice and to avoid constraint test errors).
+* If you use code blocks using tripe backticks, make sure to add a new line `\n` before and after them.
+
 ### Build Locally
 
 #### Setup
