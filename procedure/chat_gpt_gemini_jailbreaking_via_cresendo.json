@@ -24,7 +24,12 @@
       "description": "Using the model's own outputs to increasingly direct it to perform a task without actually specifying it explicitly."
     },
     {
-      "$id": "$gai-platform/microsoft_copilot_for_m365",
+      "$id": "$gai-platform/chatgpt",
+      "$type": "platform",
+      "description": ""
+    },
+    {
+      "$id": "$gai-platform/gemini",
       "$type": "platform",
       "description": ""
     },
