@@ -50,6 +50,21 @@ def update_edit_urls(book_dir):
                             f"Changed URL from '{old_url}' to '{new_url}'",
                         )
 
+                # Add the script to the end of the <head> section
+                # Ugly solution but it works
+                head = soup.find("head")
+                if head:
+                    script_tag_1 = soup.new_tag(
+                        "script",
+                        src="https://www.googletagmanager.com/gtag/js?id=G-BEG3SB4GH3",
+                    )
+                    script_tag_1.attrs["async"] = "async"
+                    script_tag_2 = soup.new_tag("script")
+                    script_tag_2.string = "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-BEG3SB4GH3');"
+                    head.append(script_tag_1)
+                    head.append(script_tag_2)
+                    logger.debug(f"Added Google Tag Manager script to {file_path}")
+
                 with open(file_path, "w", encoding="utf-8") as f:
                     f.write(str(soup))
 
