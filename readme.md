@@ -28,6 +28,7 @@ Improve our knowledge base by editing or adding files within these directories:
 --| procedure
 --| entity
 --| platform
+--| mitigation
 ```
 
 File schema and how things work:
