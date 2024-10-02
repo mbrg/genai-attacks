@@ -2,7 +2,7 @@
   "$id": "$gai-technique/off_target_language",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
-  "description": "While system instructions are typically written in English, underlying foundational models may understand other languages as well. Using prompt injection techniques in a language other than the other used by the system instructions can effectively bypass their control. Ths method is also effective bypassing a model's inherent trained controls.",
+  "description": "While system instructions are typically written in English, underlying foundational models may understand other languages as well. Using prompt injection techniques in a language other than the other used by the system instructions can effectively bypass their control. This method is also effective bypassing a model's inherent trained controls.",
   "external_references": [
     {
       "href": "https://labs.zenity.io/p/outsmarting-copilot-creating-hyperlinks-copilot-365/",
