@@ -1,7 +1,7 @@
 # Welcome to GenAI Attacks Matrix!
 
 | :flashlight: | [GenAI Attacks Matrix](https://ttps.ai/) is a knowledge source about TTPs used to target GenAI-based systems, copilots and agents |
-|------|:----------------------------------------------------------------------------------------------------------------------------------|
+|------|:---|
 
 
 ## What To Expect
