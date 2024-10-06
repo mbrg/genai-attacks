@@ -1,15 +1,15 @@
 {
-  "$id": "$gai-entity/pliny",
+  "$id": "$gai-entity/ahmed_salem",
   "$schema": "../schema/entity.schema.json",
   "$type": "entity",
   "description": "",
   "entity_type": "person",
   "external_references": [
     {
-      "href": "https://twitter.com/elder_plinius",
+      "href": "https://twitter.com/ahmedgasalem",
       "source": "Twitter",
-      "title": "Pliny on Twitter"
+      "title": "Ahmed Salem on Twitter"
     }
   ],
-  "name": "Pliny"
+  "name": "Ahmed Salem"
 }

@@ -1,23 +1,23 @@
 {
-  "$id": "procedure.schema.json",
+  "$id": "entity.schema.json",
   "additionalProperties": false,
   "properties": {
     "$id": {
       "$ref": "../schema/common.schema.json#/definitions/$id",
-      "pattern": "procedure/"
+      "pattern": "mitigation/"
     },
     "$schema": {
       "type": "string"
     },
     "$type": {
       "$ref": "../schema/common.schema.json#/definitions/$type",
-      "default": "procedure",
+      "default": "mitigation",
       "enum": [
-        "procedure"
+        "mitigation"
       ]
     },
     "description": {
-      "$comment": "A description of the procedure.",
+      "$comment": "A description of the mitigation, why is it useful and whats it's drawbacks.",
       "type": "string"
     },
     "external_references": {
@@ -35,13 +35,19 @@
       "uniqueItems": true
     },
     "name": {
-      "$comment": "The name of the procedure.",
+      "$comment": "The name of the mitigation.",
       "type": "string"
     },
     "object_references": {
-      "$comment": "References to objects that are related to the procedure, must have at least one technique reference.",
       "contains": {
-        "$ref": "../schema/common.schema.json#/definitions/technique_reference"
+        "$ref": "../schema/common.schema.json#/definitions/object_reference",
+        "properties": {
+          "$type": {
+            "enum": [
+              "platform"
+            ]
+          }
+        }
       },
       "items": {
         "$ref": "../schema/common.schema.json#/definitions/object_reference"
@@ -55,11 +61,10 @@
     "$type",
     "name",
     "description",
-    "object_references",
     "external_references",
-    "framework_references",
+    "object_references",
     "$schema"
   ],
-  "title": "Procedure Schema",
+  "title": "Entity Schema",
   "type": "object"
 }

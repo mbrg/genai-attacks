@@ -1,6 +1,6 @@
 # Welcome to GenAI Attacks Matrix!
 
-| :flashlight: | [GenAI Attacks Matrix](https://mbrg.github.io/genai-attacks/) is a knowledge source about TTPs used to target GenAI-based systems, copilots and agents |
+| :flashlight: | [GenAI Attacks Matrix](https://ttps.ai/) is a knowledge source about TTPs used to target GenAI-based systems, copilots and agents |
 |------|:---|
 
 
@@ -28,6 +28,7 @@ Improve our knowledge base by editing or adding files within these directories:
 --| procedure
 --| entity
 --| platform
+--| mitigation
 ```
 
 File schema and how things work:

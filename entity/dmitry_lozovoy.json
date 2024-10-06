@@ -1,0 +1,20 @@
+{
+  "$id": "$gai-entity/dmitry_lozovoy",
+  "$schema": "../schema/entity.schema.json",
+  "$type": "entity",
+  "description": "",
+  "entity_type": "person",
+  "external_references": [
+    {
+      "href": "https://www.linkedin.com/in/lozovoydmitry/",
+      "source": "LinkedIn",
+      "title": "Dmitry Lozovoy on LinkedIn"
+    },
+    {
+      "href": "https://labs.zenity.io/authors/90cb449b-6a9d-4559-8f8b-a131cf119e0c",
+      "source": "Zenity Labs",
+      "title": "Dmitry Lozovoy on Zenity Labs"
+    }
+  ],
+  "name": "Dmitry Lozovoy"
+}

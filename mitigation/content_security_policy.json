@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-mitigation/content_security_policy",
+  "$schema": "../schema/mitigation.schema.json",
+  "$type": "mitigation",
+  "description": "A defense mechanism that helps protect against web browsing tools and markdown rendering for data exfiltration.\nWhen a user asks the AI system to access a URL, it will only access it if the URL is from a limited set of trusted domains.\n",
+  "external_references": [
+    {
+      "description": "The mechanism is explained in the context of Microsoft Copilot (previously Bing Chat). The page you are reading draws a lot of content from this reference.",
+      "href": "https://embracethered.com/blog/posts/2023/bing-chat-data-exfiltration-poc-and-fix/",
+      "source": "Embrace The Red",
+      "title": "Bing Chat: Data Exfiltration Exploit Explained"
+    }
+  ],
+  "name": "Content Security Policy",
+  "object_references": [
+    {
+      "$id": "$gai-platform/microsoft_copilot",
+      "$type": "platform",
+      "description": "Microsoft Copilot can render URLs and links if they fall under these trusted domains:\n\n```\nth.bing.com\nwww.bing.com\nedgeservices.bing.com\nr.bing.com\n```"
+    }
+  ]
+}

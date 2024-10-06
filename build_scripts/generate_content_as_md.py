@@ -69,6 +69,7 @@ def load_json_files(base_dir, version):
         os.path.join(base_dir, "procedure"),
         os.path.join(base_dir, "platform"),
         os.path.join(base_dir, "entity"),
+        os.path.join(base_dir, "mitigation"),
     ]
 
     for directory in search_dirs:
@@ -110,12 +111,32 @@ def load_json_files(base_dir, version):
 def create_matrix(tactics, techniques):
     logger.debug("Creating matrix of tactics and techniques")
     matrix = defaultdict(list)
+
+    # primary techniques
     for technique in techniques.values():
         for ref in technique.get("object_references", []):
+            if "is_sub_object" in ref:
+                continue
             if ref["$type"] == "tactic":
                 matrix[ref["$id"]].append(technique["$id"])
                 logger.debug(
                     f"Added technique {technique['$id']} to tactic {ref['$id']}"
+                )
+
+    technique_to_tactic = defaultdict(list)
+    for tactic_id, technique_ids in matrix.items():
+        for technique_id in technique_ids:
+            technique_to_tactic[technique_id].append(tactic_id)
+
+    # sub techniques
+    for technique in techniques.values():
+        for ref in technique.get("object_references", []):
+            if "is_sub_object" not in ref:
+                continue
+            for inherited_tactic_id in technique_to_tactic[ref["$id"]]:
+                matrix[inherited_tactic_id].append(technique["$id"])
+                logger.debug(
+                    f"Added sub-technique {technique['$id']} to tactic {inherited_tactic_id}"
                 )
 
     invalid_tactic_ids = set(matrix.keys()) - set(tactics.keys())
@@ -145,7 +166,7 @@ def generate_main_page(tactics, techniques, matrix):
 
     # Find the maximum number of techniques for any tactic
     max_techniques = max(len(matrix[tactic["$id"]]) for tactic in sorted_tactics)
-    logger.debug(f"Found max techniques-per-tactic: {max_techniques}")
+    logger.info(f"Found max techniques-per-tactic: {max_techniques}")
 
     # Generate rows for techniques
     for i in range(max_techniques):
@@ -185,19 +206,55 @@ def generate_object_page(obj, all_objects, base_dir):
     for ref in obj.get("external_references", []):
         content += f"- [{ref['title']}]({ref['href']}), {ref['source']}\n"
 
-    content += "\n### Reference To Other Objects\n"
+    if obj["$type"] == "procedure":
+        content += "\n### Techniques\n"
+        content += "\n| Tactic | Technique | Details |\n"
+        content += "| -- | -- | -- |\n"
+
+        techniques = []
+        for ref in obj.get("object_references", []):
+            if ref["$id"] in all_objects and ref["$type"] == "technique":
+                technique_obj = all_objects[ref["$id"]]
+
+                # tactic id is either the '$tactic_id' property, or the first related tactic
+                for technique_ref in technique_obj.get("object_references", []):
+                    if (
+                        technique_ref["$id"] in all_objects
+                        and technique_ref["$type"] == "tactic"
+                    ):
+                        tactic_id = technique_ref["$id"]
+                        break
+                tactic_id = technique_obj.get("$tactic_id", tactic_id)
+                tactic_obj = all_objects[tactic_id]
+
+                techniques.append(
+                    (
+                        tactic_obj["tactic_order"],
+                        f"[{tactic_obj['name']}](../{tactic_obj['$type']}/{tactic_obj['$id'].split('/')[-1]}.md)",
+                        f"[{technique_obj['name']}](../{technique_obj['$type']}/{technique_obj['$id'].split('/')[-1]}.md)",
+                        ref["description"],
+                    )
+                )
+
+        for _, tactic_name, technique_name, description in sorted(
+            techniques, key=lambda x: x[0]
+        ):
+            content += f"| {tactic_name} | {technique_name} | {description} |\n"
+
+    content += "\n### Related Objects\n"
     for ref in obj.get("object_references", []):
+        # filter out techniques in procedure pages
+        if ref["$type"] == "technique" and obj["$type"] == "procedure":
+            continue
         if ref["$id"] in all_objects:
             referenced_obj = all_objects[ref["$id"]]
-            content += f"- [{referenced_obj['name']}](../{referenced_obj['$type']}/{ref['$id'].split('/')[-1]}.md) ({referenced_obj['$type']}): {ref['description']}\n"
+            content += f"- --> [{referenced_obj['name']}](../{referenced_obj['$type']}/{ref['$id'].split('/')[-1]}.md) ({referenced_obj['$type']}){': ' if ref['description'] else ''}{ref['description']}\n"
         else:
-            content += f"- {ref['$id']} ({ref['$type']}): {ref['description']} (Reference not found)\n"
-
-    content += "\n### Referenced By Other Objects\n"
+            logger.warning(f"{ref['$id']} ({ref['$type']}): Reference not found")
     for other_obj in all_objects.values():
         for ref in other_obj.get("object_references", []):
             if ref["$id"] == obj["$id"]:
-                content += f"- [{other_obj['name']}](../{other_obj['$type']}/{other_obj['$id'].split('/')[-1]}.md) ({other_obj['$type']}): {ref['description']}\n"
+                content += f"- <-- [{other_obj['name']}](../{other_obj['$type']}/{other_obj['$id'].split('/')[-1]}.md) ({other_obj['$type']}){': ' if ref['description'] else ''}{ref['description']}\n"
 
     content += "\n### Related Frameworks\n"
     for ref in obj.get("framework_references", []):
@@ -208,7 +265,9 @@ def generate_object_page(obj, all_objects, base_dir):
     return content
 
 
-def generate_summary_page(tactics, techniques, procedures, platforms, entities, matrix):
+def generate_summary_page(
+    tactics, techniques, procedures, platforms, entities, mitigations, matrix
+):
     logger.debug("Generating summary page content")
     content = "# GenAI Attacks\n\n"
     content += "* [Attacks Matrix](matrix.md)\n"
@@ -234,12 +293,27 @@ def generate_summary_page(tactics, techniques, procedures, platforms, entities, 
     for platform in platforms.values():
         content += f"    * [{platform['name']}](platform/{platform['$id'].split('/')[-1]}.md)\n"
 
+    content += "\n## Mitigations\n"
+    content += "* [Mitigations](mitigations.md)\n"
+    for mitigation in mitigations.values():
+        content += f"    * [{mitigation['name']}](mitigation/{mitigation['$id'].split('/')[-1]}.md)\n"
+
     content += "\n## Entities\n"
     content += "* [Entities](entities.md)\n"
     for entity in entities.values():
         content += (
             f"    * [{entity['name']}](entity/{entity['$id'].split('/')[-1]}.md)\n"
         )
+
+    return content
+
+
+def generate_object_list_page(objects, title):
+    logger.debug(f"Generating object list page for {title}")
+    content = f"# {title}\n\n"
+
+    for obj in objects:
+        content += f"- [{obj['name']}]({obj['$type']}/{obj['$id'].split('/')[-1]}.md)\n"
 
     return content
 
@@ -281,9 +355,10 @@ def main():
     procedures = {k: v for k, v in all_objects.items() if v["$type"] == "procedure"}
     platforms = {k: v for k, v in all_objects.items() if v["$type"] == "platform"}
     entities = {k: v for k, v in all_objects.items() if v["$type"] == "entity"}
+    mitigations = {k: v for k, v in all_objects.items() if v["$type"] == "mitigation"}
 
     logger.info(
-        f"Found {len(tactics)} tactics, {len(techniques)} techniques, {len(procedures)} procedures, {len(platforms)} platforms, and {len(entities)} entities"
+        f"Found {len(tactics)} tactics, {len(techniques)} techniques, {len(procedures)} procedures, {len(platforms)} platforms, {len(entities)} entities, {len(mitigations)} mitigations"
     )
 
     if not tactics or not techniques:
@@ -299,7 +374,14 @@ def main():
     with open(matrix_path, "w") as f:
         f.write(matrix_content)
 
-    object_types = ["tactic", "technique", "procedure", "platform", "entity"]
+    object_types = [
+        "tactic",
+        "technique",
+        "procedure",
+        "platform",
+        "entity",
+        "mitigation",
+    ]
 
     for obj_type in object_types:
         type_dir = os.path.join(build_dir, obj_type)
@@ -318,6 +400,20 @@ def main():
                 except Exception as e:
                     logger.error(f"Error writing file {file_path}: {str(e)}")
 
+    # generate object list pages
+    for objects, title in (
+        (tactics.values(), "tactics"),
+        (techniques.values(), "techniques"),
+        (procedures.values(), "procedures"),
+        (platforms.values(), "platforms"),
+        (entities.values(), "entities"),
+        (mitigations.values(), "mitigations"),
+    ):
+        page_content = generate_object_list_page(objects, title.capitalize())
+        page_path = os.path.join(build_dir, f"{title}.md")
+        with open(page_path, "w") as f:
+            f.write(page_content)
+
     # Copy repo md files to build directory
     intro_dir = os.path.join(build_dir, "intro")
     logger.info(f"Creating directory: {intro_dir}")
@@ -330,7 +426,7 @@ def main():
 
     # Generate summary page (SUMMARY.md)
     summary_content = generate_summary_page(
-        tactics, techniques, procedures, platforms, entities, matrix
+        tactics, techniques, procedures, platforms, entities, mitigations, matrix
     )
     summary_path = os.path.join(build_dir, "SUMMARY.md")
     logger.info(f"Writing summary page to: {summary_path}")

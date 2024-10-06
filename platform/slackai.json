@@ -1,0 +1,14 @@
+{
+  "$id": "$gai-platform/slackai",
+  "$schema": "../schema/platform.schema.json",
+  "$type": "platform",
+  "description": "",
+  "external_references": [
+    {
+      "href": "https://slack.com/features/ai",
+      "source": "Slack",
+      "title": "SlackAI"
+    }
+  ],
+  "name": "SlackAI"
+}

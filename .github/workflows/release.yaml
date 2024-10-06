@@ -76,6 +76,11 @@ jobs:
       - name: Generate Markdown
         run: python build_scripts/generate_content_as_md.py --version ${{ needs.versioning.outputs.semver }} --debug
 
+      - name: Customize book theme
+        run: |
+          mkdir -p build/theme
+          cp book_theme/head.hbs build/theme/head.hbs
+
       - name: Build with mdBook
         run: bin/mdbook build
 
