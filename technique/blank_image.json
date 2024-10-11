@@ -1,0 +1,21 @@
+{
+  "$id": "$gai-technique/blank_image",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary uses a blank image as a way to abuse the image rendering mechanism for data exfiltration techniques, without actually rendering an image a victim might be suspicious about.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Blank Image",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/defense_evasion",
+      "$type": "tactic",
+      "description": "An adversary can avoid raising suspicion by avoiding rendering an image to carry exfiltrated data."
+    },
+    {
+      "$id": "$gai-technique/image_rendering",
+      "$type": "technique",
+      "description": "When using Image Rendering, the adversary chooses a Blank Image that cannot be rendered by the victim client, thus avoiding raising suspicion."
+    }
+  ]
+}
