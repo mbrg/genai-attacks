@@ -1,3 +1,5 @@
+import string
+
 import pytest
 from test_utils import *
 
@@ -10,3 +12,10 @@ def test_object_file_name_and_id_align(json_object_path):
     assert (
         obj_id == file_name
     ), "Object $id should align to its filename. For example, an object with id $gai-technique/example should have file name example.json"
+
+
+@pytest.mark.parametrize("json_object_path", OBJECT_FILE_NAMES)
+def test_object_file_name_has_no_capital_letters(json_object_path):
+    assert not any(
+        char in string.ascii_uppercase for char in json_object_path
+    ), "json_object_path should not contain uppercase ASCII characters"

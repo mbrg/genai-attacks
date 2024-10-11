@@ -1,0 +1,16 @@
+{
+  "$id": "$gai-technique/user_message_harvesting",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary uses the AI system to summarize or encode the current user message.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "User Message Harvesting",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/collection",
+      "$type": "tactic",
+      "description": "An adversary can harvest sensitive data submitted to the AI system by the user."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "$id": "$gai-technique/distraction",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary combines unrelated benign instructions to the AI system next to malicious ones, to fool detection by security controls and suspicious users.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Distraction",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/defense_evasion",
+      "$type": "tactic",
+      "description": "An adversary can avoid detection by combining benign instructions with their malicious ones."
+    }
+  ]
+}
