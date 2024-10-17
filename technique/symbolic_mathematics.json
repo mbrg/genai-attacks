@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/symbolic_mathematics",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary exploits AI System capabilities in symbolic mathematics to bypass safety mechanisms, demonstrating a critical vulnerability by transforming harmful prompts into mathematical problems.",
+  "external_references": [
+    {
+      "href": "https://arxiv.org/pdf/2409.11445",
+      "source": "Academic Paper",
+      "title": "Jailbreaking Large Language Models with Symbolic Mathematics."
+    }
+  ],
+  "framework_references": [],
+  "name": "Symbolic Mathematics",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/defense_evasion",
+      "$type": "tactic",
+      "description": "An adversary can bypass LLM safety mechanisms by transforming harmful prompts into mathematical problems."
+    }
+  ]
+}
