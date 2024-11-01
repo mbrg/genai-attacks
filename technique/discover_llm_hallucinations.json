@@ -15,7 +15,13 @@
       "title": "Can you trust ChatGPT’s package recommendations?"
     }
   ],
-  "framework_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0062",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0062"
+    }
+  ],
   "name": "Discover LLM Hallucinations",
   "object_references": [
     {

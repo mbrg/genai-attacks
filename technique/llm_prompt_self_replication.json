@@ -10,7 +10,13 @@
       "title": "Here Comes The AI Worm: Unleashing Zero-click Worms that Target GenAI-Powered Applications."
     }
   ],
-  "framework_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0061",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0061"
+    }
+  ],
   "name": "LLM Prompt Self-Replication",
   "object_references": [
     {
