@@ -1,0 +1,32 @@
+{
+  "$id": "$gai-technique/discover_llm_hallucinations",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may prompt large language models and identify hallucinated entities. They may request software packages, commands, URLs, organization names, or e-mail addresses, and identify hallucinations with no connected real-world source.",
+  "external_references": [
+    {
+      "href": "https://www.lasso.security/blog/ai-package-hallucinations",
+      "source": "Lasso Security",
+      "title": "Diving Deeper into AI Package Hallucinations."
+    },
+    {
+      "href": "https://vulcan.io/blog/ai-hallucinations-package-risk",
+      "source": "Vulcan",
+      "title": "Can you trust ChatGPT’s package recommendations?"
+    }
+  ],
+  "framework_references": [],
+  "name": "Discover LLM Hallucinations",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/discovery",
+      "$type": "tactic",
+      "description": "An Adversary can discover entities hallucinated by the LLM to use during later stages of the attack."
+    },
+    {
+      "$id": "$gai-technique/publish_hallucinated_entities",
+      "$type": "technique",
+      "description": "An adversary may take advantage of hallucinated entities to point victims to rouge entities created by the adversary."
+    }
+  ]
+}

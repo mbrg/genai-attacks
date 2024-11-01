@@ -1,0 +1,32 @@
+{
+  "$id": "$gai-technique/publish_hallucinated_entities",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may create an entity they control, such as a software package, website, or email address to a source hallucinated by an LLM. Unsuspecting users would be pointed to entities under the control of the attackers when interacting with a hallucinated entity.",
+  "external_references": [
+    {
+      "href": "https://www.lasso.security/blog/ai-package-hallucinations",
+      "source": "Lasso Security",
+      "title": "Diving Deeper into AI Package Hallucinations."
+    },
+    {
+      "href": "https://vulcan.io/blog/ai-hallucinations-package-risk",
+      "source": "Vulcan",
+      "title": "Can you trust ChatGPT’s package recommendations?"
+    }
+  ],
+  "framework_references": [],
+  "name": "Publish Hallucinated Entities",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/resource_development",
+      "$type": "tactic",
+      "description": "An adversary can create rouge entities that correspond to entities hallucinated by an LLM."
+    },
+    {
+      "$id": "$gai-technique/discover_llm_hallucinations",
+      "$type": "technique",
+      "description": "The adversary needs to discover entities commonly hallucinated by the LLM, in order to create the corresponding entities."
+    }
+  ]
+}
