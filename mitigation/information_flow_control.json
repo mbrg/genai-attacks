@@ -2,7 +2,7 @@
   "$id": "$gai-mitigation/informaton_flow_control",
   "$schema": "../schema/mitigation.schema.json",
   "$type": "mitigation",
-  "description": "A defense mechanism that allows for information flow control .\nWhen a user asks the AI system to access a URL, it will only access it if the URL is from a limited set of trusted domains.\n",
+  "description": "A defense mechanism that allows for information flow control.",
   "external_references": [
     {
       "description": "",
@@ -11,10 +11,10 @@
       "title": "FATH: Authentication-based Test-time Defense against Indirect Prompt\nInjection Attacks"
     },
     {
-      "description": "The mechanism is explained in the context of Microsoft Copilot (previously Bing Chat). The page you are reading draws a lt of content from this reference.",
-      "href": "https://embracethered.com/blog/posts/2023/bing-chat-data-exfiltration-poc-and-fix/",
-      "source": "Embrace The Red",
-      "title": "Bing Chat: Data Exfiltration Exploit Explained"
+      "description": "RePD defends against jailbreak attacks by decomposing prompts into smaller, semantically interpretable units and validating each against a retrieval-based system. This process ensures that only safe and policy-compliant components contribute to the final prompt execution, mitigating adversarial influences.",
+      "href": "https://arxiv.org/pdf/2410.08660",
+      "source": "arXiv",
+      "title": "RePD: Defending Jailbreak Attack through a Retrieval-based Prompt\nDecomposition Process"
     }
 
   ],
@@ -23,7 +23,7 @@
     {
       "$id": "$gai-platform/chatgpt",
       "$type": "platform",
-      "description": "Microsoft Copilot can render URLs and links if they fall under these trusted domains:\n\n```\nth.bing.com\nwww.bing.com\nedgeservices.bing.com\nr.bing.com\n```"
+      "description": "Evaluation of the above mitigation strategies leveraged GPT 3.5 and GPT 4."
     }
   ]
 }

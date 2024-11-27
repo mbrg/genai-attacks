@@ -1,17 +1,17 @@
 {
-  "$id": "$gai-mitigation/informaton_flow_control",
+  "$id": "$gai-mitigation/llm_activations",
   "$schema": "../schema/mitigation.schema.json",
   "$type": "mitigation",
-  "description": "A defense mechanism that allows for information flow control .\n \n",
+  "description": "A defense mechanism that allows to track changes in the LLM to track any indirect prompt injections.\n \n",
   "external_references": [
     {
-      "description": "Authentication-based defense mechanism for test-time indirect prompt injection attacks, where incoming prompts are authenticated against a cryptographic signature to ensure they align with trusted inputs. By validating prompt integrity at runtime, FATH effectively mitigates the risk of adversarial modifications influencing the model's outputs.",
-      "href": "https://arxiv.org/pdf/2410.21492",
+      "description": "A simple linear classifier can effectively detect task drift with near-perfect ROC AUC on out-of-distribution test sets. This approach generalizes well to various attack types, including prompt injections, jailbreaks, and malicious instructions, without requiring modifications to the LLM.",
+      "href": "https://arxiv.org/html/2406.00799v2",
       "source": "arXiv",
-      "title": "FATH: Authentication-based Test-time Defense against Indirect Prompt\nInjection Attacks"
+      "title": "Are you still on track!? Catching LLM Task Drift with Activations"
     }
   ],
-  "name": "Information Flow Control",
+  "name": "LLM Activations",
   "object_references": [
     {
       "$id": "$gai-platform/chatgpt",

@@ -1,17 +1,17 @@
 {
-  "$id": "$gai-mitigation/informaton_flow_control",
+  "$id": "$gai-mitigation/spotlighting",
   "$schema": "../schema/mitigation.schema.json",
   "$type": "mitigation",
-  "description": "A defense mechanism that allows for information flow control .\n \n",
+  "description": "A defense mechanism that uses prompt engineering techniques to avoid indirect or direct prompt injection by highlighting the query",
   "external_references": [
     {
-      "description": "Authentication-based defense mechanism for test-time indirect prompt injection attacks, where incoming prompts are authenticated against a cryptographic signature to ensure they align with trusted inputs. By validating prompt integrity at runtime, FATH effectively mitigates the risk of adversarial modifications influencing the model's outputs.",
-      "href": "https://arxiv.org/pdf/2410.21492",
+      "description": "The \"Spotlighting\" defense mitigates indirect prompt injection attacks by dynamically focusing the model's attention on trusted sections of the prompt while disregarding untrusted input. This selective filtering ensures the model generates outputs based only on verified content, preventing adversarial manipulations.",
+      "href": "https://arxiv.org/abs/2403.14720",
       "source": "arXiv",
-      "title": "FATH: Authentication-based Test-time Defense against Indirect Prompt\nInjection Attacks"
+      "title": "Defending Against Indirect Prompt Injection Attacks With Spotlighting"
     }
   ],
-  "name": "Information Flow Control",
+  "name": "Spotlighting",
   "object_references": [
     {
       "$id": "$gai-platform/chatgpt",
