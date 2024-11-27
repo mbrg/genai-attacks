@@ -1,5 +1,5 @@
 {
-  "$id": "$gai-mitigation/informaton_flow_control",
+  "$id": "$gai-mitigation/information_flow_control",
   "$schema": "../schema/mitigation.schema.json",
   "$type": "mitigation",
   "description": "A defense mechanism that allows for information flow control.",

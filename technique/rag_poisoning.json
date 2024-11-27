@@ -51,6 +51,11 @@
       "$id": "$gai-entity/tamir_ishay_sharbat",
       "$type": "entity",
       "description": "Demonstrated by"
+    },
+    {
+      "$id": "$gai-entity/ayush_roychowdhury",
+      "$type": "entity",
+      "description": "Demonstrated by"
     }
   ]
 }
