@@ -2,7 +2,7 @@
   "$id": "$gai-mitigation/llm_activations",
   "$schema": "../schema/mitigation.schema.json",
   "$type": "mitigation",
-  "description": "A defense mechanism that allows to track changes in the LLM to track any indirect prompt injections.\n \n",
+  "description": "A defense mechanism that allows to track changes in the LLM to track any indirect prompt injections.",
   "external_references": [
     {
       "description": "A simple linear classifier can effectively detect task drift with near-perfect ROC AUC on out-of-distribution test sets. This approach generalizes well to various attack types, including prompt injections, jailbreaks, and malicious instructions, without requiring modifications to the LLM.",

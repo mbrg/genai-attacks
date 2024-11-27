@@ -5,7 +5,7 @@
   "description": "A defense mechanism that allows for information flow control.",
   "external_references": [
     {
-      "description": "",
+      "description": "an authentication-based defense mechanism for test-time indirect prompt injection attacks, where incoming prompts are authenticated against a cryptographic signature to ensure they align with trusted inputs. By validating prompt integrity at runtime, FATH effectively mitigates the risk of adversarial modifications influencing the model's outputs.",
       "href": "https://arxiv.org/pdf/2410.21492",
       "source": "arXiv",
       "title": "FATH: Authentication-based Test-time Defense against Indirect Prompt\nInjection Attacks"
