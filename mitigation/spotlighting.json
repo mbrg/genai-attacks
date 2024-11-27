@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-mitigation/informaton_flow_control",
+  "$schema": "../schema/mitigation.schema.json",
+  "$type": "mitigation",
+  "description": "A defense mechanism that allows for information flow control .\n \n",
+  "external_references": [
+    {
+      "description": "Authentication-based defense mechanism for test-time indirect prompt injection attacks, where incoming prompts are authenticated against a cryptographic signature to ensure they align with trusted inputs. By validating prompt integrity at runtime, FATH effectively mitigates the risk of adversarial modifications influencing the model's outputs.",
+      "href": "https://arxiv.org/pdf/2410.21492",
+      "source": "arXiv",
+      "title": "FATH: Authentication-based Test-time Defense against Indirect Prompt\nInjection Attacks"
+    }
+  ],
+  "name": "Information Flow Control",
+  "object_references": [
+    {
+      "$id": "$gai-platform/chatgpt",
+      "$type": "platform",
+      "description": "Evaluation of the above mitigation strategies leveraged GPT 3.5 and GPT 4."
+    }
+  ]
+}
