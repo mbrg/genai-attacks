@@ -2,7 +2,7 @@
   "$id": "$gai-tactic/impact",
   "$schema": "../schema/tactic.schema.json",
   "$type": "tactic",
-  "description": "The adversary is trying to communicate with compromised systems to control them.",
+  "description": "The adversary is trying to manipulate, interrupt, erode confidence in, or destroy your LLM systems and data.",
   "external_references": [],
   "framework_references": [
     {

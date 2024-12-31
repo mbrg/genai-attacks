@@ -1,0 +1,33 @@
+{
+  "$id": "$gai-technique/llm_prompt_self_replication",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "An adversary may use a carefully crafted LLM Prompt Injection designed to cause the LLM to replicate the prompt as part of its output. This allows the prompt to propagate to other LLMs and persist on the system.",
+  "external_references": [
+    {
+      "href": "https://arxiv.org/abs/2403.02817",
+      "source": "Stav Cohen, Ron Bitton, Ben Nassi",
+      "title": "Here Comes The AI Worm: Unleashing Zero-click Worms that Target GenAI-Powered Applications."
+    }
+  ],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0061",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0061"
+    }
+  ],
+  "name": "LLM Prompt Self-Replication",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/persistence",
+      "$type": "tactic",
+      "description": "An adversary can create a prompt that propagates to other LLMs and persists on the system."
+    },
+    {
+      "$id": "$gai-technique/prompt_injection",
+      "$type": "technique",
+      "description": "An adversary can craft a malicious prompt that would cause the LLM to replicate the prompt as part of its output and propagate to other LLMs."
+    }
+  ]
+}
