@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-mitigation/spotlighting",
+  "$schema": "../schema/mitigation.schema.json",
+  "$type": "mitigation",
+  "description": "A defense mechanism that uses prompt engineering techniques to avoid indirect or direct prompt injection by highlighting the query",
+  "external_references": [
+    {
+      "description": "The \"Spotlighting\" defense mitigates indirect prompt injection attacks by dynamically focusing the model's attention on trusted sections of the prompt while disregarding untrusted input. This selective filtering ensures the model generates outputs based only on verified content, preventing adversarial manipulations.",
+      "href": "https://arxiv.org/abs/2403.14720",
+      "source": "arXiv",
+      "title": "Defending Against Indirect Prompt Injection Attacks With Spotlighting"
+    }
+  ],
+  "name": "Spotlighting",
+  "object_references": [
+    {
+      "$id": "$gai-platform/chatgpt",
+      "$type": "platform",
+      "description": "Evaluation of the above mitigation strategies leveraged GPT 3.5 and GPT 4."
+    }
+  ]
+}

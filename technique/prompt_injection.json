@@ -29,6 +29,21 @@
       "description": "The concept of prompt injection was first discovered by Jonathan Cefalu from Preamble in May 2022 in a letter to OpenAI who called it \"command injection\"."
     },
     {
+      "$id": "$gai-mitigation/information_flow_control",
+      "$type": "mitigation",
+      "description": "Information Flow control would be one of many ways to track and control indirect prompt injections from knowledge corruption and leaking sensitive data."
+    },
+    {
+      "$id": "$gai-mitigation/spotlighting",
+      "$type": "mitigation",
+      "description": "By spotlighting in prompts, the LLM focuses on a specific part of the query that defines the task, thus avoiding other injected tasks."
+    },
+    {
+      "$id": "$gai-mitigation/llm_activations",
+      "$type": "mitigation",
+      "description": "By tracking LLM activations, the LLMs shift of attention to different tasks caused by indirect prompt injections can be tracked and mitigated."
+    },
+    {
       "$id": "$gai-entity/simon_willison",
       "$type": "entity",
       "description": "Simon has coined the term Prompt Injection in his post \"Prompt injection attacks against GPT-3.\""

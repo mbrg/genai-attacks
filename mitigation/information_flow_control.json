@@ -1,0 +1,28 @@
+{
+  "$id": "$gai-mitigation/information_flow_control",
+  "$schema": "../schema/mitigation.schema.json",
+  "$type": "mitigation",
+  "description": "A defense mechanism that allows for information flow control.",
+  "external_references": [
+    {
+      "description": "an authentication-based defense mechanism for test-time indirect prompt injection attacks, where incoming prompts are authenticated against a cryptographic signature to ensure they align with trusted inputs. By validating prompt integrity at runtime, FATH effectively mitigates the risk of adversarial modifications influencing the model's outputs.",
+      "href": "https://arxiv.org/pdf/2410.21492",
+      "source": "arXiv",
+      "title": "FATH: Authentication-based Test-time Defense against Indirect Prompt\nInjection Attacks"
+    },
+    {
+      "description": "RePD defends against jailbreak attacks by decomposing prompts into smaller, semantically interpretable units and validating each against a retrieval-based system. This process ensures that only safe and policy-compliant components contribute to the final prompt execution, mitigating adversarial influences.",
+      "href": "https://arxiv.org/pdf/2410.08660",
+      "source": "arXiv",
+      "title": "RePD: Defending Jailbreak Attack through a Retrieval-based Prompt\nDecomposition Process"
+    }
+  ],
+  "name": "Information Flow Control",
+  "object_references": [
+    {
+      "$id": "$gai-platform/chatgpt",
+      "$type": "platform",
+      "description": "Evaluation of the above mitigation strategies leveraged GPT 3.5 and GPT 4."
+    }
+  ]
+}
