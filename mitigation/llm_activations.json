@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-mitigation/llm_activations",
+  "$schema": "../schema/mitigation.schema.json",
+  "$type": "mitigation",
+  "description": "A defense mechanism that allows to track changes in the LLM to track any indirect prompt injections.",
+  "external_references": [
+    {
+      "description": "A simple linear classifier can effectively detect task drift with near-perfect ROC AUC on out-of-distribution test sets. This approach generalizes well to various attack types, including prompt injections, jailbreaks, and malicious instructions, without requiring modifications to the LLM.",
+      "href": "https://arxiv.org/html/2406.00799v2",
+      "source": "arXiv",
+      "title": "Are you still on track!? Catching LLM Task Drift with Activations"
+    }
+  ],
+  "name": "LLM Activations",
+  "object_references": [
+    {
+      "$id": "$gai-platform/chatgpt",
+      "$type": "platform",
+      "description": "Evaluation of the above mitigation strategies leveraged GPT 3.5 and GPT 4."
+    }
+  ]
+}

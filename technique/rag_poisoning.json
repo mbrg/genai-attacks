@@ -8,6 +8,21 @@
       "href": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
       "source": "Wikipedia",
       "title": "Retrieval-augmented generation."
+    },
+    {
+      "href": "https://arxiv.org/abs/2406.00083",
+      "source": "arXiv",
+      "title": "BadRAG: Identifying Vulnerabilities in Retrieval Augmented Generation of Large Language Models."
+    },
+    {
+      "href": "https://arxiv.org/abs/2408.04870",
+      "source": "arXiv",
+      "title": "ConfusedPilot: Confused Deputy Risks in RAG-based LLMs."
+    },
+    {
+      "href": "https://arxiv.org/abs/2402.07867",
+      "source": "arXiv",
+      "title": "PoisonedRAG: Knowledge Corruption Attacks to Retrieval-Augmented Generation of Large Language Models."
     }
   ],
   "framework_references": [],
@@ -30,6 +45,11 @@
     },
     {
       "$id": "$gai-entity/tamir_ishay_sharbat",
+      "$type": "entity",
+      "description": "Demonstrated by"
+    },
+    {
+      "$id": "$gai-entity/ayush_roychowdhury",
       "$type": "entity",
       "description": "Demonstrated by"
     }
