@@ -8,6 +8,11 @@
       "href": "https://labs.zenity.io/p/stealing-copilots-system-prompt",
       "source": "Zenity Labs",
       "title": "Extracting Microsoft Copilot's System Instructions"
+    },
+    {
+      "href": "https://arxiv.org/abs/2412.18295",
+      "source": "arXiv",
+      "title": "A black-box attack that adaptively and automatically compels RAG systems to disclose their confidential knowledge bases. RAG systems tested on include Llama-2, Falcon, GPT 3.5 and 4."
     }
   ],
   "framework_references": [],
