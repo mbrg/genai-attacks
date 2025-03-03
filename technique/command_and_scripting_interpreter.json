@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/command_and_scripting_interpreter",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may abuse command and script interpreters to execute commands, scripts, or binaries. These interfaces and languages provide ways of interacting with computer systems and are a common feature across many different platforms. Most systems come with some built-in command-line interface and scripting capabilities, for example, macOS and Linux distributions include some flavor of Unix Shell while Windows installations include the Windows Command Shell and PowerShell.\n\nThere are also cross-platform interpreters such as Python, as well as those commonly associated with client applications such as JavaScript and Visual Basic.\n\nAdversaries may abuse these technologies in various ways as a means of executing arbitrary commands. Commands and scripts can be embedded in Initial Access payloads delivered to victims as lure documents or as secondary payloads downloaded from an existing C2. Adversaries may also execute commands through interactive terminals/shells, as well as utilize various Remote Services in order to achieve remote Execution.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0050",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0050"
+    }
+  ],
+  "name": "Command and Scripting Interpreter",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/execution",
+      "$type": "tactic",
+      "description": "Using command-line interfaces or scripting interpreters to execute malicious code or commands within machine learning environments."
+    }
+  ]
+}

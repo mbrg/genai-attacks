@@ -1,0 +1,27 @@
+{
+  "$id": "$gai-technique/poison_training_data",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may attempt to poison datasets used by a ML model by modifying the underlying data or its labels. This allows the adversary to embed vulnerabilities in ML models trained on the data that may not be easily detectable. Data poisoning attacks may or may not require modifying the labels. The embedded vulnerability is activated at a later time by data samples with a backdoor trigger\n\nPoisoned data can be introduced via ML supply chain compromise or the data may be poisoned after the adversary gains initial access to the system.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0020",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0020"
+    }
+  ],
+  "name": "Poison Training Data",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/resource_development",
+      "$type": "tactic",
+      "description": "Introducing malicious alterations to training data to influence or degrade machine learning model performance."
+    },
+    {
+      "$id": "$gai-tactic/persistence",
+      "$type": "tactic",
+      "description": "Injecting malicious data into training datasets to establish long-term influence over machine learning models."
+    }
+  ]
+}

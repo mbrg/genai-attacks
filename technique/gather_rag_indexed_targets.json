@@ -1,0 +1,16 @@
+{
+  "$id": "$gai-technique/gather_rag_indexed_targets",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may identify data sources used in retrieval augmented generation (RAG) systems for targeting purposes. By pinpointing these sources, attackers can focus on poisoning or otherwise manipulating the external data repositories the AI relies on.\nRAG-indexed data may be identified in public documentation about the system, or by interacting with the system directly and observing any indications of or references to external data sources.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Gather RAG-Indexed Targets",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/reconnaissance",
+      "$type": "tactic",
+      "description": "An adversary could gather intelligence about GenAI systems to find vulnerabilities related to external data sources it uses and perform subsequent attacks that exploit these dependencies, such as data poisoning or indirect prompt injections."
+    }
+  ]
+}

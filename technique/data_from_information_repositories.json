@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/data_from_information_repositories",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may leverage information repositories to mine valuable information. Information repositories are tools that allow for storage of information, typically to facilitate collaboration or information sharing between users, and can store a wide variety of data that may aid adversaries in further objectives, or direct access to the target information.\n\nInformation stored in a repository may vary based on the specific instance or environment. Specific common information repositories include SharePoint, Confluence, and enterprise databases such as SQL Server.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0036",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0036"
+    }
+  ],
+  "name": "Data from Information Repositories",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/collection",
+      "$type": "tactic",
+      "description": "Accessing information repositories to collect data that could inform or aid adversarial objectives."
+    }
+  ]
+}

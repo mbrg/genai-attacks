@@ -1,11 +1,11 @@
 {
-  "$id": "$gai-technique/these_arent_the_droids",
+  "$id": "$gai-technique/instructions_silencing",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
   "description": "The adversary forces AI to avoid providing any information to the user about adversary-provided instructions or the process of following them.",
   "external_references": [],
   "framework_references": [],
-  "name": "These Aren't The Droids",
+  "name": "Instructions Silencing",
   "object_references": [
     {
       "$id": "$gai-tactic/defense_evasion",

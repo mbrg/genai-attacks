@@ -25,7 +25,7 @@
       "description": "An adversary can create a prompt that propagates to other LLMs and persists on the system."
     },
     {
-      "$id": "$gai-technique/prompt_injection",
+      "$id": "$gai-technique/llm_prompt_injection",
       "$type": "technique",
       "description": "An adversary can craft a malicious prompt that would cause the LLM to replicate the prompt as part of its output and propagate to other LLMs."
     }

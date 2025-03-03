@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/data_from_local_system",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may search local system sources, such as file systems and configuration files or local databases, to find files of interest and sensitive data prior to Exfiltration.\n\nThis can include basic fingerprinting information and sensitive data such as ssh keys.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0037",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0037"
+    }
+  ],
+  "name": "Data from Local System",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/collection",
+      "$type": "tactic",
+      "description": "Collecting data directly from the local system to analyze or use for adversarial purposes."
+    }
+  ]
+}

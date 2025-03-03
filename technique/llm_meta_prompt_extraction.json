@@ -1,5 +1,5 @@
 {
-  "$id": "$gai-technique/system_instructions_extraction",
+  "$id": "$gai-technique/llm_meta_prompt_extraction",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
   "description": "The adversary extracts system instructions provided by the AI system builder to learn about the system's capabilities and circumvent its guardrails.",
@@ -10,13 +10,19 @@
       "title": "Extracting Microsoft Copilot's System Instructions"
     }
   ],
-  "framework_references": [],
-  "name": "System Instructions Extraction",
+  "framework_references": [
+    {
+      "framework_id": "AML.T0056",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0056"
+    }
+  ],
+  "name": "LLM Meta Prompt Extraction",
   "object_references": [
     {
-      "$id": "$gai-tactic/discovery",
+      "$id": "$gai-tactic/exfiltration",
       "$type": "tactic",
-      "description": ""
+      "description": "Extracting AI system instructions and exfiltrating them outside of the organization."
     }
   ]
 }

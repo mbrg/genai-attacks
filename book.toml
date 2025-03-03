@@ -11,3 +11,4 @@ build-dir = "book"
 edit-url-template = "https://github.com/mbrg/genai-attacks/edit/main/{path}"
 fold.enable = true
 git-repository-url = "https://github.com/mbrg/genai-attacks"
+additional-css = ["custom.css"]

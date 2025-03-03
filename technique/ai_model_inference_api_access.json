@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/ai_model_inference_api_access",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may gain access to a model via legitimate access to the inference API. Inference API access can be a source of information to the adversary, a means of staging the attack, or for introducing data to the target system for impact).\n\nMany systems rely on the same models provided via an inference API, which means they share the same vulnerabilities. This is especially true of foundation models which are prohibitively resource intensive to train. Adversaries may use their access to model APIs to identify vulnerabilities such as jailbreaks or hallucinations and then target applications that use the same models.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0040",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0040"
+    }
+  ],
+  "name": "AI Model Inference API Access",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/ml_model_access",
+      "$type": "tactic",
+      "description": "Gaining access to AI model inference APIs to interact with or gather information about machine learning models."
+    }
+  ]
+}

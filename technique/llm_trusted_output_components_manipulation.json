@@ -1,0 +1,21 @@
+{
+  "$id": "$gai-technique/llm_trusted_output_components_manipulation",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may utilize prompts to a large language model (LLM) which manipulate various components of its response in order to make it appear trustworthy to the user. This helps the adversary continue to operate in the victim's environment and evade detection by the users it interacts with. \nThe LLM may be instructed to tailor its language to appear more trustworthy to the user or attempt to manipulate the user to take certain actions. Other response components that could be manipulated include links, recommended follow-up actions, retrieved document metadata, and citations.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "LLM Trusted Output Components Manipulation",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/defense_evasion",
+      "$type": "tactic",
+      "description": "An adversary can evade detection by modifying trusted components of the AI system."
+    },
+    {
+      "$id": "$gai-tactic/impact",
+      "$type": "tactic",
+      "description": "An adversary can manipulate the user into taking action by abusing trusted components of the AI system."
+    }
+  ]
+}

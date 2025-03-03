@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/establish_accounts",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may create accounts with various services for use in targeting, to gain access to resources needed in ML Attack Staging, or for victim impersonation.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0021",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0021"
+    }
+  ],
+  "name": "Establish Accounts",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/resource_development",
+      "$type": "tactic",
+      "description": "Creating accounts to support malicious activities, including access to systems, data, or machine learning environments."
+    }
+  ]
+}

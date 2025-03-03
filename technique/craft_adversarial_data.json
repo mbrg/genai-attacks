@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/craft_adversarial_data",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversarial data are inputs to a machine learning model that have been modified such that they cause the adversary's desired effect in the target model. Effects can range from misclassification, to missed detections, to maximizing energy consumption. Typically, the modification is constrained in magnitude or location so that a human still perceives the data as if it were unmodified, but human perceptibility may not always be a concern depending on the adversary's intended effect. For example, an adversarial input for an image classification task is an image the machine learning model would misclassify, but a human would still recognize as containing the correct class.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0043",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0043"
+    }
+  ],
+  "name": "Craft Adversarial Data",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/ml_attack_staging",
+      "$type": "tactic",
+      "description": "Creating adversarial data designed to mislead, manipulate, or disrupt machine learning models."
+    }
+  ]
+}

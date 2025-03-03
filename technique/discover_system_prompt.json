@@ -1,0 +1,17 @@
+{
+  "$id": "$gai-technique/discover_system_prompt",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may discover a large language model's system instructions provided by the AI system builder to learn about the system's capabilities and circumvent its guardrails.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Discover System Prompt",
+  "object_references": [
+    {
+      "$id": "$gai-technique/discover_llm_system_information",
+      "$type": "technique",
+      "description": "Sub-technique of",
+      "is_sub_object": true
+    }
+  ]
+}

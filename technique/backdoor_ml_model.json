@@ -1,0 +1,27 @@
+{
+  "$id": "$gai-technique/backdoor_ml_model",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may introduce a backdoor into a ML model. A backdoored model operates performs as expected under typical conditions, but will produce the adversary's desired output when a trigger is introduced to the input data. A backdoored model provides the adversary with a persistent artifact on the victim system. The embedded vulnerability is typically activated at a later time by data samples with an backdoor trigger",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0018",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0018"
+    }
+  ],
+  "name": "Backdoor ML Model",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/persistence",
+      "$type": "tactic",
+      "description": "Embedding backdoors in machine learning models to allow unauthorized influence or control over model predictions."
+    },
+    {
+      "$id": "$gai-tactic/ml_attack_staging",
+      "$type": "tactic",
+      "description": "Embedding backdoors in machine learning models to prepare for future exploitation or malicious activities."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/search_application_repositories",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may search open application repositories during targeting. Examples of these include Google Play, the iOS App store, the macOS App Store, and the Microsoft Store.\nAdversaries may craft search queries seeking applications that contain ML-enabled components.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0004",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0004"
+    }
+  ],
+  "name": "Search Application Repositories",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/reconnaissance",
+      "$type": "tactic",
+      "description": "Gathering information from application repositories to identify potential vulnerabilities or machine learning implementations."
+    }
+  ]
+}

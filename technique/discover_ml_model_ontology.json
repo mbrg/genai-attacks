@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/discover_ml_model_ontology",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may discover the ontology of a machine learning model's output space, for example, the types of objects a model can detect. The adversary may discovery the ontology by repeated queries to the model, forcing it to enumerate its output space. Or the ontology may be discovered in a configuration file or in documentation about the model.\n\nThe model ontology helps the adversary understand how the model is being used by the victim. It is useful to the adversary in creating targeted attacks.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0013",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0013"
+    }
+  ],
+  "name": "Discover ML Model Ontology",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/discovery",
+      "$type": "tactic",
+      "description": "Identifying the structure, components, or taxonomy of machine learning models to understand their organization and usage."
+    }
+  ]
+}

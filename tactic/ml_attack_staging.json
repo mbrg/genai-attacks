@@ -1,0 +1,17 @@
+{
+  "$id": "$gai-tactic/ml_attack_staging",
+  "$schema": "../schema/tactic.schema.json",
+  "$type": "tactic",
+  "description": "The adversary is leveraging their knowledge of and access to the target system to tailor the attack.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.TA0001",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/tactics/AML.TA0001"
+    }
+  ],
+  "name": "ML Attack Staging",
+  "object_references": [],
+  "tactic_order": 13
+}

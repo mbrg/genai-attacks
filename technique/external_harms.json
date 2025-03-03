@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/external_harms",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may abuse their access to a victim system and use its resources or capabilities to further their goals by causing harms external to that system. These harms could affect the organization (e.g. Financial Harm, Reputational Harm), its users (e.g. User Harm), or the general public (e.g. Societal Harm).",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0048",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0048"
+    }
+  ],
+  "name": "External Harms",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/impact",
+      "$type": "tactic",
+      "description": "Using machine learning systems to cause external harm, such as misinformation or economic damage."
+    }
+  ]
+}

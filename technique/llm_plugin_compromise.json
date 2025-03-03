@@ -1,0 +1,27 @@
+{
+  "$id": "$gai-technique/llm_plugin_compromise",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may use their access to an LLM that is part of a larger system to compromise connected plugins. LLMs are often connected to other services or resources via plugins to increase their capabilities. Plugins may include integrations with other applications, access to public or private data sources, and the ability to execute code.\n\nThis may allow adversaries to execute API calls to integrated applications or plugins, providing the adversary with increased privileges on the system. Adversaries may take advantage of connected data sources to retrieve sensitive information. They may also use an LLM integrated with a command or script interpreter to execute arbitrary instructions.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0053",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0053"
+    }
+  ],
+  "name": "LLM Plugin Compromise",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/execution",
+      "$type": "tactic",
+      "description": "Compromising large language model (LLM) plugins to execute malicious actions or influence machine learning outcomes."
+    },
+    {
+      "$id": "$gai-tactic/privilege_escalation",
+      "$type": "tactic",
+      "description": "Compromising large language model (LLM) plugins to gain additional privileges."
+    }
+  ]
+}

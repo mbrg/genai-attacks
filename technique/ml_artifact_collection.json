@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/ml_artifact_collection",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may collect ML artifacts for Exfiltration or for use in ML Attack Staging. ML artifacts include models and datasets as well as other telemetry data produced when interacting with a model.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0035",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0035"
+    }
+  ],
+  "name": "ML Artifact Collection",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/collection",
+      "$type": "tactic",
+      "description": "Gathering machine learning artifacts, such as datasets, models, or configurations, to analyze or exploit them."
+    }
+  ]
+}

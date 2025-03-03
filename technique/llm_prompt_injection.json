@@ -1,5 +1,5 @@
 {
-  "$id": "$gai-technique/prompt_injection",
+  "$id": "$gai-technique/llm_prompt_injection",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
   "description": "The adversary gets AI to interpret data to be analyzed as instructions to be executed.",
@@ -15,8 +15,14 @@
       "title": "AI Injections: Direct and Indirect Prompt Injections and Their Implications."
     }
   ],
-  "framework_references": [],
-  "name": "Prompt Injection",
+  "framework_references": [
+    {
+      "framework_id": "AML.T0051",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0051"
+    }
+  ],
+  "name": "LLM Prompt Injection",
   "object_references": [
     {
       "$id": "$gai-tactic/execution",

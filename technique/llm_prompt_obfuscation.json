@@ -1,0 +1,16 @@
+{
+  "$id": "$gai-technique/llm_prompt_obfuscation",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may hide or otherwise obfuscate prompt injections or retrieval content from the user to avoid detection. \nThis may include modifying how the injection is rendered such as small text, text colored the same as the background, or hidden HTML elements.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "LLM Prompt Obfuscation",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/defense_evasion",
+      "$type": "tactic",
+      "description": "An adversary can avoid detection by hiding or obfuscating the prompt injection text."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/search_victim_owned_websites",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may search websites owned by the victim for information that can be used during targeting. Victim-owned websites may contain technical details about their ML-enabled products or services. Victim-owned websites may contain a variety of details, including names of departments/divisions, physical locations, and data about key employees such as names, roles, and contact info. These sites may also have details highlighting business operations and relationships.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0003",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0003"
+    }
+  ],
+  "name": "Search Victim-Owned Websites",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/reconnaissance",
+      "$type": "tactic",
+      "description": "Gathering information from victim-owned websites to understand machine learning usage and vulnerabilities."
+    }
+  ]
+}

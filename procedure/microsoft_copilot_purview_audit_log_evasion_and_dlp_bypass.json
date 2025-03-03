@@ -19,12 +19,12 @@
       "description": "The adversary explicitly tells Copilot to not show any references to the fetched documents."
     },
     {
-      "$id": "$gai-technique/prompt_crafting",
+      "$id": "$gai-technique/llm_prompt_crafting",
       "$type": "technique",
       "description": "Using prior knowledge on how Copilot renders references."
     },
     {
-      "$id": "$gai-technique/prompt_injection",
+      "$id": "$gai-technique/llm_prompt_injection",
       "$type": "technique",
       "description": "Copilot is provided with instructions not to show any references to the fetched documents."
     },

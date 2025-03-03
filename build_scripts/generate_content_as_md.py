@@ -185,6 +185,17 @@ def generate_main_page(tactics, techniques, matrix):
     return content
 
 
+def get_tactic_id(technique_obj, all_objects):
+    # tactic id is either the '$tactic_id' property, or the first related tactic
+    # if it is a sub-technique - get the tactic from parent
+    for technique_ref in technique_obj.get("object_references", []):
+        if technique_ref["$id"] in all_objects and technique_ref["$type"] == "tactic":
+            return technique_ref["$id"]
+        if technique_ref["is_sub_object"]:
+            parent_technique = all_objects[technique_ref["$id"]]
+            return get_tactic_id(parent_technique, all_objects)
+
+
 def generate_object_page(obj, all_objects, base_dir):
     logger.debug(f"Generating page for object: {obj['$id']}")
     content = f"# {obj['name']}\n\n"
@@ -216,15 +227,7 @@ def generate_object_page(obj, all_objects, base_dir):
             if ref["$id"] in all_objects and ref["$type"] == "technique":
                 technique_obj = all_objects[ref["$id"]]
 
-                # tactic id is either the '$tactic_id' property, or the first related tactic
-                for technique_ref in technique_obj.get("object_references", []):
-                    if (
-                        technique_ref["$id"] in all_objects
-                        and technique_ref["$type"] == "tactic"
-                    ):
-                        tactic_id = technique_ref["$id"]
-                        break
-                tactic_id = technique_obj.get("$tactic_id", tactic_id)
+                tactic_id = get_tactic_id(technique_obj, all_objects)
                 tactic_obj = all_objects[tactic_id]
 
                 techniques.append(

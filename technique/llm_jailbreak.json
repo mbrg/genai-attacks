@@ -1,8 +1,8 @@
 {
-  "$id": "$gai-technique/jailbreaking",
+  "$id": "$gai-technique/llm_jailbreak",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
-  "description": "The adversary nullifies the system prompt to bypass safeguards and subvert the application's intent.",
+  "description": "An adversary may use a carefully crafted prompt injection designed to place LLM in a state in which it will freely respond to any user input, bypassing any controls, restrictions, or guardrails placed on the LLM. Once successfully jailbroken, the LLM can be used in unintended ways by the adversary..",
   "external_references": [
     {
       "href": "https://github.com/elder-plinius/L1B3RT45",
@@ -20,13 +20,24 @@
       "title": "AI jailbreaks: What they are and how they can be mitigated."
     }
   ],
-  "framework_references": [],
-  "name": "Jailbreaking",
+  "framework_references": [
+    {
+      "framework_id": "AML.T0054",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0054"
+    }
+  ],
+  "name": "LLM Jailbreak",
   "object_references": [
     {
       "$id": "$gai-tactic/privilege_escalation",
       "$type": "tactic",
       "description": "An adversary can override system-level prompts using user-level prompts."
+    },
+    {
+      "$id": "$gai-tactic/defense_evasion",
+      "$type": "tactic",
+      "description": "An adversary can bypass detections by jailbreaking the LLM."
     }
   ]
 }
