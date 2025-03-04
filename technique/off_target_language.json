@@ -14,13 +14,13 @@
   "name": "Off-Target Language",
   "object_references": [
     {
-      "$id": "$gai-technique/prompt_injection",
+      "$id": "$gai-technique/llm_prompt_injection",
       "$type": "technique",
       "description": "Sub-technique of",
       "is_sub_object": true
     },
     {
-      "$id": "$gai-technique/jailbreaking",
+      "$id": "$gai-technique/llm_jailbreak",
       "$type": "technique",
       "description": "Sub-technique of",
       "is_sub_object": true

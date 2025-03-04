@@ -1,0 +1,17 @@
+{
+  "$id": "$gai-technique/discover_special_character_sets",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may discover delimiters and special character sets used by the large language model. For example, delimiters used in retrieval augmented generation (RAG) applications to differentiate between context and user prompts. These can later be exploited to confuse or manipulate the LLM into misbehaving.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Discover Special Character Sets",
+  "object_references": [
+    {
+      "$id": "$gai-technique/discover_llm_system_information",
+      "$type": "technique",
+      "description": "Sub-technique of",
+      "is_sub_object": true
+    }
+  ]
+}

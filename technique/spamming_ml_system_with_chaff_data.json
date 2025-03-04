@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/spamming_ml_system_with_chaff_data",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may spam the machine learning system with chaff data that causes increase in the number of detections. This can cause analysts at the victim organization to waste time reviewing and correcting incorrect inferences.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0046",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0046"
+    }
+  ],
+  "name": "Spamming ML System with Chaff Data",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/impact",
+      "$type": "tactic",
+      "description": "Overwhelming machine learning systems with irrelevant or misleading data to degrade their performance or effectiveness."
+    }
+  ]
+}

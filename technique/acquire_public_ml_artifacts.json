@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/acquire_public_ml_artifacts",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may search public sources, including cloud storage, public-facing services, and software or data repositories, to identify machine learning artifacts. These machine learning artifacts may include the software stack used to train and deploy models, training and testing data, model configurations and parameters. An adversary will be particularly interested in artifacts hosted by or associated with the victim organization as they may represent what that organization uses in a production environment.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0002",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0002"
+    }
+  ],
+  "name": "Acquire Public ML Artifacts",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/resource_development",
+      "$type": "tactic",
+      "description": "Obtaining publicly available machine learning artifacts to assist in planning or conducting attacks."
+    }
+  ]
+}

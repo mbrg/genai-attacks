@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/cost_harvesting",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may target different machine learning services to send useless queries or computationally expensive inputs to increase the cost of running services at the victim organization. Sponge examples are a particular type of adversarial data designed to maximize energy consumption and thus operating cost.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0034",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0034"
+    }
+  ],
+  "name": "Cost Harvesting",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/impact",
+      "$type": "tactic",
+      "description": "Exploiting machine learning systems in a way that increases operational costs for the victim."
+    }
+  ]
+}

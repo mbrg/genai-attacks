@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/llm_data_leakage",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may craft prompts that induce the LLM to leak sensitive information. This can include private user data or proprietary information. The leaked information may come from proprietary training data, data sources the LLM is connected to, or information from other users of the LLM.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0057",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0057"
+    }
+  ],
+  "name": "LLM Data Leakage",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/exfiltration",
+      "$type": "tactic",
+      "description": "Exploiting data leakage vulnerabilities in large language models to retrieve sensitive or unintended information."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/user_execution",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "An adversary may rely upon specific actions by a user in order to gain execution. Users may inadvertently execute unsafe code introduced via ML supply chain compromise. Users may be subjected to social engineering to get them to execute malicious code by, for example, opening a malicious document file or link.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0011",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0011"
+    }
+  ],
+  "name": "User Execution",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/execution",
+      "$type": "tactic",
+      "description": "Relying on user interaction to execute malicious actions or deploy machine learning-based attacks."
+    }
+  ]
+}

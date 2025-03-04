@@ -1,0 +1,17 @@
+{
+  "$id": "$gai-technique/discover_system_instruction_keywords",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may discover keywords that have special meaning to the large language model (LLM), such as function names or object names. These can later be exploited to confuse or manipulate the LLM into misbehaving and to make calls to plugins the LLM has access to.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Discover System Instruction Keywords",
+  "object_references": [
+    {
+      "$id": "$gai-technique/discover_llm_system_information",
+      "$type": "technique",
+      "description": "Sub-technique of",
+      "is_sub_object": true
+    }
+  ]
+}

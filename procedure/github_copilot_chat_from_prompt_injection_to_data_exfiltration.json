@@ -19,12 +19,12 @@
       "description": "Malicious instructions are added as a comment in a local source code file, loaded by the user into VSCode."
     },
     {
-      "$id": "$gai-technique/prompt_injection",
+      "$id": "$gai-technique/llm_prompt_injection",
       "$type": "technique",
       "description": "The comment is interpreted by GitHub Copilot as instructions."
     },
     {
-      "$id": "$gai-technique/system_instructions_extraction",
+      "$id": "$gai-technique/llm_meta_prompt_extraction",
       "$type": "technique",
       "description": "Extracting system instructions reveal that GitHub Copilot is powered by GPT4."
     },

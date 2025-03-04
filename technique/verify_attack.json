@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/verify_attack",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries can verify the efficacy of their attack via an inference API or access to an offline copy of the target model. This gives the adversary confidence that their approach works and allows them to carry out the attack at a later time of their choosing. The adversary may verify the attack once but use it against many edge devices running copies of the target model. The adversary may verify their attack digitally, then deploy it in the targeted environment at a later time. Verifying the attack may be hard to detect since the adversary can use a minimal number of queries or an offline copy of the model.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0042",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0042"
+    }
+  ],
+  "name": "Verify Attack",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/ml_attack_staging",
+      "$type": "tactic",
+      "description": "Testing and validating the effectiveness of a machine learning attack before deployment."
+    }
+  ]
+}

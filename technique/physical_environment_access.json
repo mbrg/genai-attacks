@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/physical_environment_access",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "In addition to the attacks that take place purely in the digital domain, adversaries may also exploit the physical environment for their attacks. If the model is interacting with data collected from the real world in some way, the adversary can influence the model through access to wherever the data is being collected. By modifying the data in the collection process, the adversary can perform modified versions of attacks designed for digital access.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0041",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0041"
+    }
+  ],
+  "name": "Physical Environment Access",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/ml_model_access",
+      "$type": "tactic",
+      "description": "Gaining access to the physical environment where machine learning models or systems are deployed to gather information or interact directly."
+    }
+  ]
+}

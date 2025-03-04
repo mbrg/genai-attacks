@@ -1,0 +1,16 @@
+{
+  "$id": "$gai-technique/discover_llm_system_information",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary is trying to discover something about the large language model's (LLM) system information. This may be found in a configuration file containing the system instructions or extracted via interactions with the LLM. The desired information may include the full system prompt, special characters that have significance to the LLM or keywords indicating functionality available to the LLM. Information about how the LLM is instructed can be used by the adversary to understand the system's capabilities and to aid them in crafting malicious prompts.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Discover LLM System Information",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/discovery",
+      "$type": "tactic",
+      "description": "Extracting internal LLM system information to understand the system's capabilities and aid in crafting prompts."
+    }
+  ]
+}

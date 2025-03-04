@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/obtain_capabilities",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may search for and obtain software capabilities for use in their operations. Capabilities may be specific to ML-based attacks or generic software tools repurposed for malicious intent. In both instances, an adversary may modify or customize the capability to aid in targeting a particular ML system.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0016",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0016"
+    }
+  ],
+  "name": "Obtain Capabilities",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/resource_development",
+      "$type": "tactic",
+      "description": "Acquiring tools, software, or other resources to enable future attacks or machine learning-specific operations."
+    }
+  ]
+}

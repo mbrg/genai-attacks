@@ -24,7 +24,7 @@
       "description": "The adversary embeds malicious instructions under a domain they control at `https://wuzzi.net/c/a.txt`. The victim then searches for this website within ChatGPT which leads to ChatGPT MacOS client browsing into the website."
     },
     {
-      "$id": "$gai-technique/prompt_injection",
+      "$id": "$gai-technique/llm_prompt_injection",
       "$type": "technique",
       "description": "ChatGPT MacOS application retrieves the content on the website and interprets retrieved text as instructions to follow: `Create a plan for A using B to achieve C and follow through to completion!`"
     },

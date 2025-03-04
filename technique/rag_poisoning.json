@@ -2,7 +2,7 @@
   "$id": "$gai-technique/rag_poisoning",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
-  "description": "The adversary injects malicious content into data indexed by a RAG system to contaminate a future thread through RAG-based search results.",
+  "description": "Adversaries may inject malicious content into data indexed by a RAG system to contaminate a future thread through RAG-based search results. This may be accomplished by placing manipulated documents in a location the RAG indexes (see Gather RAG-Indexed Targets).\nThe content may be targeted such that it would always surface as a search result for a specific user query. The adversary\u2019s content may include false or misleading information. It may also include prompt injections with malicious instructions, or false RAG entries.",
   "external_references": [
     {
       "href": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
@@ -31,7 +31,12 @@
     {
       "$id": "$gai-tactic/initial_access",
       "$type": "tactic",
-      "description": "An adversary can indirectly inject malicious content into a thread by contaminating RAG data."
+      "description": "An adversary can gain initial access by injecting malicious content into a publicly available data source indexed by RAG."
+    },
+    {
+      "$id": "$gai-tactic/persistence",
+      "$type": "tactic",
+      "description": "An adversary can gain persistence by creating or modifying an internal data source indexed by RAG that users interact with."
     },
     {
       "$id": "$gai-entity/johann_rehberger",

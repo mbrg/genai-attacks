@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/create_proxy_ml_model",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may obtain models to serve as proxies for the target model in use at the victim organization. Proxy models are used to simulate complete access to the target model in a fully offline manner.\n\nAdversaries may train models from representative datasets, attempt to replicate models from victim inference APIs, or use available pre-trained models.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0005",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0005"
+    }
+  ],
+  "name": "Create Proxy ML Model",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/ml_attack_staging",
+      "$type": "tactic",
+      "description": "Building a proxy machine learning model to simulate a victim's model for further analysis or attack preparation."
+    }
+  ]
+}

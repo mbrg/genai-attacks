@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/discover_ml_artifacts",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may search private sources to identify machine learning artifacts that exist on the system and gather information about them. These artifacts can include the software stack used to train and deploy models, training and testing data management systems, container registries, software repositories, and model zoos.\n\nThis information can be used to identify targets for further collection, exfiltration, or disruption, and to tailor and improve attacks.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0007",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0007"
+    }
+  ],
+  "name": "Discover ML Artifacts",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/discovery",
+      "$type": "tactic",
+      "description": "Searching for machine learning artifacts such as datasets, models, or configurations to gather insights into an organization's ML processes."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/full_ml_model_access",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may gain full \"white-box\" access to a machine learning model. This means the adversary has complete knowledge of the model architecture, its parameters, and class ontology. They may exfiltrate the model to craft adversarial data and verify attacks offline where it is hard to detect their behavior.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0044",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0044"
+    }
+  ],
+  "name": "Full ML Model Access",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/ml_model_access",
+      "$type": "tactic",
+      "description": "Obtaining full access to machine learning models, allowing an adversary to inspect, manipulate, or exfiltrate model data and configurations."
+    }
+  ]
+}

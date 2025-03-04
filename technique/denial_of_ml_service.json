@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/denial_of_ml_service",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may target machine learning systems with a flood of requests for the purpose of degrading or shutting down the service. Since many machine learning systems require significant amounts of specialized compute, they are often expensive bottlenecks that can become overloaded. Adversaries can intentionally craft inputs that require heavy amounts of useless compute from the machine learning system.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0029",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0029"
+    }
+  ],
+  "name": "Denial of ML Service",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/impact",
+      "$type": "tactic",
+      "description": "Disrupting or disabling machine learning services to impact operations or availability."
+    }
+  ]
+}

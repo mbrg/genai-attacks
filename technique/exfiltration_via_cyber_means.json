@@ -1,0 +1,27 @@
+{
+  "$id": "$gai-technique/exfiltration_via_cyber_means",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may exfiltrate ML artifacts or other information relevant to their goals via traditional cyber means.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0025",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0025"
+    },
+    {
+      "framework_id": "TA0010",
+      "framework_name": "MITRE",
+      "href": "https://attack.mitre.org/tactics/TA0010/"
+    }
+  ],
+  "name": "Exfiltration via Cyber Means",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/exfiltration",
+      "$type": "tactic",
+      "description": "Using cyber means, such as data transfers or network-based methods, to exfiltrate machine learning artifacts or sensitive data."
+    }
+  ]
+}

@@ -14,7 +14,7 @@
   "name": "ChatGPT and Gemini jailbreak using the Crescendo technique",
   "object_references": [
     {
-      "$id": "$gai-technique/jailbreaking",
+      "$id": "$gai-technique/llm_jailbreak",
       "$type": "technique",
       "description": "The model's protection mechanisms are effectively circumvented, thus creating a jailbreak from its original safety filters."
     },

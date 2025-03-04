@@ -14,9 +14,10 @@
   "name": "Citation Silencing",
   "object_references": [
     {
-      "$id": "$gai-tactic/defense_evasion",
-      "$type": "tactic",
-      "description": "An adversary can bypass security mechanisms and audit logs that rely on citations."
+      "$id": "$gai-technique/llm_trusted_output_components_manipulation",
+      "$type": "technique",
+      "description": "Sub-technique of",
+      "is_sub_object": true
     },
     {
       "$id": "$gai-entity/michael_bargury",

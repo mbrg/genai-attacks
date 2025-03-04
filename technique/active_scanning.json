@@ -15,6 +15,11 @@
       "framework_id": "SAT1035",
       "framework_name": "Subdomain tenant discovery (saas-attacks)",
       "href": "https://github.com/pushsecurity/saas-attacks/blob/main/techniques/subdomain_tenant_discovery/description.md"
+    },
+    {
+      "framework_id": "AML.T0006",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0006"
     }
   ],
   "name": "Active Scanning",

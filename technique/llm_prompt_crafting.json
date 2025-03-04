@@ -1,11 +1,11 @@
 {
-  "$id": "$gai-technique/prompt_crafting",
+  "$id": "$gai-technique/llm_prompt_crafting",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
-  "description": "The adversary uses their acquired knowledge of the target AI system to craft prompts that bypass its defenses.",
+  "description": "The adversary uses their acquired knowledge of the target AI system to craft prompts that bypass its defenses. The adversary may iterate on the prompt to ensure that it works as-intended consistently.",
   "external_references": [],
   "framework_references": [],
-  "name": "Prompt Crafting",
+  "name": "LLM Prompt Crafting",
   "object_references": [
     {
       "$id": "$gai-tactic/resource_development",
@@ -18,12 +18,12 @@
       "description": "For commercial products, prompt crafting can be easier to performed on an attacker-controlled tenant."
     },
     {
-      "$id": "$gai-technique/jailbreaking",
+      "$id": "$gai-technique/llm_jailbreak",
       "$type": "technique",
       "description": "Prompt crafting typically involves jailbreaking."
     },
     {
-      "$id": "$gai-technique/prompt_injection",
+      "$id": "$gai-technique/llm_prompt_injection",
       "$type": "technique",
       "description": "Prompt crafting typically involves prompt injection."
     }

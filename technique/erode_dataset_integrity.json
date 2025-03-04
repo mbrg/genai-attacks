@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/erode_dataset_integrity",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may poison or manipulate portions of a dataset to reduce its usefulness, reduce trust, and cause users to waste resources correcting errors.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0059",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0059"
+    }
+  ],
+  "name": "Erode Dataset Integrity",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/impact",
+      "$type": "tactic",
+      "description": "Poison datasets used for training or validation to degrade the performance and reliability of ML models."
+    }
+  ]
+}

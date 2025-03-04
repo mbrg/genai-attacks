@@ -28,11 +28,6 @@
       "$id": "$gai-tactic/resource_development",
       "$type": "tactic",
       "description": "An adversary can create rouge entities that correspond to entities hallucinated by an LLM."
-    },
-    {
-      "$id": "$gai-technique/discover_llm_hallucinations",
-      "$type": "technique",
-      "description": "The adversary needs to discover entities commonly hallucinated by the LLM, in order to create the corresponding entities."
     }
   ]
 }

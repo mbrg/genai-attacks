@@ -19,7 +19,7 @@
       "description": "Copilots gets access to malicious data via email or shared document."
     },
     {
-      "$id": "$gai-technique/prompt_injection",
+      "$id": "$gai-technique/llm_prompt_injection",
       "$type": "technique",
       "description": "Prompt Injection via a malicious email or shared document."
     },

@@ -1,0 +1,17 @@
+{
+  "$id": "$gai-tactic/ml_model_access",
+  "$schema": "../schema/tactic.schema.json",
+  "$type": "tactic",
+  "description": "The adversary is attempting to gain some level of access to a machine learning model..",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.TA0000",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/tactics/AML.TA0000"
+    }
+  ],
+  "name": "ML Model Access",
+  "object_references": [],
+  "tactic_order": 4
+}

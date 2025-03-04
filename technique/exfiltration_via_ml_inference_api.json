@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/exfiltration_via_ml_inference_api",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may exfiltrate private information via the AI model inference API. ML Models have been shown leak private information about their training data. The model itself may also be extracted for the purposes of ML Intellectual Property Theft.\n\nExfiltration of information relating to private training data raises privacy concerns. Private training data may include personally identifiable information, or other protected data.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0024",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0024"
+    }
+  ],
+  "name": "Exfiltration via ML Inference API",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/exfiltration",
+      "$type": "tactic",
+      "description": "Exfiltrating data by exploiting machine learning inference APIs to extract sensitive information."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/ml_enabled_product_or_service",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may use a product or service that uses machine learning under the hood to gain access to the underlying machine learning model. This type of indirect model access may reveal details of the ML model or its inferences in logs or metadata.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0047",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0047"
+    }
+  ],
+  "name": "ML-Enabled Product or Service",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/ml_model_access",
+      "$type": "tactic",
+      "description": "Accessing machine learning-enabled products or services to interact with or gather information about the underlying ML models."
+    }
+  ]
+}

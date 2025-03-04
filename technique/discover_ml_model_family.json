@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/discover_ml_model_family",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may discover the general family of model. General information about the model may be revealed in documentation, or the adversary may use carefully constructed examples and analyze the model's responses to categorize it.\n\nKnowledge of the model family can help the adversary identify means of attacking the model and help tailor the attack.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0014",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0014"
+    }
+  ],
+  "name": "Discover ML Model Family",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/discovery",
+      "$type": "tactic",
+      "description": "Determining the type or family of machine learning models in use to understand their architecture or potential vulnerabilities."
+    }
+  ]
+}

@@ -14,9 +14,10 @@
   "name": "Citation Manipulation",
   "object_references": [
     {
-      "$id": "$gai-tactic/impact",
-      "$type": "tactic",
-      "description": "An adversary can social engineer by providing trustworthy sources to maliciously-crafted messages or data."
+      "$id": "$gai-technique/llm_trusted_output_components_manipulation",
+      "$type": "technique",
+      "description": "Sub-technique of",
+      "is_sub_object": true
     },
     {
       "$id": "$gai-technique/citation_silencing",

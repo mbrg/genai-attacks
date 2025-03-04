@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/develop_capabilities",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may develop their own capabilities to support operations. This process encompasses identifying requirements, building solutions, and deploying capabilities. Capabilities used to support attacks on ML systems are not necessarily ML-based themselves. Examples include setting up websites with adversarial information or creating Jupyter notebooks with obfuscated exfiltration code.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0017",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0017"
+    }
+  ],
+  "name": "Develop Capabilities",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/resource_development",
+      "$type": "tactic",
+      "description": "Creating tools, software, or other resources to facilitate future machine learning-related attacks or operations."
+    }
+  ]
+}

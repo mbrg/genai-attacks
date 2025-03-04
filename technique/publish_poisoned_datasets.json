@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/publish_poisoned_datasets",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may poison training data and publish it to a public location. The poisoned dataset may be a novel dataset or a poisoned variant of an existing open source dataset. This data may be introduced to a victim system via ML supply chain compromise.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0019",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0019"
+    }
+  ],
+  "name": "Publish Poisoned Datasets",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/resource_development",
+      "$type": "tactic",
+      "description": "Releasing datasets that have been maliciously altered to disrupt machine learning processes or outcomes."
+    }
+  ]
+}

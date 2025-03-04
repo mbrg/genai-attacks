@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/publish_poisoned_models",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may publish a poisoned model to a public location such as a model registry or code repository. The poisoned model may be a novel model or a poisoned variant of an existing open-source model. This model may be introduced to a victim system via ML supply chain compromise.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0058",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0058"
+    }
+  ],
+  "name": "Publish Poisoned Models",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/resource_development",
+      "$type": "tactic",
+      "description": "Releasing maliciously altered machine learning models to disrupt downstream use or compromise systems."
+    }
+  ]
+}
