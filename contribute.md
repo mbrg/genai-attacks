@@ -2,7 +2,7 @@
 
 ## How To Contribute Content?
 
-| :point_up:    | You can edit any `.json` file or create a new one directly in your browser to easily contribute! |
+| ☝️ | You can edit any `.json` file or create a new one directly in your browser to easily contribute! |
 |------|:---|
 
 Improve our knowledge base by editing or adding files within these directories:

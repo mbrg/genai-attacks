@@ -1,7 +1,7 @@
 [book]
-title = "GenAI Attacks Matrix"
+title = "AI Agents Attack Matrix"
 authors = ["ZenitySec"]
-description = "Documentation for the GenAI Attacks Matrix"
+description = "Documentation for the AI Agents Attack Matrix"
 src = "build"
 
 [build]

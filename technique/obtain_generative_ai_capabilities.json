@@ -1,0 +1,23 @@
+{
+  "$id": "$gai-technique/obtain_generative_ai_capabilities",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may search for and obtain generative AI models or tools, such as large language models (LLMs), to assist them in various steps of their operation. Generative AI can be used in a number of malicious ways, including generating malware or offensive cyber scripts, performing Retrieval Content Crafting, or generating Phishing content.\nAdversaries may obtain an open source model or they may leverage a generative AI service. They may need to jailbreak the generative AI model to bypass any restrictions put in place to limit the types of responses it can generate. They may also need to break the terms of service of the generative AI.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0016.002",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0016.002"
+    }
+  ],
+  "name": "Obtain Generative AI Capabilities",
+  "object_references": [
+    {
+      "$id": "$gai-technique/obtain_capabilities",
+      "$type": "technique",
+      "description": "Sub-technique of",
+      "is_sub_object": true
+    }
+  ]
+}

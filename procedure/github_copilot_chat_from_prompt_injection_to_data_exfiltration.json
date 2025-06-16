@@ -24,7 +24,7 @@
       "description": "The comment is interpreted by GitHub Copilot as instructions."
     },
     {
-      "$id": "$gai-technique/llm_meta_prompt_extraction",
+      "$id": "$gai-technique/extract_llm_system_prompt",
       "$type": "technique",
       "description": "Extracting system instructions reveal that GitHub Copilot is powered by GPT4."
     },

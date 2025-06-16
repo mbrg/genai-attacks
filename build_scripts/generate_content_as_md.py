@@ -148,7 +148,7 @@ def create_matrix(tactics, techniques):
 
 def generate_main_page(tactics, techniques, matrix):
     logger.debug("Generating main page content")
-    content = "# GenAI Attacks Matrix\n\n"
+    content = "# AI Agents Attack Matrix\n\n"
     sorted_tactics = sorted(tactics.values(), key=lambda x: x["tactic_order"])
 
     # Generate header row

@@ -4,7 +4,13 @@
   "$type": "technique",
   "description": "Adversaries may discover delimiters and special character sets used by the large language model. For example, delimiters used in retrieval augmented generation (RAG) applications to differentiate between context and user prompts. These can later be exploited to confuse or manipulate the LLM into misbehaving.",
   "external_references": [],
-  "framework_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0069.000",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0069.000"
+    }
+  ],
   "name": "Discover Special Character Sets",
   "object_references": [
     {

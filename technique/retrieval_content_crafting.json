@@ -14,7 +14,7 @@
   "name": "Retrieval Content Crafting",
   "object_references": [
     {
-      "$id": "$gai-tactic/initial_access",
+      "$id": "$gai-tactic/resource_development",
       "$type": "tactic",
       "description": "An adversary can target a specific user prompt by crafting content that would be surfaced by a RAG system to respond to that query."
     },

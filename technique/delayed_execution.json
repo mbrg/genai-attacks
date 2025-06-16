@@ -2,7 +2,7 @@
   "$id": "$gai-technique/delayed_execution",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
-  "description": "The adversary injects instructions to be follow by the AI system in response to a future event, either a specific keyword or the next interaction.",
+  "description": "The adversary injects instructions to be follow by the AI system in response to a future event, either a specific keyword or the next interaction. The triggering events can range from simple phrases to complex and covert signals, including encoded or steganographic payloads hidden within seemingly benign content.",
   "external_references": [],
   "framework_references": [],
   "name": "Delayed Execution",
@@ -10,7 +10,7 @@
     {
       "$id": "$gai-tactic/defense_evasion",
       "$type": "tactic",
-      "description": "An adversary can bypass controls and evade detection by delaying the execution of their malicious instructions.."
+      "description": "An adversary can bypass controls and evade detection by delaying the execution of their malicious instructions."
     }
   ]
 }
