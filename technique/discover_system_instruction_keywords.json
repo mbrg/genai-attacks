@@ -4,7 +4,13 @@
   "$type": "technique",
   "description": "Adversaries may discover keywords that have special meaning to the large language model (LLM), such as function names or object names. These can later be exploited to confuse or manipulate the LLM into misbehaving and to make calls to plugins the LLM has access to.",
   "external_references": [],
-  "framework_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0069.001",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0069.001"
+    }
+  ],
   "name": "Discover System Instruction Keywords",
   "object_references": [
     {

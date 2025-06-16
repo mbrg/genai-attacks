@@ -4,7 +4,13 @@
   "$type": "technique",
   "description": "Adversaries may introduce false entries into a victim\u2019s retrieval augmented generation (RAG) database. Content designed to be interpreted as a document by the large language model (LLM) used in the RAG system is included in a data source being ingested into the RAG database. When RAG entry including the false document is retrieved, the LLM is tricked into treating part of the retrieved content as a false RAG result.\nBy including a false RAG document inside of a regular RAG entry, it bypasses data monitoring tools. It also prevents the document from being deleted directly.\nThe adversary may use discovered system keywords to learn how to instruct a particular LLM to treat content as a RAG entry. They may be able to manipulate the injected entry\u2019s metadata including document title, author, and creation date.",
   "external_references": [],
-  "framework_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0071",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0071"
+    }
+  ],
   "name": "False RAG Entry Injection",
   "object_references": [
     {

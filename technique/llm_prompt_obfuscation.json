@@ -4,7 +4,13 @@
   "$type": "technique",
   "description": "Adversaries may hide or otherwise obfuscate prompt injections or retrieval content from the user to avoid detection. \nThis may include modifying how the injection is rendered such as small text, text colored the same as the background, or hidden HTML elements.",
   "external_references": [],
-  "framework_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0068",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0068"
+    }
+  ],
   "name": "LLM Prompt Obfuscation",
   "object_references": [
     {

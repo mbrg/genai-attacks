@@ -2,7 +2,7 @@
   "$id": "$gai-technique/ascii_smuggling",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
-  "description": "The adversary uses Tags Unicode Block to write instructions that are visible to machine but not to humans.",
+  "description": "ASCII Smuggling is a technique that embeds hidden instructions or data within seemingly benign text by leveraging invisible or non-rendering Unicode characters. These instructions are not visible to humans but are processed and interpreted by large language models (LLMs), enabling stealthy prompt injection or data encoding.\n\nSpecific methods include:\n\nUnicode Tags: Replaces regular letters and symbols with special tag versions from the Unicode Tags block. The content looks empty or harmless but can be decoded back into readable text.\n\nVariation Selectors: Converts data into a sequence of variation selectors \u2014 characters usually used to change how other symbols look. These selectors can be used to encode hidden bytes.\n\nSneaky Bits: Encodes binary data using pairs of special Unicode characters that represent 0s and 1s. This creates a hidden binary message that can be decoded without affecting the visible text.",
   "external_references": [
     {
       "href": "https://twitter.com/goodside/status/1745511940351287394",
@@ -13,6 +13,11 @@
       "href": "https://embracethered.com/blog/posts/2024/hiding-and-finding-text-with-unicode-tags/",
       "source": "Embrace the Red",
       "title": "ASCII Smuggler Tool: Crafting Invisible Text and Decoding Hidden Codes."
+    },
+    {
+      "href": "https://embracethered.com/blog/posts/2025/sneaky-bits-and-ascii-smuggler/",
+      "source": "Embrace the Red",
+      "title": "Sneaky Bits: Advanced Data Smuggling Techniques (ASCII Smuggler Updates)."
     },
     {
       "href": "https://en.wikipedia.org/wiki/Tags_(Unicode_block)",

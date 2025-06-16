@@ -25,7 +25,13 @@
       "title": "PoisonedRAG: Knowledge Corruption Attacks to Retrieval-Augmented Generation of Large Language Models."
     }
   ],
-  "framework_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0070",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0070"
+    }
+  ],
   "name": "RAG Poisoning",
   "object_references": [
     {

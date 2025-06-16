@@ -10,7 +10,13 @@
       "title": "Phantom References in Microsoft Copilot."
     }
   ],
-  "framework_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0067.000",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0067.000"
+    }
+  ],
   "name": "Citation Silencing",
   "object_references": [
     {
