@@ -1,0 +1,14 @@
+{
+  "$id": "$gai-platform/claude",
+  "$schema": "../schema/platform.schema.json",
+  "$type": "platform",
+  "description": "",
+  "external_references": [
+    {
+      "href": "https://claude.ai/",
+      "source": "Anthropic",
+      "title": "Claude"
+    }
+  ],
+  "name": "Claude"
+}

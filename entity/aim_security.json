@@ -1,0 +1,15 @@
+{
+  "$id": "$gai-entity/aim_security",
+  "$schema": "../schema/entity.schema.json",
+  "$type": "entity",
+  "description": "",
+  "entity_type": "organization",
+  "external_references": [
+    {
+      "href": "https://www.aim.security/",
+      "source": "",
+      "title": "Aim Security"
+    }
+  ],
+  "name": "Aim Security"
+}

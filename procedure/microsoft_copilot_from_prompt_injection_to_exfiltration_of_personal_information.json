@@ -19,6 +19,11 @@
       "description": "Copilots gets access to malicious data via email or shared document."
     },
     {
+      "$id": "$gai-technique/llm_scope_violation",
+      "$type": "technique",
+      "description": "The malicious email is able to reference and exfiltrate other emails and internal documents."
+    },
+    {
       "$id": "$gai-technique/llm_prompt_injection",
       "$type": "technique",
       "description": "Prompt Injection via a malicious email or shared document."
