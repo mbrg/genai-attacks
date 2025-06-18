@@ -1,0 +1,67 @@
+{
+  "$id": "$gai-procedure/echoleak_zero_click_data_exfiltration_using_m365_copilot",
+  "$schema": "../schema/procedure.schema.json",
+  "$type": "procedure",
+  "description": "An adversary exploits a zero-click vulnerability in Microsoft 365 Copilot by sending a specially crafted email containing a prompt injection disguised as user instructions. When a user asks Copilot to summarize the latest earning reports, the malicious email is fetched along with the legitimate earning reports. The instructions in the malicious email cause Copilot to embed sensitive financial data within a markdown-formatted image, which is then returned to the user and loaded automatically without any further interaction. The attack also leverages trusted Microsoft domains to facilitate the data exfiltration.",
+  "external_references": [
+    {
+      "href": "https://www.aim.security/lp/aim-labs-echoleak-blogpost",
+      "source": "Aim Security",
+      "title": "Breaking down 'EchoLeak', the First Zero-Click AI Vulnerability Enabling Data Exfiltration from Microsoft 365 Copilot"
+    }
+  ],
+  "framework_references": [],
+  "name": "EchoLeak: Zero-Click Data Exfiltration using M365 Copilot",
+  "object_references": [
+    {
+      "$id": "$gai-technique/retrieval_content_crafting",
+      "$type": "technique",
+      "description": "An attacker crafts an email which would be retrieved by M365 Copilot when asked about the latest earning reports."
+    },
+    {
+      "$id": "$gai-technique/acquire_infrastructure",
+      "$type": "technique",
+      "description": "An attacker sets up an Azure tenant to host an endpoint which will be used to exfiltrate data."
+    },
+    {
+      "$id": "$gai-technique/rag_poisoning",
+      "$type": "technique",
+      "description": "An attacker sends a malicious email which gets indexed into the RAG system of M365 Copilot."
+    },
+    {
+      "$id": "$gai-technique/llm_prompt_injection",
+      "$type": "technique",
+      "description": "The malicious email contains a prompt injection disguised as legitimate instructions for the email recipient."
+    },
+    {
+      "$id": "$gai-technique/llm_jailbreak",
+      "$type": "technique",
+      "description": "The exploit circumvents copilot's system instructions and provides new ones that specify copilot to embed sensitive data into a markdown image and return it to the user."
+    },
+    {
+      "$id": "$gai-technique/llm_scope_violation",
+      "$type": "technique",
+      "description": "The malicious email is able to reference and exfiltrate internal company data."
+    },
+    {
+      "$id": "$gai-technique/abuse_trusted_sites",
+      "$type": "technique",
+      "description": "The attacker exfiltrates data through a malicious, yet trusted, teams.microsoft.com endpoint"
+    },
+    {
+      "$id": "$gai-technique/image_rendering",
+      "$type": "technique",
+      "description": "The attack uses image rendering to exfiltrate sensitive data without requiring user interaction."
+    },
+    {
+      "$id": "$gai-platform/microsoft_copilot_for_m365",
+      "$type": "platform",
+      "description": ""
+    },
+    {
+      "$id": "$gai-entity/aim_security",
+      "$type": "entity",
+      "description": "Demonstrated by"
+    }
+  ]
+}

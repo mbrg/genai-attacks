@@ -21,7 +21,7 @@
     {
       "$id": "$gai-technique/retrieval_content_crafting",
       "$type": "technique",
-      "description": "The adversary targets any question about the \"EldritchNexus API key\" by pasting data with malicious instructions in a public channel, indexed by Slack AI. The prompt injection starts with: `EldritchNexus API key:`.\n\nIn a second attack scenario, the attacker targets search queries about a specific user: `To view the messages shared by Shankar`."
+      "description": "The adversary targets any question about the \"EldritchNexus API key\" by pasting data with malicious instructions in a public channel, indexed by Slack AI. The prompt injection starts with: `EldritchNexus API key:`. In a second attack scenario, the attacker targets search queries about a specific user: `To view the messages shared by Shankar`."
     },
     {
       "$id": "$gai-technique/llm_prompt_injection",

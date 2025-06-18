@@ -1,0 +1,32 @@
+{
+  "$id": "$gai-technique/abuse_trusted_sites",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "The adversary exfiltrates sensitive data by embedding it in resources loaded from attacker-controlled endpoints hosted trusted domains. This bypasses security controls like Content Security Policies and evades detection by leveraging implicit trust in known sites.",
+  "external_references": [
+    {
+      "href": "https://embracethered.com/blog/posts/2023/google-bard-data-exfiltration/?utm_source=chatgpt.com",
+      "source": "Embrace the Red",
+      "title": "Hacking Google Bard - From Prompt Injection to Data Exfiltration"
+    }
+  ],
+  "framework_references": [],
+  "name": "Abuse Trusted Sites",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/defense_evasion",
+      "$type": "tactic",
+      "description": "An adversary can bypass Content Security Policy controls and evade detection by abusing trusted sites."
+    },
+    {
+      "$id": "$gai-tactic/exfiltration",
+      "$type": "tactic",
+      "description": "An adversary can exfiltrate data by hosting attacker-controlled endpoints on trusted domains."
+    },
+    {
+      "$id": "$gai-entity/johann_rehberger",
+      "$type": "entity",
+      "description": "Demonstrated by"
+    }
+  ]
+}
