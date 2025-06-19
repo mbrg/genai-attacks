@@ -39,11 +39,6 @@
       "description": "The exploit circumvents copilot's system instructions and provides new ones that specify copilot to embed sensitive data into a markdown image and return it to the user."
     },
     {
-      "$id": "$gai-technique/llm_scope_violation",
-      "$type": "technique",
-      "description": "The malicious email is able to reference and exfiltrate internal company data."
-    },
-    {
       "$id": "$gai-technique/abuse_trusted_sites",
       "$type": "technique",
       "description": "The attacker exfiltrates data through a malicious, yet trusted, teams.microsoft.com endpoint"
