@@ -2,7 +2,7 @@
   "$id": "$gai-technique/clickable_link_rendering",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
-  "description": "The adversary gets AI to present a URL to the user, which is rendered as a link, and can be clicked by a user. The URL leads to an an attacker-controlled website, allowing the adversary to exfiltrate data through URL parameters. Variants include HTML tags and markdown.",
+  "description": "The adversary gets AI to present a URL to the user, which is rendered as a link, and can be clicked by a user. The URL leads to an attacker-controlled website, allowing the adversary to exfiltrate data through URL parameters. Variants include HTML tags and markdown.\n\nThe URL can also lead to controlled domain, where the URL is automatically chosen based on answers to a series of questions the AI system answers, allowing the adversary to leak the answers to those questions by the choice of a granular web link.",
   "external_references": [],
   "framework_references": [],
   "name": "Clickable Link Rendering",

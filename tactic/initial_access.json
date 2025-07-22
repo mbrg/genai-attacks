@@ -2,7 +2,7 @@
   "$id": "$gai-tactic/initial_access",
   "$schema": "../schema/tactic.schema.json",
   "$type": "tactic",
-  "description": "Get your text into the LLM prompt",
+  "description": "The adversary is trying to gain access to the AI system.\n\nThe target system could be a network, mobile device, or an edge device such as a sensor platform. The AI capabilities used by the system could be local with onboard or cloud-enabled AI capabilities.\n\nInitial Access consists of techniques that use various entry vectors to gain their initial foothold within the system.",
   "external_references": [],
   "framework_references": [
     {

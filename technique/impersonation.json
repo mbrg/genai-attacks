@@ -1,0 +1,28 @@
+{
+    "$id": "$gai-technique/impersonation",
+    "$schema": "../schema/technique.schema.json",
+    "$type": "technique",
+    "description": "Adversaries may impersonate a trusted person or organization in order to persuade and trick a target into performing some action on their behalf. For example, adversaries may communicate with victims (via Phishing, or Spearphishing via Social Engineering LLM) while impersonating a known sender such as an executive, colleague, or third-party vendor. Established trust can then be leveraged to accomplish an adversary's ultimate goals, possibly against multiple victims.\n\nAdversaries may target resources that are part of the AI DevOps lifecycle, such as model repositories, container registries, and software registries.",
+    "external_references": [
+      {
+        "href": "https://5stars217.github.io/2023-08-08-red-teaming-with-ml-models/",
+        "source": "threlfall_hax",
+        "title": "Model Confusion - Weaponizing ML models for red teams and bounty hunters"
+      }
+    ],
+    "framework_references": [
+    {
+      "framework_id": "AML.T0073",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0073"
+    }
+  ],
+    "name": "Impersonation",
+    "object_references": [
+      {
+        "$id": "$gai-tactic/defense_evasion",
+        "$type": "tactic",
+        "description": ""
+      }
+    ]
+}

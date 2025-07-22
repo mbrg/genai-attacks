@@ -2,9 +2,14 @@
   "$id": "$gai-tactic/command_and_control",
   "$schema": "../schema/tactic.schema.json",
   "$type": "tactic",
-  "description": "The adversary is trying to communicate with compromised systems to control them.",
+  "description": "The adversary is trying to communicate with compromised AI systems to control them.",
   "external_references": [],
   "framework_references": [
+    {
+      "framework_id": "AML.TA0014",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/tactics/AML.TA0014"
+    },
     {
       "framework_id": "TA0011",
       "framework_name": "MITRE ATT&CK",

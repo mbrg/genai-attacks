@@ -1,0 +1,24 @@
+{
+    "$id": "$gai-technique/poison_ai_model",
+    "$schema": "../schema/technique.schema.json",
+    "$type": "technique",
+    "description": "Adversaries may manipulate an AI model's weights to change it's behavior or performance, resulting in a poisoned model. Adversaries may poison a model by by directly manipulating its weights, training the model on poisoned data, further fine-tuning the model, or otherwise interfering with its training process.\n\nThe change in behavior of poisoned models may be limited to targeted categories in predictive AI models, or targeted topics, concepts, or facts in generative AI models, or aim for a general performance degradation.",
+    "external_references": [],
+    "framework_references": [
+      {
+        "framework_id": "AML.T0018.000",
+        "framework_name": "MITRE ATLAS",
+        "href": "https://atlas.mitre.org/techniques/AML.T0018.000"
+      }
+    ],
+    "name": "Poison AI Model",
+    "object_references": [
+      {
+        "$id": "$gai-technique/manipulate_ai_model",
+        "$type": "technique",
+        "description": "Sub-technique of",
+        "is_sub_object": true
+      }
+    ]
+  }
+  

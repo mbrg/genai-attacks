@@ -1,0 +1,24 @@
+{
+    "$id": "$gai-technique/container_registry",
+    "$schema": "../schema/technique.schema.json",
+    "$type": "technique",
+    "description": "An adversary may compromise a victim's container registry by pushing a manipulated container image and overwriting an existing container name and/or tag. Users of the container registry as well as automated CI/CD pipelines may pull the adversary's container image, compromising their AI Supply Chain. This can affect development and deployment environments.\n\nContainer images may include AI models, so the compromised image could have an AI model which was manipulated by the adversary (See [Manipulate AI Model](https://atlas.mitre.org/techniques/AML.T0018)).",
+    "external_references": [],
+    "framework_references": [
+      {
+        "framework_id": "AML.T0010.004",
+        "framework_name": "MITRE ATLAS",
+        "href": "https://atlas.mitre.org/techniques/AML.T0010.004"
+      }
+    ],
+    "name": "Container Registry",
+    "object_references": [
+      {
+        "$id": "$gai-technique/ai_supply_chain_compromise",
+        "$type": "technique",
+        "description": "Sub-technique of",
+        "is_sub_object": true
+      }
+    ]
+  }
+  

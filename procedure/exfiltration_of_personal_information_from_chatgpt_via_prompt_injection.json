@@ -44,7 +44,7 @@
       "description": "Assuming we can execute 2 prompt injections, separated by some period of time (e.g., a month), we can use ChatGPT's memory feature to remember the desired value using the first prompt and extract it using the second prompt."
     },
     {
-      "$id": "$gai-technique/granular_web_request_triggering",
+      "$id": "$gai-technique/web_request_triggering",
       "$type": "technique",
       "description": "Triggering a web request to multiple website pages `www.attacker.com/send/<code>` where `<code>` is chosen based on the AI system's answer to the adversary questions. In this scenario, the researcher uses `<code>` to exfiltrate a single digit number of their postal code by choosing `<code>` with length proportional to that digit."
     },
