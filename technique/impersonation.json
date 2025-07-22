@@ -22,7 +22,7 @@
       {
         "$id": "$gai-tactic/defense_evasion",
         "$type": "tactic",
-        "description": ""
+        "description": "An adversary can evade detection and bypass security controls by impersonating trusted individuals or organizations, leveraging established trust relationships to avoid suspicion from users and security systems."
       }
     ]
 }
