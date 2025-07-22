@@ -3,6 +3,7 @@
     "$schema": "../schema/technique.schema.json",
     "$type": "technique",
     "description": "Adversaries may directly modify an AI model's architecture to re-define it's behavior. This can include adding or removing layers as well as adding pre or post-processing operations.\n\nThe effects could include removing the ability to predict certain classes, adding erroneous operations to increase computation costs, or degrading performance. Additionally, a separate adversary-defined network could be injected into the computation graph, which can change the behavior based on the inputs, effectively creating a backdoor.",
+    "external_references": [],
     "framework_references": [
       {
         "framework_id": "AML.T0018.001",
