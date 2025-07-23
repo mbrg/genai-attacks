@@ -16,7 +16,7 @@
     {
       "$id": "$gai-tactic/discovery",
       "$type": "tactic",
-      "description": "Adversaries may use the information gained to shape follow-on behaviors, such as targeting data or credentials from enumerated services or evading identified defenses through Disable or Modify Tools or Disable or Modify Cloud Logs."
+      "description": "Discovering AI services provides adversaries intelligence about the target's AI infrastructure, including model types, access endpoints, container registries, and security configurations. This reconnaissance enables adversaries to map the AI attack surface, identify high-value targets like LLM APIs"
     }
   ]
 }
