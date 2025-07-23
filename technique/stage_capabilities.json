@@ -1,22 +1,22 @@
 {
-    "$id": "$gai-technique/stage_capabilities",
-    "$schema": "../schema/technique.schema.json",
-    "$type": "technique",
-    "description": "Adversaries may upload, install, or otherwise set up capabilities that can be used during targeting. To support their operations, an adversary may need to take capabilities they developed (Develop Capabilities) or obtained (Obtain Capabilities) and stage them on infrastructure under their control. These capabilities may be staged on infrastructure that was previously purchased/rented by the adversary (Acquire Infrastructure) or was otherwise compromised by them. Capabilities may also be staged on web services, such as GitHub, model registries, such as Hugging Face, or container registries.\n\nAdversaries may stage a variety of AI Artifacts including poisoned datasets (Publish Poisoned Datasets, malicious models (Publish Poisoned Models), and prompt injections. They may target names of legitimate companies or products, engage in typosquatting, or use hallucinated entities (Discover LLM Hallucinations).",
-    "external_references": [],
-    "framework_references": [
-        {
-          "framework_id": "AML.T0079",
-          "framework_name": "MITRE ATLAS",
-          "href": "https://atlas.mitre.org/techniques/AML.T0079"
-        }
-      ],
-    "name": "Stage Capabilities",
-    "object_references": [
-      {
-        "$id": "$gai-tactic/resource_development",
-        "$type": "tactic",
-        "description": "An adversary may stagemay stage a variety of AI Artifacts including poisoned datasets that can be used during targeting."
-      }
-    ]
-  }
+  "$id": "$gai-technique/stage_capabilities",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may upload, install, or otherwise set up capabilities that can be used during targeting. To support their operations, an adversary may need to take capabilities they developed (Develop Capabilities) or obtained (Obtain Capabilities) and stage them on infrastructure under their control. These capabilities may be staged on infrastructure that was previously purchased/rented by the adversary (Acquire Infrastructure) or was otherwise compromised by them. Capabilities may also be staged on web services, such as GitHub, model registries, such as Hugging Face, or container registries.\n\nAdversaries may stage a variety of AI Artifacts including poisoned datasets (Publish Poisoned Datasets, malicious models (Publish Poisoned Models), and prompt injections. They may target names of legitimate companies or products, engage in typosquatting, or use hallucinated entities (Discover LLM Hallucinations).",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0079",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0079"
+    }
+  ],
+  "name": "Stage Capabilities",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/resource_development",
+      "$type": "tactic",
+      "description": "An adversary may stagemay stage a variety of AI Artifacts including poisoned datasets that can be used during targeting."
+    }
+  ]
+}

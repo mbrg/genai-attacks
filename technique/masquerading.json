@@ -1,28 +1,28 @@
 {
-    "$id": "$gai-technique/masquerading",
-    "$schema": "../schema/technique.schema.json",
-    "$type": "technique",
-    "description": "Adversaries may attempt to manipulate features of their artifacts to make them appear legitimate or benign to users and/or security tools. Masquerading occurs when the name or location of an object, legitimate or malicious, is manipulated or abused for the sake of evading defenses and observation. This may include manipulating file metadata, tricking users into misidentifying the file type, and giving legitimate task or service names.",
-    "external_references": [
-      {
-        "href": "https://5stars217.github.io/2023-08-08-red-teaming-with-ml-models/",
-        "source": "threlfall_hax",
-        "title": "Model Confusion - Weaponizing ML models for red teams and bounty hunters"
-      }
-    ],
-    "framework_references": [
+  "$id": "$gai-technique/masquerading",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may attempt to manipulate features of their artifacts to make them appear legitimate or benign to users and/or security tools. Masquerading occurs when the name or location of an object, legitimate or malicious, is manipulated or abused for the sake of evading defenses and observation. This may include manipulating file metadata, tricking users into misidentifying the file type, and giving legitimate task or service names.",
+  "external_references": [
+    {
+      "href": "https://5stars217.github.io/2023-08-08-red-teaming-with-ml-models/",
+      "source": "threlfall_hax",
+      "title": "Model Confusion - Weaponizing ML models for red teams and bounty hunters"
+    }
+  ],
+  "framework_references": [
     {
       "framework_id": "AML.T0073",
       "framework_name": "MITRE ATLAS",
       "href": "https://atlas.mitre.org/techniques/AML.T0073"
     }
   ],
-    "name": "Masquerading",
-    "object_references": [
-      {
-        "$id": "$gai-tactic/defense_evasion",
-        "$type": "tactic",
-        "description": "An adversary can disguise their artifacts to make them appear legitimate or benign to users and/or security tools."
-      }
-    ]
+  "name": "Masquerading",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/defense_evasion",
+      "$type": "tactic",
+      "description": "An adversary can disguise their artifacts to make them appear legitimate or benign to users and/or security tools."
+    }
+  ]
 }
