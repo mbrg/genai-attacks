@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/corrupt_ai_model",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "An adversary may purposefully corrupt a malicious AI model file so that it cannot be successfully deserialized in order to evade detection by a model scanner. The corrupt model may still successfully execute malicious code before deserialization fails.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0076",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0076"
+    }
+  ],
+  "name": "Corrupt AI Model",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/defense_evasion",
+      "$type": "tactic",
+      "description": "An adversary can corrupt a malicious AI model file so that it cannot be successfully deserialized in order to evade detection by a model scanner."
+    }
+  ]
+}

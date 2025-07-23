@@ -1,8 +1,8 @@
 {
-  "$id": "$gai-technique/backdoor_ml_model",
+  "$id": "$gai-technique/manipulate_ai_model",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
-  "description": "Adversaries may introduce a backdoor into a ML model. A backdoored model operates performs as expected under typical conditions, but will produce the adversary's desired output when a trigger is introduced to the input data. A backdoored model provides the adversary with a persistent artifact on the victim system. The embedded vulnerability is typically activated at a later time by data samples with an backdoor trigger",
+  "description": "Adversaries may directly manipulate an AI model to change its behavior or introduce malicious code. Manipulating a model gives the adversary a persistent change in the system. This can include poisoning the model by changing its weights, modifying the model architecture to change its behavior, and embedding malware which may be executed when the model is loaded.",
   "external_references": [],
   "framework_references": [
     {
@@ -11,7 +11,7 @@
       "href": "https://atlas.mitre.org/techniques/AML.T0018"
     }
   ],
-  "name": "Backdoor ML Model",
+  "name": "Manipulate AI Model",
   "object_references": [
     {
       "$id": "$gai-tactic/persistence",

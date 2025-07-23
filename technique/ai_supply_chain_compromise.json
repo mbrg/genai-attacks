@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/ai_supply_chain_compromise",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may gain initial access to a system by compromising the unique portions of the ML supply chain. This could include hardware, data and its annotations, parts of the ML software stack, or the model itself. In some instances the attacker will need secondary access to fully carry out an attack using compromised components of the supply chain.\n\nExamples include compromising hardware such as GPUs, TPUs, or embedded devices used by AI systems, targeting AI software frameworks, container registries, and open source implementations of algorithms, poisoning data sources including large open source datasets or compromising private datasets during the labeling phase, and compromising models by introducing malware or adversarial techniques into open sourced models used for fine tuning.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0010",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0010"
+    }
+  ],
+  "name": "AI Supply Chain Compromise",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/initial_access",
+      "$type": "tactic",
+      "description": "Compromising machine learning supply chains to gain unauthorized access or introduce malicious components."
+    }
+  ]
+}

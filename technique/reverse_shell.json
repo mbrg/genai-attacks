@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/reverse_shell",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may utilize a reverse shell to communicate and control the victim system.\n\nTypically, a user uses a client to connect to a remote machine which is listening for connections.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0073",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0072"
+    }
+  ],
+  "name": "Reverse Shell",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/command_and_control",
+      "$type": "tactic",
+      "description": "With a reverse shell, the adversary is listening for incoming connections initiated from the victim system."
+    }
+  ]
+}

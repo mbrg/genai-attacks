@@ -1,5 +1,5 @@
 {
-  "$id": "$gai-technique/search_for_victims_publicly_available_research_materials",
+  "$id": "$gai-technique/search_open_technical_databases",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
   "description": "Adversaries may search publicly available research to learn how and where machine learning is used within a victim organization. The adversary can use this information to identify targets for attack, or to tailor an existing attack to make it more effective. Organizations often use open source model architectures trained on additional proprietary data in production. Knowledge of this underlying architecture allows the adversary to craft more realistic proxy models. An adversary can search these resources for publications for authors employed at the victim organization.",
@@ -11,7 +11,7 @@
       "href": "https://atlas.mitre.org/techniques/AML.T0000"
     }
   ],
-  "name": "Search for Victim's Publicly Available Research Materials",
+  "name": "Search Open Technical Databases",
   "object_references": [
     {
       "$id": "$gai-tactic/reconnaissance",

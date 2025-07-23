@@ -2,7 +2,7 @@
   "$id": "$gai-technique/web_request_triggering",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
-  "description": "The adversary triggers the AI system to issue a web request to an attacker-controlled domain, encoding data into the URI. The request is triggered by the client application with no user clicks required.",
+  "description": "The adversary triggers the AI system to issue a web request to an attacker-controlled domain, encoding data into the URI. The adversary can also perform granular web triggering by using questions about the data to determine which URL will be browsed. In both cases the request is triggered by the client application with no user clicks required.",
   "external_references": [],
   "framework_references": [],
   "name": "Web Request Triggering",

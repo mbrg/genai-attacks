@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/drive_by_compromise",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may gain access to an AI system through a user visiting a website over the normal course of browsing, or an AI agent retrieving information from the web on behalf of a user. Websites can contain an LLM Prompt Injection which, when executed, can change the behavior of the AI model.",
+  "external_references": [],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0078",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0078"
+    }
+  ],
+  "name": "Drive-By Compromise",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/initial_access",
+      "$type": "tactic",
+      "description": "An adversary can access the AI system by taking advantage of a user visiting a compromised website."
+    }
+  ]
+}
