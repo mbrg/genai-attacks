@@ -3,7 +3,13 @@
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
   "description": "Adversaries may attempt to discover the data sources a particular agent can access. The AI agent's configuration may reveal data sources or knowledge.\n\nThe embedded knowledge may include sensitive or proprietary material such as intellectual property, customer data, internal policies, or even credentials. By mapping what knowledge an agent has access to, an adversary can better understand the AI agent's role and potentially expose confidential information or pinpoint high-value targets for further exploitation.",
-  "external_references": [],
+  "external_references": [
+    {
+      "href": "https://labs.zenity.io/p/a-copilot-studio-story-discovery-phase-in-ai-agents-f917",
+      "source": "Zenity Labs",
+      "title": "AgentFlayer: Discovery Phase of AI Agents in Copilot Studio"
+    }
+  ],
   "framework_references": [
     {
       "framework_id": "AML.T0084.000",

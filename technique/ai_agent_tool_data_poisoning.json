@@ -1,0 +1,16 @@
+{
+  "$id": "$gai-technique/ai_agent_tool_data_poisoning",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may place malicious content on a victim\u2019s system where it can be retrieved by an AI Agent Tool. This may be accomplished by placing documents in a location that will be ingested by a service the AI agent has associated tools for.\n\nThe content may be targeted such that it would often be retrieved by common queries. The adversary's content may include false or misleading information. It may also include prompt injections with malicious instructions.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "AI Agent Tool Data Poisoning",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/initial_access",
+      "$type": "tactic",
+      "description": "An adversary can indirectly inject malicious content into a thread by contaminating data accessible to the AI system via an invocable retrival tool."
+    }
+  ]
+}

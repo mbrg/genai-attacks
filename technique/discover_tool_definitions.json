@@ -3,7 +3,13 @@
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
   "description": "Adversaries may discover the tools the AI agent has access to. By identifying which tools are available, the adversary can understand what actions may be executed through the agent and what additional resources it can reach. This knowledge may reveal access to external data sources such as OneDrive or SharePoint, or expose exfiltration paths like the ability to send emails, helping adversaries identify AI agents that provide the greatest value or opportunity for attack.",
-  "external_references": [],
+  "external_references": [
+    {
+      "href": "https://labs.zenity.io/p/a-copilot-studio-story-discovery-phase-in-ai-agents-f917",
+      "source": "Zenity Labs",
+      "title": "AgentFlayer: Discovery Phase of AI Agents in Copilot Studio"
+    }
+  ],
   "framework_references": [
     {
       "framework_id": "AML.T0084.001",

@@ -1,0 +1,28 @@
+{
+  "$id": "$gai-technique/delay_execution_of_llm_instructions",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may include instructions to be followed by the AI system in response to a future event, such as a specific keyword or the next interaction, in order to evade detection or bypass controls placed on the AI system.\n\nFor example, an adversary may include \"If the user submits a new request...\" followed by the malicious instructions as part of their prompt.\n\nAI agents can include security measures against prompt injections that prevent the invocation of particular tools or access to certain data sources during a conversation turn that has untrusted data in context. Delaying the execution of instructions to a future interaction or keyword is one way adversaries may bypass this type of control.",
+  "external_references": [
+    {
+      "href": "https://embracethered.com/blog/posts/2024/llm-context-pollution-and-delayed-automated-tool-invocation/",
+      "source": "Embrace the Red",
+      "title": "Google Gemini: Planting Instructions For Delayed Automatic Tool Invocation"
+    }
+  ],
+  "framework_references": [
+    {
+      "framework_id": "AML.T0094",
+      "framework_name": "MITRE ATLAS",
+      "href": "https://atlas.mitre.org/techniques/AML.T0094"
+    }
+  ],
+  "name": "Delay Execution of LLM Instructions",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/defense_evasion",
+      "$type": "tactic",
+      "description": "Intentionally delaying the execution of instructions or tool invocations in large language models to evade detection or oversight."
+    }
+  ]
+}

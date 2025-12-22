@@ -3,7 +3,13 @@
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
   "description": "Adversaries may attempt to discover configuration information for AI agents present on the victim's system. Agent configurations can include tools or services they have access to.\n\nAdversaries may directly access agent configuring dashboards or configuration files. They may also obtain configuration details by prompting the agent with questions such as \"What tools do you have access to?\"\n\nAdversaries can use the information they discover about AI agents to help with targeting.",
-  "external_references": [],
+  "external_references": [
+    {
+      "href": "https://labs.zenity.io/p/a-copilot-studio-story-discovery-phase-in-ai-agents-f917",
+      "source": "Zenity Labs",
+      "title": "AgentFlayer: Discovery Phase of AI Agents in Copilot Studio"
+    }
+  ],
   "framework_references": [
     {
       "framework_id": "AML.T0084",

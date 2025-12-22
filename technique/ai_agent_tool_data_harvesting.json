@@ -1,5 +1,5 @@
 {
-  "$id": "$gai-technique/retrieval_tool_data_harvesting",
+  "$id": "$gai-technique/ai_agent_tool_data_harvesting",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
   "description": "Adversaries may prompt the AI service to invoke various tools the agent has access to. Tools may retrieve data from different APIs or services in an organization.",
@@ -11,7 +11,7 @@
       "href": "https://atlas.mitre.org/techniques/AML.T0085.001"
     }
   ],
-  "name": "Retrieval Tool Data Harvesting",
+  "name": "AI Agent Tool Data Harvesting",
   "object_references": [
     {
       "$id": "$gai-technique/data_from_ai_services",
@@ -20,7 +20,7 @@
       "is_sub_object": true
     },
     {
-      "$id": "$gai-technique/retrieval_tool_credential_harvesting",
+      "$id": "$gai-technique/ai_agent_tool_credential_harvesting",
       "$type": "technique",
       "description": "The two techniques are similar apart from their target data and purpose."
     }

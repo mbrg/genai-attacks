@@ -3,7 +3,13 @@
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
   "description": "Adversaries may use prompts to invoke an agent's tool capable of performing write operations to exfiltrate data. Sensitive information can be encoded into the tool's input parameters and transmitted as part of a seemingly legitimate action. Variants include sending emails, creating or modifying documents, updating CRM records, or even generating media such as images or videos.",
-  "external_references": [],
+  "external_references": [
+    {
+      "href": "https://labs.zenity.io/p/a-copilot-studio-story-2-when-aijacking-leads-to-full-data-exfiltration-bc4a",
+      "source": "Zenity Labs",
+      "title": "AgentFlayer: When AIjacking Leads to Full Data Exfiltration in Copilot Studio"
+    }
+  ],
   "framework_references": [
     {
       "framework_id": "AML.T0086",

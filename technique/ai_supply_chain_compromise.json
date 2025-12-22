@@ -2,7 +2,7 @@
   "$id": "$gai-technique/ai_supply_chain_compromise",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
-  "description": "Adversaries may gain initial access to a system by compromising the unique portions of the AI supply chain. This could include Hardware, Data and its annotations, parts of the AI AI Software stack, or the Model itself. In some instances the attacker will need secondary access to fully carry out an attack using compromised components of the supply chain.",
+  "description": "Adversaries may gain initial access to a system by compromising the unique portions of the AI supply chain. This could include Hardware, Data and its annotations, parts of the AI Software stack, or the Model itself. In some instances the attacker will need secondary access to fully carry out an attack using compromised components of the supply chain.",
   "external_references": [],
   "framework_references": [
     {

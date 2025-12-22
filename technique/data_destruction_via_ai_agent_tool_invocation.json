@@ -1,0 +1,16 @@
+{
+  "$id": "$gai-technique/data_destruction_via_ai_agent_tool_invocation",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may invoke an AI agent\u2019s tool capable of performing mutative operations to perform Data Destruction. Adversaries may destroy data and files on specific systems or in large numbers on a network to interrupt availability to systems, services, and network resources.",
+  "external_references": [],
+  "framework_references": [],
+  "name": "Data Destruction via AI Agent Tool Invocation",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/impact",
+      "$type": "tactic",
+      "description": "An adversary can achieve their goals by invoking tools on behalf of a compromised user."
+    }
+  ]
+}

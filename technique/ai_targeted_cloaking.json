@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/ai_targeted_cloaking",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may manipulate AI systems by selectively presenting different content to AI-based agents than what is shown to human users. This technique targets AI crawlers, assistants, or inference models and delivers crafted content designed to mislead or alter downstream behavior. The cloaking may be based on request headers, user-agent strings, or other indicators that distinguish AI access from regular traffic. By controlling the content seen only by the AI system, attackers can influence model outputs, decisions, or beliefs without alerting human reviewers.",
+  "external_references": [
+    {
+      "href": "https://splx.ai/blog/ai-targeted-cloaking-openai-atlas",
+      "source": "ZScaler",
+      "title": "OpenAI\u2019s new browser Atlas falls for AI-targeted Cloaking Attack"
+    }
+  ],
+  "framework_references": [],
+  "name": "AI-Targeted Cloaking",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/impact",
+      "$type": "tactic",
+      "description": "Causing harm by influencing the behavior, outputs, or decisions of AI systems in ways that serve adversarial goals."
+    }
+  ]
+}

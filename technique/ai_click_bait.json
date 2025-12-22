@@ -2,7 +2,7 @@
   "$id": "$gai-technique/ai_click_bait",
   "$schema": "../schema/technique.schema.json",
   "$type": "technique",
-  "description": "The adversary crafts deceptive web content designed to bait Computer-Using agents into taking unintended actions, such as clicking buttons, copying code, or navigating to specific web pages. These attacks exploit the agent's interpretation of UI content, visual cues, or prompt-like language embedded in the site. When successful, they can lead the agent to inadvertently copy and execute malicious code on the user's operating system.",
+  "description": "The adversary crafts deceptive web content designed to bait Computer-Using agents or AI web browsers into taking unintended actions, such as clicking buttons, copying code, or navigating to specific web pages. These attacks exploit the agent's interpretation of UI content, visual cues, or prompt-like language embedded in the site. When successful, they can lead the agent to inadvertently copy and execute malicious code on the user's operating system.",
   "external_references": [
     {
       "href": "https://embracethered.com/blog/posts/2025/ai-clickfix-ttp-claude/",

@@ -1,0 +1,22 @@
+{
+  "$id": "$gai-technique/ai_service_api",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may communicate using the API of an AI service on the victim's system. The adversary's commands to the victim system, and often the results, are embedded in the normal traffic of the AI service.\n\nAn AI service API command and control channel is covert because the adversary's commands blend in with normal communications, so an adversary may use this technique to avoid detection. Using existing infrastructure on the victim's system allows the adversary to live off the land, further reducing their footprint.\n\nAI service APIs may be abused as C2 channels when an adversary wants to be stealthy and maintain long-term persistence for espionage activities.",
+  "external_references": [
+    {
+      "href": "https://www.microsoft.com/en-us/security/blog/2025/11/03/sesameop-novel-backdoor-uses-openai-assistants-api-for-command-and-control/",
+      "source": "Microsoft",
+      "title": "SesameOp: Novel backdoor uses OpenAI Assistants API for command and control"
+    }
+  ],
+  "framework_references": [],
+  "name": "AI Service API",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/command_and_control",
+      "$type": "tactic",
+      "description": "Using cloud-hosted AI-provider APIs as covert channels for command and control communication."
+    }
+  ]
+}

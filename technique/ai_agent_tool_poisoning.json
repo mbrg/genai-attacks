@@ -1,0 +1,32 @@
+{
+  "$id": "$gai-technique/ai_agent_tool_poisoning",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may achieve persistence by poisoning tools used by AI agents, using built-in tools or tools available to the agent via Model-Context-Protocol (MCP) connections. This can involve introducing malicious tools at the outset or compromising benign tools already integrated into the agent's environment. \n\nBy altering tool behavior such as modifying parameters or description, injecting hidden logic, or redirecting outputs, attackers can maintain long-term influence over the agent\u2019s actions, decisions, or external interactions. Poisoned tools may silently exfiltrate data, execute unauthorized commands, or manipulate downstream processes without raising suspicion.",
+  "external_references": [
+    {
+      "href": "https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks",
+      "source": "Invariant Labs",
+      "title": "MCP Security Notification: Tool Poisoning Attacks"
+    },
+    {
+      "href": "https://www.koi.ai/blog/postmark-mcp-npm-malicious-backdoor-email-theft",
+      "source": "Koi",
+      "title": "First Malicious MCP in the Wild: The Postmark Backdoor That's Stealing Your Emails"
+    }
+  ],
+  "framework_references": [],
+  "name": "AI Agent Tool Poisoning",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/persistence",
+      "$type": "tactic",
+      "description": "Altering or injecting malicious behavior into tools integrated with AI agents in order to achieve long-term unauthorized influence or control."
+    },
+    {
+      "$id": "$gai-tactic/initial_access",
+      "$type": "tactic",
+      "description": "Gaining initial access by tricking users into installing a malicious MCP server that includes poisoned tools."
+    }
+  ]
+}

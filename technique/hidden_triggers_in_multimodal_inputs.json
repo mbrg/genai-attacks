@@ -1,0 +1,27 @@
+{
+  "$id": "$gai-technique/hidden_triggers_in_multimodal_inputs",
+  "$schema": "../schema/technique.schema.json",
+  "$type": "technique",
+  "description": "Adversaries may embed hidden triggers across different input modalities\u2014such as images, audio, or metadata\u2014that activate specific behavior in multimodal machine learning models. These triggers are often imperceptible to humans but are recognized by the model due to steganographic encoding. This allows attackers to bypass detection mechanisms or hijack model behavior without leaving obvious traces. The hidden cues can be introduced during training or inference and may target models that accept multiple input types, enabling evasive or malicious behavior when the trigger is present.",
+  "external_references": [
+    {
+      "href": "https://datakrypto.com/malicious-prompts-hidden-in-images-threaten-ai-data-security-heres-how-encryption-can-help/",
+      "source": "DataKrypto",
+      "title": "Malicious Prompts Hidden in Images Threaten AI Data Security \u2014 Here\u2019s How Encryption Can Help"
+    }
+  ],
+  "framework_references": [],
+  "name": "Hidden Triggers in Multimodal Inputs",
+  "object_references": [
+    {
+      "$id": "$gai-tactic/defense_evasion",
+      "$type": "tactic",
+      "description": "Embedding hidden cross-modal triggers to evade detection or control model behavior in ways that bypass standard defenses."
+    },
+    {
+      "$id": "$gai-tactic/execution",
+      "$type": "tactic",
+      "description": "Triggering execution of malicious or unintended actions in AI models by embedding hidden cues across input modalities."
+    }
+  ]
+}
