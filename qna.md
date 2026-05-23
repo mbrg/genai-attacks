@@ -4,7 +4,7 @@
 
 MITRE Atlas is a knowledge resource about attacks that target the _creators_ of AI systems.
 It covers training data, the training environment, model artifacts and more, all crucial components when building an AI system.
-By contrast, the AI Agents Attack matrix is focused on attacks that target the _users_ of an AI system. The focus is on how AI systems interact with the rest of the business environment on behalf of their uses. The AI Agents Attack Matrix includes the tehcniques in MITRE Atlas and more, and is meant to be a community-driven project that keeps updating on a regular basis based on new attack techniques that are discovered.
+By contrast, the AI Agents Attack matrix is focused on attacks that target the _users_ of an AI system. The focus is on how AI systems interact with the rest of the business environment on behalf of their uses. The AI Agents Attack Matrix includes the techniques in MITRE Atlas and more, and is meant to be a community-driven project that keeps updating on a regular basis based on new attack techniques that are discovered.
 
 ## How does this project differ from MITRE ATT&CK?
 
